@@ -29,6 +29,7 @@ jobs:
       - name: Generate a random color
         id: random_color
         run: |
+          python3 -c "
           import random
           colors = [
               "red", "blue", "green", "yellow", "pink", "purple", "orange", "brown", 
@@ -40,6 +41,7 @@ jobs:
               "azure", "orchid", "ruby", "amber", "moss", "sand", "cobalt", "rose"
           ]
           color_snake = random.choice(colors)
+          "
 
       - name: Generate snake files in './dist/'
         uses: Platane/snk@v3
