@@ -32,7 +32,7 @@ jobs:
           python3 -c '
           import random
           colors = [
-              "red", "orange", "blue"
+              "red", "orange", "blue", "purple", "yellow", "pink", "gray"
           ]
           color_snake = random.choice(colors)
           print(f"::set-output name=color_snake::{color_snake}")
