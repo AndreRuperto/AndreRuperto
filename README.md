@@ -1,7 +1,9 @@
-<h2 align="center">💫 Hi, my name is André Ruperto</h2>
-<h3>🔭 I’m working on SERPRO<br></h3>
-<h3>🌱 I’m studying Computer Science<br></h3>
-<h3>⚡ I'm learning Java and Spring for backend<br></h3>
+<h2 align="center">💫 Olá, meu nome é André Ruperto</h2>
+<h3>🔭 Trabalho no Ministério da Gestão e da Inovação em Serviços Públicos (MGI)<br></h3>
+<h3>🌱 Estudo Ciência da Computação na UDF (Centro Universitário do Distrito Federal)<br></h3>
+<h3>⚡ Meu foco é a área de Ciência e Análise de Dados<br></h3>
+<h3>🐍 Minha melhor linguagem é Python<br></h3>
+<h3>🎓 Estou no 6º semestre de 8 da graduação em Ciência da Computação<br></h3>
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=AndreRuperto&show_icons=true&include_all_commits=true&count_private=true&theme=merko&hide_border=false" height="150" alt="stats graph"  />
