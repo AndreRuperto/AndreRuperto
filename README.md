@@ -31,6 +31,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="30" alt="MySQL logo"  />
 </div>
 
-<img src="https://github.com/AndreRuperto/AndreRuperto/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/AndreRuperto) [![](https://visitcount.itsvg.in/api?id=AndreRuperto&icon=2&color=12)](https://visitcount.itsvg.in)
