@@ -31,8 +31,10 @@ jobs:
         run: |
           python3 -c '
           import random
-          colors = [
-              "red", "orange", "blue", "purple", "yellow", "pink", "gray"
+          cores = [
+            "#FFA500", "#00FFFF", "#32CD32", "#FF69B4", "#7DF9FF", "#FFD700", "#DC143C", 
+            "#4B0082", "#008080", "#800080", "#FF8C00", "#AFEEEE", "#FFA07A", "#E6E6FA",  
+            "#98FF98"
           ]
           color_snake = random.choice(colors)
           print(f"::set-output name=color_snake::{color_snake}")
