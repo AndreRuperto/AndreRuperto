@@ -21,15 +21,36 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Generate a random color
+        id: random_color
+        run: |
+          import random
+          colors = [
+              "red", "blue", "green", "yellow", "pink", "purple", "orange", "brown", 
+              "black", "white", "gray", "cyan", "magenta", "lime", "teal", "navy", 
+              "maroon", "olive", "aqua", "indigo", "violet", "gold", "silver", 
+              "beige", "turquoise", "tan", "coral", "salmon", "lavender", "peach", 
+              "khaki", "crimson", "amber", "emerald", "ivory", "plum", "periwinkle", 
+              "charcoal", "mint", "scarlet", "fuchsia", "cherry", "sapphire", 
+              "azure", "orchid", "ruby", "amber", "moss", "sand", "cobalt", "rose"
+          ]
+          color_snake = random.choice(colors)
+
       - name: Generate snake files in './dist/'
         uses: Platane/snk@v3
         id: snake-gif
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=orange
+            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#32CD32
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
             dist/github-contribution-grid-snake.gif?palette=github-dark&color_snake=orange
+            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=${{ steps.random_color.outputs.color_snake }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
