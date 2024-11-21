@@ -32,9 +32,10 @@ jobs:
           python3 -c '
           import random
           colors = [
-              "red"
+              "red", "orange", "blue"
           ]
           color_snake = random.choice(colors)
+          print(f"::set-output name=color_snake::{color_snake}")
           '
 
       - name: Generate snake files in './dist/'
