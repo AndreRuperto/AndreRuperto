@@ -32,7 +32,7 @@ jobs:
           python3 -c '
           import random
           colors = [
-              "red", "blue", "orange"
+              "red"
           ]
           color_snake = random.choice(colors)
           '
