@@ -26,6 +26,9 @@ jobs:
         with:
           github_user_name: AndreRuperto
           outputs: dist/github-contribution-grid-snake.svg?palette=github-dark
+          color_snake: "#ff4500"
+          color_dots: "#1e90ff"
+          color_background: "#000000"
 
       - name: Push snake.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
