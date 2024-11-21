@@ -26,12 +26,13 @@ jobs:
         run: mkdir -p dist
 
       - name: Generate snake.svg
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk/svg-only@v3.2.0
         with:
           github_user_name: AndreRuperto
-          svg_out_path: dist/github-contribution-grid-snake.svg
-          color_snake: "#FFA500" # Laranja
-          color_dots: "#1e90ff"  # Azul (opcional, ajuste se necessário)
+          outputs: |
+            github-dark.svg?palette=github-dark&color_snake=orange
+            github-light.svg?palette=github-light&color_snake=orange
+            custom.svg?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
 
       - name: Push snake.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
