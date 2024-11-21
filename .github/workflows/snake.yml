@@ -31,7 +31,7 @@ jobs:
         run: |
           python3 -c '
           import random
-          cores = [
+          colors = [
             "#FFA500", "#00FFFF", "#32CD32", "#FF69B4", "#7DF9FF", "#FFD700", "#DC143C", 
             "#4B0082", "#008080", "#800080", "#FF8C00", "#AFEEEE", "#FFA07A", "#E6E6FA",  
             "#98FF98"
