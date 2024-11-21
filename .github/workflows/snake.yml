@@ -32,13 +32,7 @@ jobs:
           python3 -c '
           import random
           colors = [
-              "red", "blue", "green", "yellow", "pink", "purple", "orange", "brown", 
-              "black", "white", "gray", "cyan", "magenta", "lime", "teal", "navy", 
-              "maroon", "olive", "aqua", "indigo", "violet", "gold", "silver", 
-              "beige", "turquoise", "tan", "coral", "salmon", "lavender", "peach", 
-              "khaki", "crimson", "amber", "emerald", "ivory", "plum", "periwinkle", 
-              "charcoal", "mint", "scarlet", "fuchsia", "cherry", "sapphire", 
-              "azure", "orchid", "ruby", "amber", "moss", "sand", "cobalt", "rose"
+              "red", "blue", "orange"
           ]
           color_snake = random.choice(colors)
           '
