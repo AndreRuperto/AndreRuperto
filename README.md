@@ -59,6 +59,6 @@
 
 </div>
 
-div align="center">
+<div align="center">
   <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/github-contribution-grid-snake-random.svg" alt="Snake animation" /><
 </div>
