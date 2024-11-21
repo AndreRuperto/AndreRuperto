@@ -25,7 +25,7 @@ jobs:
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: AndreRuperto
-          outputs: dist/github-contribution-grid-snake.svg?palette=github-dark
+          svg_out_path: dist/github-contribution-grid-snake.svg
 
       - name: Push snake.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
