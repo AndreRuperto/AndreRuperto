@@ -1,7 +1,7 @@
 name: Generate snake animation
 
 on:
-  schedule: # execute every 12 hours
+  schedule:
     - cron: "0 */12 * * *"
 
   workflow_dispatch:
@@ -20,6 +20,10 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+
+      # Cria o diretório dist antes de salvar o arquivo
+      - name: Create output directory
+        run: mkdir -p dist
 
       - name: Generate snake.svg
         uses: Platane/snk/svg-only@v3
