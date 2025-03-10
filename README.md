@@ -5,7 +5,7 @@
 <h3>🔭 Faço estágio no Ministério da Gestão e da Inovação em Serviços Públicos (MGI) na Equipe de Dados<br></h3>
 <h3>🌱 Estudo Ciência da Computação na UDF (Centro Universitário do Distrito Federal)<br></h3>
 <h3>⚡ Meu foco é a área de Ciência e Análise de Dados<br></h3>
-<h3>🎓 Estou no 6º semestre de 8 da graduação em Ciência da Computação<br></h3>
+<h3>🎓 Estou no 7º semestre de 8 da graduação em Ciência da Computação<br></h3>
 <h3>🛠️ Sou um dos criadores do <a href="https://capi3d.com.br/">Capi3D</a><br></h3>
 <br/>
 <p align="left">
