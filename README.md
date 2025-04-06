@@ -35,11 +35,16 @@
 </div>
 
 ---
+## 💻 Skills Técnicas:
 
-### 💻 Linguagens e Tecnologias
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=py,fastapi,postgresql,nodejs,js,html,css,git,github,docker,vscode,postman,airflow,figma,pandas,sklearn" />
-</p>
+### 🧑‍💻 &nbsp;Linguagens de Programação e Frameworks
+![Linguagens e Frameworks](https://skillicons.dev/icons?i=py,nodejs,js,html,css,fastapi,sklearn)
+
+### 💾 &nbsp;Bancos de Dados
+![Bancos de Dados](https://skillicons.dev/icons?i=postgres,mysql,sqlite)
+
+### 🛠️ &nbsp;Ferramentas & Plataformas
+![Ferramentas & Plataformas](https://skillicons.dev/icons?i=git,github,docker,postman,vscode,figma,vercel)
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/github-contribution-grid-snake-random.svg" alt="Snake animation" />
