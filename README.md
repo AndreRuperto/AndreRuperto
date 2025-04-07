@@ -8,15 +8,11 @@
 <h3>🎓 Estou no 7º semestre de 8 da graduação em Ciência da Computação<br></h3>
 <h3>🛠️ Sou um dos criadores do <a href="https://capi3d.com.br/">Capi3D</a><br></h3>
 
-<br/>
+<div align="right">
+  <img src="https://media.giphy.com/media/YYW0hHizzIOrlhimPG/giphy.gif" width="200px" style="border-radius: 10px;" alt="Coding GIF" />
+</div>
 
-<p align="center">
-  <img src="https://media.giphy.com/media/YYW0hHizzIOrlhimPG/giphy.gif" alt="Coding GIF" width="600" style="border-radius: 10px;">
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1500&color=36BCF7FF&lines=import+pandas+as+pd;from+sklearn.model_selection+import+train_test_split;from+sklearn.knowledge+import+curiosity;while+True:+;++++dados+=+pd.read_real_world_data();++++treino,+teste+=+train_test_split(dados);++++curiosity.fit(treino);++++curiosity.predict(teste);++++%23+Modelando+novos+conhecimentos!" alt="Typing SVG" />
-</p>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=%F0%9F%9A%80+Transformando+ideias+em+c%C3%B3digo!;%F0%9F%9B%A0%EF%B8%8F+Desenvolvendo+solu%C3%A7%C3%B5es+criativas;%F0%9F%93%8A+Fazendo+dados+contarem+hist%C3%B3rias)](https://git.io/typing-svg)
 
 ---
 
@@ -28,33 +24,16 @@
 
 ---
 
-<table>
-  <tr>
-    <td>
+## 💻 Skills Técnicas:
 
-      <h3>💻 Skills Técnicas:</h3>
+### 🧑‍💻 &nbsp;Linguagens de Programação e Frameworks
+![Linguagens e Frameworks](https://skillicons.dev/icons?i=py,nodejs,js,html,css,fastapi,sklearn)
 
-      <h4>🧑‍💻 Linguagens de Programação e Frameworks</h4>
-      <p>
-        <img src="https://skillicons.dev/icons?i=py,nodejs,js,html,css,fastapi" />
-      </p>
+### 💾 &nbsp;Bancos de Dados
+![Bancos de Dados](https://skillicons.dev/icons?i=postgres,mysql,sqlite)
 
-      <h4>💾 Bancos de Dados</h4>
-      <p>
-        <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite" />
-      </p>
-
-      <h4>🛠️ Ferramentas & Plataformas</h4>
-      <p>
-        <img src="https://skillicons.dev/icons?i=git,github,docker,postman,vscode,figma,vercel" />
-      </p>
-
-    </td>
-    <td align="center" width="50%">
-      <img src="https://media.giphy.com/media/YYW0hHizzIOrlhimPG/giphy.gif" width="300px" style="border-radius: 10px;" alt="Coding GIF" />
-    </td>
-  </tr>
-</table>
+### 🛠️ &nbsp;Ferramentas & Plataformas
+![Ferramentas & Plataformas](https://skillicons.dev/icons?i=git,github,docker,postman,vscode,figma,vercel)
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/github-contribution-grid-snake-random.svg" alt="Snake animation" />
