@@ -35,10 +35,14 @@
 
 ### 🛠️ &nbsp;Ferramentas & Plataformas
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=git,github,docker,postman,vscode,figma,vercel" alt="Ferramentas padrão" />
-  <span>&nbsp;</span>
+  <img src="https://skillicons.dev/icons?i=git" alt="Git" />
+  <img src="https://skillicons.dev/icons?i=github" alt="GitHub" />
+  <img src="https://skillicons.dev/icons?i=docker" alt="Docker" />
+  <img src="https://skillicons.dev/icons?i=postman" alt="Postman" />
+  <img src="https://skillicons.dev/icons?i=vscode" alt="VSCode" />
+  <img src="https://skillicons.dev/icons?i=figma" alt="Figma" />
+  <img src="https://skillicons.dev/icons?i=vercel" alt="Vercel" />
   <img src="./assets/icons/powerbi.png" alt="Power BI" />
-  <span>&nbsp;</span>
   <img src="./assets/icons/qlik.png" alt="Qlik" />
 </p>
 
