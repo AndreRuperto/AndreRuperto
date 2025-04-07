@@ -11,17 +11,17 @@
 ---
 
 ### 📊 Estatísticas
+
 <div align="center">
-  <!-- Gráficos principais do GitHub -->
+  <a href="https://github.com/Ashutosh00710/github-readme-activity-graph">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=AndreRuperto&theme=merko" alt="Gráfico de atividade do GitHub" />
+  </a>
+  <img height="200px" src="https://streak-stats.demolab.com?user=AndreRuperto&theme=merko" alt="Streak de contribuições" />
   <img src="https://github-readme-stats.vercel.app/api?username=AndreRuperto&show_icons=true&include_all_commits=true&count_private=true&theme=merko&rank_icon=github&border_radius=10" height="150" alt="Estatísticas GitHub" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=AndreRuperto&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=merko&border_radius=10" height="150" alt="Linguagens mais usadas" />
 
-  <!-- Gráfico de atividade -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AndreRuperto&theme=merko&hide_border=true&line=2ecc71&bg_color=transparent&title_color=2ecc71" alt="Gráfico de atividade" style="margin-top: 20px;" />
-
-  <!-- Streak -->
-  <img height="200px" src="https://github-readme-streak-stats.herokuapp.com/?user=AndreRuperto&hide_border=true&background=1F1F1F&ring=2ecc71&fire=2ecc71&currStreakNum=2ecc71&sideNums=2ecc71&currStreakLabel=2ecc71&sideLabels=2ecc71&dates=cccccc" alt="Streak de contribuições" />
 </div>
+
 ---
 
 ## 💻 Skills Técnicas:
