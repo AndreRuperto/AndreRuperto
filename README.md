@@ -26,26 +26,22 @@
 
 <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap;">
 
-  <div>
+  <h2>💻 Skills Técnicas:</h2>
 
-    <h2>💻 Skills Técnicas:</h2>
+  <h3>🧑‍💻 &nbsp;Linguagens de Programação e Frameworks</h3>
+  <p>
+    <img src="https://skillicons.dev/icons?i=py,nodejs,js,html,css,fastapi,sklearn" />
+  </p>
 
-    <h3>🧑‍💻 &nbsp;Linguagens de Programação e Frameworks</h3>
-    <p>
-      <img src="https://skillicons.dev/icons?i=py,nodejs,js,html,css,fastapi,sklearn" />
-    </p>
+  <h3>💾 &nbsp;Bancos de Dados</h3>
+  <p>
+    <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite" />
+  </p>
 
-    <h3>💾 &nbsp;Bancos de Dados</h3>
-    <p>
-      <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite" />
-    </p>
-
-    <h3>🛠️ &nbsp;Ferramentas & Plataformas</h3>
-    <p>
-      <img src="https://skillicons.dev/icons?i=git,github,docker,postman,vscode,figma,vercel" />
-    </p>
-
-  </div>
+  <h3>🛠️ &nbsp;Ferramentas & Plataformas</h3>
+  <p>
+    <img src="https://skillicons.dev/icons?i=git,github,docker,postman,vscode,figma,vercel" />
+  </p>
 
   <div align="center">
     <img src="https://media.giphy.com/media/YYW0hHizzIOrlhimPG/giphy.gif" width="180px" style="border-radius: 10px;" alt="Coding GIF" />
