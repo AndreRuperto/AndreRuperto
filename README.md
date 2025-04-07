@@ -2,6 +2,10 @@
 
 **`Desenvolvedor FullStack`**
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/226190894-18e959ba-d458-4a94-ac44-790190f2a947.gif" width="220px" alt="Hello World em várias linguagens" />
+</p>
+
 ### 🧠 Sobre Mim
 
 - 🔭 Atualmente estagiando no **Ministério da Gestão e da Inovação (MGI)** — Equipe de Dados  
@@ -63,8 +67,6 @@
   <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/github-contribution-grid-snake-random.svg" alt="Snake animation" />
 </div>
 
-<p align="center">
+<p align="right">
   <img src="https://user-images.githubusercontent.com/74038190/212749168-86d6c7ab-98da-409b-998f-c5b74721badd.gif" width="220px" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://user-images.githubusercontent.com/74038190/226190894-18e959ba-d458-4a94-ac44-790190f2a947.gif" width="220px" />
 </p>
