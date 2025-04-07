@@ -36,8 +36,10 @@
 ### 🛠️ &nbsp;Ferramentas & Plataformas
 <p align="left">
   <img src="https://skillicons.dev/icons?i=git,github,docker,postman,vscode,figma,vercel" alt="Ferramentas padrão" />
-  <img src="./assets/icons/powerbi.png" alt="Power BI" style="margin-left: 6px; border-radius: 12px;" />
-  <img src="./assets/icons/qlik.png" alt="Qlik" style="margin-left: 6px; border-radius: 12px;" />
+  <span>&nbsp;</span>
+  <img src="./assets/icons/powerbi.png" alt="Power BI" />
+  <span>&nbsp;</span>
+  <img src="./assets/icons/qlik.png" alt="Qlik" />
 </p>
 
 <div align="center">
