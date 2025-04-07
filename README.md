@@ -2,11 +2,14 @@
 
 **`Desenvolvedor FullStack`**
 
-<h3>🔭 Faço estágio no Ministério da Gestão e da Inovação em Serviços Públicos (MGI) na Equipe de Dados<br></h3>
-<h3>🌱 Estudo Ciência da Computação na UDF (Centro Universitário do Distrito Federal)<br></h3>
-<h3>⚡ Meu foco é a área de Ciência e Análise de Dados<br></h3>
-<h3>🎓 Estou no 7º semestre de 8 da graduação em Ciência da Computação<br></h3>
-<h3>🛠️ Sou um dos criadores do <a href="https://capi3d.com.br/">Capi3D</a><br></h3>
+### 🧠 Sobre Mim
+
+- 🔭 Atualmente estagiando no **Ministério da Gestão e da Inovação (MGI)** — Equipe de Dados  
+- 🎓 Estudando **Ciência da Computação** no **Centro Universitário UDF**  
+- ⚡ Apaixonado por **transformar dados em decisões inteligentes**  
+- 📊 Interesse especial em **Ciência de Dados, Machine Learning e Automação**  
+- 🧩 Cursando o **7º semestre (de 8)** da graduação  
+- 🛠️ Co-criador do projeto [**Capi3D**](https://capi3d.com.br/)
 
 ---
 
