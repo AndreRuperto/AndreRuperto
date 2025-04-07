@@ -7,24 +7,16 @@
 <h3>⚡ Meu foco é a área de Ciência e Análise de Dados<br></h3>
 <h3>🎓 Estou no 7º semestre de 8 da graduação em Ciência da Computação<br></h3>
 <h3>🛠️ Sou um dos criadores do <a href="https://capi3d.com.br/">Capi3D</a><br></h3>
+
 <br/>
-<p align="left">
-    <a href="https://linkedin.com/in/andrerup">
-        <img 
-            alt="LinkedIn" 
-            title="Conecte-se comigo no LinkedIn" 
-            src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=for-the-badge"
-        />
-    </a>
-    <a href="https://github.com/AndreRuperto?tab=followers">
-        <img 
-            alt="Seguidores" 
-            title="Me siga no GitHub" 
-            src="https://custom-icon-badges.demolab.com/github/followers/AndreRuperto?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=github&label=Seguidores&logoColor=white"
-        />
-    </a>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/YYW0hHizzIOrlhimPG/giphy.gif" alt="Coding GIF" width="600" style="border-radius: 10px;">
 </p>
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1500&color=36BCF7FF&lines=import+pandas+as+pd;from+sklearn.model_selection+import+train_test_split;from+sklearn.knowledge+import+curiosity;while+True:+;++++dados+=+pd.read_real_world_data();++++treino,+teste+=+train_test_split(dados);++++curiosity.fit(treino);++++curiosity.predict(teste);++++%23+Modelando+novos+conhecimentos!" alt="Typing SVG" />
+</p>
 
 ---
 
@@ -35,6 +27,7 @@
 </div>
 
 ---
+
 ## 💻 Skills Técnicas:
 
 ### 🧑‍💻 &nbsp;Linguagens de Programação e Frameworks
