@@ -8,11 +8,14 @@
 <h3>🎓 Estou no 7º semestre de 8 da graduação em Ciência da Computação<br></h3>
 <h3>🛠️ Sou um dos criadores do <a href="https://capi3d.com.br/">Capi3D</a><br></h3>
 
-<div align="right">
-  <img src="https://media.giphy.com/media/YYW0hHizzIOrlhimPG/giphy.gif" width="200px" style="border-radius: 10px;" alt="Coding GIF" />
-</div>
+<div>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=%F0%9F%9A%80+Transformando+ideias+em+c%C3%B3digo!;%F0%9F%9B%A0%EF%B8%8F+Desenvolvendo+solu%C3%A7%C3%B5es+criativas;%F0%9F%93%8A+Fazendo+dados+contarem+hist%C3%B3rias)](https://git.io/typing-svg)
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=%F0%9F%9A%80+Transformando+ideias+em+c%C3%B3digo!;%F0%9F%9B%A0%EF%B8%8F+Desenvolvendo+solu%C3%A7%C3%B5es+criativas;%F0%9F%93%8A+Fazendo+dados+contarem+hist%C3%B3rias)](https://git.io/typing-svg)
+
+  <div align="right">
+    <img src="https://media.giphy.com/media/YYW0hHizzIOrlhimPG/giphy.gif" width="100px" style="border-radius: 10px;" alt="Coding GIF" />
+  </div>
+</div>
 
 ---
 
@@ -26,13 +29,14 @@
 
 ## 💻 Skills Técnicas:
 
-![Linguagens](https://skillicons.dev/icons?i=py,nodejs,js,html,css,fastapi,sklearn)  
-![Bancos](https://skillicons.dev/icons?i=postgres,mysql,sqlite)  
-![Ferramentas](https://skillicons.dev/icons?i=git,github,docker,postman,vscode,figma,vercel)
+### 🧑‍💻 &nbsp;Linguagens de Programação e Frameworks
+![Linguagens e Frameworks](https://skillicons.dev/icons?i=py,nodejs,js,html,css,fastapi,sklearn)
 
-<p align="right">
-  <img src="https://media.giphy.com/media/YYW0hHizzIOrlhimPG/giphy.gif" width="180px" style="border-radius: 10px;" />
-</p>
+### 💾 &nbsp;Bancos de Dados
+![Bancos de Dados](https://skillicons.dev/icons?i=postgres,mysql,sqlite)
+
+### 🛠️ &nbsp;Ferramentas & Plataformas
+![Ferramentas & Plataformas](https://skillicons.dev/icons?i=git,github,docker,postman,vscode,figma,vercel)
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/github-contribution-grid-snake-random.svg" alt="Snake animation" />
