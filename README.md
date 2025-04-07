@@ -28,7 +28,7 @@
 ## 💻 Skills Técnicas:
 
 ### 🧑‍💻 &nbsp;Linguagens de Programação e Frameworks  
-![Linguagens e Frameworks](https://skillicons.dev/icons?i=py,nodejs,js,html,css,fastapi,django,flask)
+![Linguagens e Frameworks](https://skillicons.dev/icons?i=py,nodejs,c,js,html,css,fastapi,django,flask)
 
 ### 🧠 &nbsp;Machine Learning & IA  
 ![ML & IA](https://skillicons.dev/icons?i=sklearn,tensorflow,pytorch,opencv,selenium)
