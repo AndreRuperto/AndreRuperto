@@ -35,8 +35,8 @@
 
 ### 🛠️ &nbsp;Ferramentas & Plataformas
 ![Ferramentas & Plataformas](https://skillicons.dev/icons?i=git,github,docker,postman,vscode,figma,vercel)
-<img src="./assets/icons/powerbi.png" alt="Power BI" style="margin-left: 25px;"/>
-<img src="./assets/icons/qlik.png" alt="Qlik" style="margin-left: 25x;"/>
+<img src="./assets/icons/powerbi.png" alt="Power BI" style="margin-left: 100px;"/>
+<img src="./assets/icons/qlik.png" alt="Qlik" style="margin-left: 100x;"/>
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/github-contribution-grid-snake-random.svg" alt="Snake animation" />
