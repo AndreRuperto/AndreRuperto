@@ -8,23 +8,20 @@
 <h3>🎓 Estou no 7º semestre de 8 da graduação em Ciência da Computação<br></h3>
 <h3>🛠️ Sou um dos criadores do <a href="https://capi3d.com.br/">Capi3D</a><br></h3>
 
-<div>
-  <div align="center">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=%F0%9F%9A%80+Transformando+ideias+em+c%C3%B3digo!;%F0%9F%9B%A0%EF%B8%8F+Desenvolvendo+solu%C3%A7%C3%B5es+criativas;%F0%9F%93%8A+Fazendo+dados+contarem+hist%C3%B3rias" alt="Typing SVG" />
-  </div>
-
-  <p align="right">
-    <img src="https://media.giphy.com/media/YYW0hHizzIOrlhimPG/giphy.gif" width="150px" style="border-radius: 10px;" alt="Coding GIF" />
-  </p>
-</div>
 ---
 
 ### 📊 Estatísticas
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AndreRuperto&show_icons=true&include_all_commits=true&count_private=true&theme=merko&rank_icon=github&border_radius=10" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=AndreRuperto&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=merko&border_radius=10" height="150" alt="languages graph"  />
-</div>
+  <!-- Gráficos principais do GitHub -->
+  <img src="https://github-readme-stats.vercel.app/api?username=AndreRuperto&show_icons=true&include_all_commits=true&count_private=true&theme=merko&rank_icon=github&border_radius=10" height="150" alt="Estatísticas GitHub" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=AndreRuperto&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=merko&border_radius=10" height="150" alt="Linguagens mais usadas" />
 
+  <!-- Gráfico de atividade -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AndreRuperto&theme=merko&hide_border=true&line=2ecc71&bg_color=transparent&title_color=2ecc71" alt="Gráfico de atividade" style="margin-top: 20px;" />
+
+  <!-- Streak -->
+  <img height="200px" src="https://github-readme-streak-stats.herokuapp.com/?user=AndreRuperto&theme=transparent&hide_border=true&ring=2ecc71&fire=2ecc71&currStreakNum=2ecc71&sideNums=2ecc71&currStreakLabel=2ecc71&sideLabels=2ecc71&dates=ffffff" alt="Streak de contribuições" />
+</div>
 ---
 
 ## 💻 Skills Técnicas:
