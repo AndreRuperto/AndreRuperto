@@ -8,14 +8,15 @@
 <h3>🎓 Estou no 7º semestre de 8 da graduação em Ciência da Computação<br></h3>
 <h3>🛠️ Sou um dos criadores do <a href="https://capi3d.com.br/">Capi3D</a><br></h3>
 
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=%F0%9F%9A%80+Transformando+ideias+em+c%C3%B3digo!;%F0%9F%9B%A0%EF%B8%8F+Desenvolvendo+solu%C3%A7%C3%B5es+criativas;%F0%9F%93%8A+Fazendo+dados+contarem+hist%C3%B3rias" alt="Typing SVG" />
+<div>
+  <div align="center">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=%F0%9F%9A%80+Transformando+ideias+em+c%C3%B3digo!;%F0%9F%9B%A0%EF%B8%8F+Desenvolvendo+solu%C3%A7%C3%B5es+criativas;%F0%9F%93%8A+Fazendo+dados+contarem+hist%C3%B3rias" alt="Typing SVG" />
+  </div>
+
+  <p align="right">
+    <img src="https://media.giphy.com/media/YYW0hHizzIOrlhimPG/giphy.gif" width="150px" style="border-radius: 10px;" alt="Coding GIF" />
+  </p>
 </div>
-
-<p align="right">
-  <img src="https://media.giphy.com/media/YYW0hHizzIOrlhimPG/giphy.gif" width="150px" style="border-radius: 10px;" alt="Coding GIF" />
-</p>
-
 ---
 
 ### 📊 Estatísticas
