@@ -55,6 +55,8 @@
   <img src="./assets/icons/powerbi.svg" alt="Power BI" />
   <span>&nbsp;</span>
   <img src="./assets/icons/qlik.svg" alt="Qlik" />
+  <span>&nbsp;</span>
+  <img src="./assets/icons/airflow.svg" alt="Airflow" />
 </p>
 
 <div align="center">
