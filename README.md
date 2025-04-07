@@ -49,9 +49,9 @@
   <span>&nbsp;</span>
   <img src="https://skillicons.dev/icons?i=vercel" alt="Vercel" />
   <span>&nbsp;</span>
-  <img src="./assets/icons/powerbi.png" alt="Power BI" />
+  <img src="./assets/icons/powerbi.svg" alt="Power BI" />
   <span>&nbsp;</span>
-  <img src="./assets/icons/qlik.png" alt="Qlik" />
+  <img src="./assets/icons/qlik.svg" alt="Qlik" />
 </p>
 
 <div align="center">
