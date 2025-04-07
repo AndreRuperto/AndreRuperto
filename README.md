@@ -24,16 +24,34 @@
 
 ---
 
-## 💻 Skills Técnicas:
+<div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap;">
 
-### 🧑‍💻 &nbsp;Linguagens de Programação e Frameworks
-![Linguagens e Frameworks](https://skillicons.dev/icons?i=py,nodejs,js,html,css,fastapi,sklearn)
+  <div>
 
-### 💾 &nbsp;Bancos de Dados
-![Bancos de Dados](https://skillicons.dev/icons?i=postgres,mysql,sqlite)
+    <h2>💻 Skills Técnicas:</h2>
 
-### 🛠️ &nbsp;Ferramentas & Plataformas
-![Ferramentas & Plataformas](https://skillicons.dev/icons?i=git,github,docker,postman,vscode,figma,vercel)
+    <h3>🧑‍💻 &nbsp;Linguagens de Programação e Frameworks</h3>
+    <p>
+      <img src="https://skillicons.dev/icons?i=py,nodejs,js,html,css,fastapi,sklearn" />
+    </p>
+
+    <h3>💾 &nbsp;Bancos de Dados</h3>
+    <p>
+      <img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite" />
+    </p>
+
+    <h3>🛠️ &nbsp;Ferramentas & Plataformas</h3>
+    <p>
+      <img src="https://skillicons.dev/icons?i=git,github,docker,postman,vscode,figma,vercel" />
+    </p>
+
+  </div>
+
+  <div align="center">
+    <img src="https://media.giphy.com/media/YYW0hHizzIOrlhimPG/giphy.gif" width="180px" style="border-radius: 10px;" alt="Coding GIF" />
+  </div>
+
+</div>
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/github-contribution-grid-snake-random.svg" alt="Snake animation" />
