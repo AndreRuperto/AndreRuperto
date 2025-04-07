@@ -20,7 +20,7 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=AndreRuperto&theme=merko&hide_border=true&line=2ecc71&bg_color=transparent&title_color=2ecc71" alt="Gráfico de atividade" style="margin-top: 20px;" />
 
   <!-- Streak -->
-  <img height="200px" src="https://github-readme-streak-stats.herokuapp.com/?user=AndreRuperto&theme=transparent&hide_border=true&ring=2ecc71&fire=2ecc71&currStreakNum=2ecc71&sideNums=2ecc71&currStreakLabel=2ecc71&sideLabels=2ecc71&dates=ffffff" alt="Streak de contribuições" />
+  <img height="200px" src="https://github-readme-streak-stats.herokuapp.com/?user=AndreRuperto&hide_border=true&background=1F1F1F&ring=2ecc71&fire=2ecc71&currStreakNum=2ecc71&sideNums=2ecc71&currStreakLabel=2ecc71&sideLabels=2ecc71&dates=cccccc" alt="Streak de contribuições" />
 </div>
 ---
 
