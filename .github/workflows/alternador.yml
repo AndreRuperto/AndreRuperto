@@ -1,0 +1,74 @@
+name: Alternador Snake/Pac-Man
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # necessário para clonar a branch output
+
+      - name: Clonar a branch output
+        run: |
+          git fetch origin output
+          git checkout output || git checkout -b output
+
+      - name: Ler modo atual
+        id: modo
+        run: |
+          if [ ! -f mode.txt ]; then
+            echo "snake" > mode.txt
+          fi
+          MODO=$(cat mode.txt)
+          echo "Modo atual: $MODO"
+          echo "::set-output name=modo::$MODO"
+
+      - name: Gerar cor aleatória
+        id: cor
+        run: |
+          python3 -c '
+          import random
+          cores = ["#FFA500", "#00FFFF", "#32CD32", "#FF69B4", "#FFD700", "#DC143C", "#4B0082", "#008080", "#800080", "#FF8C00", "#98FF98", "#FF4500"]
+          print(f"::set-output name=cor::{random.choice(cores)}")
+          '
+
+      - name: Gerar Snake
+        if: steps.modo.outputs.modo == 'snake'
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=${{ steps.cor.outputs.cor }}
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-random.svg?palette=github-dark&color_snake=${{ steps.cor.outputs.cor }}
+            dist/github-contribution-grid-snake.gif?palette=github-dark&color_snake=${{ steps.cor.outputs.cor }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Gerar Pac-Man
+        if: steps.modo.outputs.modo == 'pacman'
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+
+      - name: Alternar modo
+        run: |
+          NEXT=$( [ "$(cat mode.txt)" = "snake" ] && echo "pacman" || echo "snake" )
+          echo $NEXT > mode.txt
+
+      - name: Commit e Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Atualização do modo e animação"
+          git push origin output
