@@ -3,12 +3,12 @@
 **`Desenvolvedor FullStack`**
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/226190894-18e959ba-d458-4a94-ac44-790190f2a947.gif" width="80%" alt="Hello World em várias linguagens" />
+  <img src="https://user-images.githubusercontent.com/74038190/226190894-18e959ba-d458-4a94-ac44-790190f2a947.gif" width="60%" alt="Hello World em várias linguagens" />
 </p>
 
 ### 🧠 Sobre Mim
 
-<img align="right" alt="computado" src="https://user-images.githubusercontent.com/74038190/212749168-86d6c7ab-98da-409b-998f-c5b74721badd.gif" width="220" />
+<img align="right" alt="computado" src="https://user-images.githubusercontent.com/74038190/212749168-86d6c7ab-98da-409b-998f-c5b74721badd.gif" width="180" />
 
 - 🔭 Atualmente estagiando no **Ministério da Gestão e da Inovação (MGI)** — Equipe de Dados  
 - 🎓 Estudando **Ciência da Computação** no **Centro Universitário UDF**  
