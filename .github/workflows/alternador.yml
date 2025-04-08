@@ -28,9 +28,7 @@ jobs:
           if [ ! -f mode.txt ]; then
             echo "snake" > mode.txt
           fi
-          MODO=$(cat mode.txt)
-          echo "Modo atual: $MODO"
-          echo "::set-output name=modo::$MODO"
+          echo "modo=$(cat mode.txt)" >> $GITHUB_OUTPUT
 
       - name: Gerar cor aleatória (caso Snake)
         id: cor
