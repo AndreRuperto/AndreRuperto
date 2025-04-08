@@ -3,7 +3,7 @@
 **`Desenvolvedor FullStack`**
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/226190894-18e959ba-d458-4a94-ac44-790190f2a947.gif" width="300px" alt="Hello World em várias linguagens" />
+  <img src="https://user-images.githubusercontent.com/74038190/226190894-18e959ba-d458-4a94-ac44-790190f2a947.gif" width="100%" alt="Hello World em várias linguagens" />
 </p>
 
 ### 🧠 Sobre Mim
@@ -64,6 +64,8 @@
   <span>&nbsp;</span>
   <img src="./assets/icons/airflow.svg" alt="Airflow" />
 </p>
+
+<br>
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/github-contribution-grid.svg" alt="Snake animation" />
