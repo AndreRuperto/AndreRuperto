@@ -59,7 +59,7 @@ jobs:
 
       - name: Copiar Pac-Man para nome genérico
         if: steps.modo.outputs.modo == 'pacman'
-        run: cp pacman-contribution-graph.svg github-contribution-grid.svg
+        run: cp pacman-contribution-graph-dark.svg github-contribution-grid.svg
 
       - name: Alternar o modo para próxima execução
         run: |
