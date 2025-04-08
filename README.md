@@ -64,7 +64,7 @@
 </p>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/github-contribution-grid-snake-random.svg" alt="Snake animation" />
+  <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/github-contribution-grid.svg" alt="Snake animation" />
 </div>
 
 <br>
