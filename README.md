@@ -8,7 +8,7 @@
 
 ### 🧠 Sobre Mim
 
-<img align="right" alt="computado" src="https://user-images.githubusercontent.com/74038190/212749168-86d6c7ab-98da-409b-998f-c5b74721badd.gif" width="180" />
+<img align="right" alt="computado" src="https://user-images.githubusercontent.com/74038190/212749168-86d6c7ab-98da-409b-998f-c5b74721badd.gif" width="100" />
 
 - 🔭 Atualmente estagiando no **Ministério da Gestão e da Inovação (MGI)** — Equipe de Dados  
 - 🎓 Estudando **Ciência da Computação** no **Centro Universitário UDF**  
@@ -34,7 +34,7 @@
 ## 💻 Skills Técnicas:
 
 ### 🧑‍💻 &nbsp;Linguagens de Programação e Frameworks  
-![Linguagens e Frameworks](https://skillicons.dev/icons?i=py,nodejs,c,cpp,js,html,css,fastapi,django,flask)
+![Linguagens e Frameworks](https://skillicons.dev/icons?i=py,nodejs,c,cpp,js,ts,html,css,fastapi,django,flask)
 
 ### 🧠 &nbsp;Machine Learning & IA  
 ![ML & IA](https://skillicons.dev/icons?i=sklearn,tensorflow,pytorch,opencv,selenium)
