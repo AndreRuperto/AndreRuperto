@@ -2,7 +2,7 @@ name: Alternador Snake/Pac-Man
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # a cada 12 horas
+    - cron: "0 */12 * * *"          # a cada 12 h
   workflow_dispatch:
 
 jobs:
@@ -12,64 +12,88 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repositório
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0  # necessário pra acessar a branch output
+    - name: Checkout repositório
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0              # precisamos da branch output completa
 
-      - name: Buscar e trocar para a branch 'output'
-        run: |
-          git fetch origin output
-          git checkout output || git checkout -b output
+    - name: Buscar e trocar para a branch 'output'
+      run: |
+        git fetch origin output
+        git checkout output || git checkout -b output
 
-      - name: Ler modo atual (snake ou pacman)
-        id: modo
-        run: |
-          if [ ! -f mode.txt ]; then
-            echo "snake" > mode.txt
-          fi
-          echo "modo=$(cat mode.txt)" >> $GITHUB_OUTPUT
+    # ───────────────────────────────────────────────
+    # 1 ▪ Lê o modo atual (snake ↔ pacman)
+    # ───────────────────────────────────────────────
+    - name: Ler modo atual (snake ou pacman)
+      id: modo
+      run: |
+        if [ ! -f mode.txt ]; then
+          echo "snake" > mode.txt
+        fi
+        echo "modo=$(cat mode.txt)" >> $GITHUB_OUTPUT
 
-      - name: Gerar cor aleatória (caso Snake)
-        id: cor
-        run: |
-          python3 -c '
-          import random
-          cores = ["#FFA500", "#00FFFF", "#32CD32", "#FF69B4", "#FFD700", "#DC143C", "#4B0082", "#008080", "#800080", "#FF8C00", "#98FF98", "#FF4500"]
-          print(f"::set-output name=cor::{random.choice(cores)}")
-          '
+    # ───────────────────────────────────────────────
+    # 2 ▪ Snake
+    # ───────────────────────────────────────────────
+    - name: Gerar cor aleatória (Snake)
+      if: steps.modo.outputs.modo == 'snake'
+      id: cor
+      run: |
+        python3 - <<'PY'
+        import random, os
+        cores = ["#FFA500", "#00FFFF", "#32CD32", "#FF69B4", "#FFD700",
+                 "#DC143C", "#4B0082", "#008080", "#800080", "#FF8C00",
+                 "#98FF98", "#FF4500"]
+        print(f"::set-output name=cor::{random.choice(cores)}")
+        PY
 
-      - name: Gerar Snake
-        if: steps.modo.outputs.modo == 'snake'
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=${{ steps.cor.outputs.cor }}
+    - name: Gerar Snake
+      if: steps.modo.outputs.modo == 'snake'
+      uses: Platane/snk@v3
+      with:
+        github_user_name: ${{ github.repository_owner }}
+        outputs: |
+          dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=${{ steps.cor.outputs.cor }}
 
-      - name: Copiar Snake para nome genérico
-        if: steps.modo.outputs.modo == 'snake'
-        run: cp dist/github-contribution-grid-snake.svg github-contribution-grid.svg
+    - name: Copiar Snake para nome genérico
+      if: steps.modo.outputs.modo == 'snake'
+      run: |
+        cp dist/github-contribution-grid-snake.svg github-contribution-grid.svg
 
-      - name: Gerar Pac-Man
-        if: steps.modo.outputs.modo == 'pacman'
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_user_name: ${{ github.repository_owner }}
+    # ───────────────────────────────────────────────
+    # 3 ▪ Pac-Man  (usa SUA Action)
+    # ───────────────────────────────────────────────
+    - name: Gerar Pac-Man
+      if: steps.modo.outputs.modo == 'pacman'
+      uses: AndreRuperto/pacman-contribution-graph@v1   # ### ALTERADO
+      with:
+        github_user_name: ${{ github.repository_owner }}
+        github_token:     ${{ secrets.GITHUB_TOKEN }} # ### ALTERADO
+        theme:            github-dark                 # opcional
+        output_directory: dist                        # igual ao Snake
 
-      - name: Copiar Pac-Man para nome genérico
-        if: steps.modo.outputs.modo == 'pacman'
-        run: cp pacman-contribution-graph-dark.svg github-contribution-grid.svg
+    - name: Copiar Pac-Man para nome genérico
+      if: steps.modo.outputs.modo == 'pacman'
+      run: |
+        # Se você gerar também a versão -dark, escolha a que preferir
+        cp dist/pacman-contribution-graph.svg github-contribution-grid.svg
 
-      - name: Alternar o modo para próxima execução
-        run: |
-          NEXT=$( [ "$(cat mode.txt)" = "snake" ] && echo "pacman" || echo "snake" )
-          echo $NEXT > mode.txt
+    # ───────────────────────────────────────────────
+    # 4 ▪ Alterna o modo para a próxima execução
+    # ───────────────────────────────────────────────
+    - name: Alternar o modo para próxima execução
+      run: |
+        NEXT=$( [ "$(cat mode.txt)" = "snake" ] && echo "pacman" || echo "snake" )
+        echo $NEXT > mode.txt
 
-      - name: Commit e Push para output
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Atualiza animação e modo"
-          git push origin output
+    # ───────────────────────────────────────────────
+    # 5 ▪ Commit & push na branch output
+    # ───────────────────────────────────────────────
+    - name: Commit e Push para output
+      run: |
+        git config user.name  "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Atualiza animação e modo" || echo "Nada para commitar"
+        git push origin output
