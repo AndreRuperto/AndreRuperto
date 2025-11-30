@@ -10,7 +10,7 @@
 
 <img align="right" alt="computado" src="https://user-images.githubusercontent.com/74038190/212749168-86d6c7ab-98da-409b-998f-c5b74721badd.gif" width="100" />
 
-- 🔭 Atualmente estagiando no **Ministério da Gestão e da Inovação (MGI)** — Equipe de Dados  
+- 🔭 Trabalhando na **Resende Mori Hutchison** — Analista de dados Júnior  
 - 🎓 Estudando **Ciência da Computação** no **Centro Universitário UDF**  
 - ⚡ Apaixonado por **transformar dados em decisões inteligentes**  
 - 📊 Interesse especial em **Ciência de Dados, Machine Learning e Automação**  
