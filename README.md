@@ -27,7 +27,7 @@
   <img 
     src="https://github-readme-activity-graph.vercel.app/graph?username=AndreRuperto&theme=merko"
     alt="Gráfico de atividade do GitHub"
-    onerror="this.style.display='none'"
+    onerror="this.remove()"
   />
 
   <!-- Streak -->
@@ -35,7 +35,7 @@
     <img 
       src="https://streak-stats.demolab.com?user=AndreRuperto&theme=merko"
       alt="GitHub Streak"
-      onerror="this.style.display='none'"
+      onerror="this.remove()"
     />
   </a>
 
@@ -44,7 +44,7 @@
     src="https://github-readme-stats.vercel.app/api?username=AndreRuperto&show_icons=true&include_all_commits=true&count_private=true&theme=merko&rank_icon=github&border_radius=10"
     height="150"
     alt="Estatísticas GitHub"
-    onerror="this.style.display='none'"
+    onerror="this.remove()"
   />
 
   <!-- Top Langs -->
@@ -52,7 +52,7 @@
     src="https://github-readme-stats.vercel.app/api/top-langs?username=AndreRuperto&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=merko&border_radius=10"
     height="150"
     alt="Linguagens mais usadas"
-    onerror="this.style.display='none'"
+    onerror="this.remove()"
   />
 
 </div>
