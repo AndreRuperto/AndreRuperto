@@ -1,6 +1,5 @@
 # 👨🏻‍💻 André Ruperto
-
-**`Desenvolvedor FullStack`**
+*`Desenvolvedor FullStack & Analista de Dados`*
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/74038190/226190894-18e959ba-d458-4a94-ac44-790190f2a947.gif" width="60%" alt="Hello World em várias linguagens" />
@@ -10,12 +9,11 @@
 
 <img align="right" alt="computado" src="https://user-images.githubusercontent.com/74038190/212749168-86d6c7ab-98da-409b-998f-c5b74721badd.gif" width="100" />
 
-- 🔭 Trabalhando na **Resende Mori Hutchison** — Analista de dados Júnior  
-- 🎓 Estudando **Ciência da Computação** no **Centro Universitário UDF**  
+- 🔭 Trabalhando na **Resende Mori Hutchison** — Analista de Dados Júnior  
+- 💼 **Desenvolvedor Full Stack Freelancer** — [andreruperto.dev](https://www.andreruperto.dev)
+- 🎓 **Graduado em Ciência da Computação** pelo **Centro Universitário UDF** (CRA: 9.38/10)
 - ⚡ Apaixonado por **transformar dados em decisões inteligentes**  
 - 📊 Interesse especial em **Ciência de Dados, Machine Learning e Automação**  
-- 🧩 Cursando o **7º semestre (de 8)** da graduação  
-- 🛠️ Co-criador do projeto [**Capi3D**](https://capi3d.com.br/)
 
 ---
 
