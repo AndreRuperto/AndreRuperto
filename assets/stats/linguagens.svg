@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="163" viewBox="0 0 350 163" role="img" aria-label="Linguagens mais usadas por André Ruperto">
+  <title>Linguagens mais usadas por André Ruperto</title>
+  <style>
+    .titulo { font: 600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #abd200; }
+    .texto  { font: 600 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #68b587; }
+    .valor  { font: 700 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #abd200; }
+    .menor  { font: 400 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #68b587; }
+  </style>
+  <rect x="0.5" y="0.5" rx="10" width="349" height="162" fill="#0a0f0b" stroke="#e4e2e2" stroke-opacity="0.8"/>
+  <text x="25" y="35" class="titulo">Linguagens mais usadas</text>
+  <mask id="barra"><rect x="25" y="55" width="300" height="8" rx="5" fill="white"/></mask>
+  <g mask="url(#barra)">
+    <rect x="25.00" y="55" width="127.54" height="8" fill="#e34c26"/>
+    <rect x="152.54" y="55" width="83.82" height="8" fill="#3178c6"/>
+    <rect x="236.36" y="55" width="58.35" height="8" fill="#f1e05a"/>
+    <rect x="294.71" y="55" width="21.63" height="8" fill="#3572A5"/>
+    <rect x="316.34" y="55" width="6.94" height="8" fill="#663399"/>
+    <rect x="323.28" y="55" width="1.72" height="8" fill="#DA5B0B"/>
+  </g>
+  <circle cx="30" cy="84" r="5" fill="#e34c26"/>
+  <text x="42" y="88" class="menor">HTML 42.5%</text>
+  <circle cx="190" cy="84" r="5" fill="#3178c6"/>
+  <text x="202" y="88" class="menor">TypeScript 27.9%</text>
+  <circle cx="30" cy="109" r="5" fill="#f1e05a"/>
+  <text x="42" y="113" class="menor">JavaScript 19.4%</text>
+  <circle cx="190" cy="109" r="5" fill="#3572A5"/>
+  <text x="202" y="113" class="menor">Python 7.2%</text>
+  <circle cx="30" cy="134" r="5" fill="#663399"/>
+  <text x="42" y="138" class="menor">CSS 2.3%</text>
+  <circle cx="190" cy="134" r="5" fill="#DA5B0B"/>
+  <text x="202" y="138" class="menor">Jupyter Notebook 0.6%</text>
+</svg>

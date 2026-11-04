@@ -1,10 +1,11 @@
 """Testa os cards de estatísticas e reescreve a seção do README só com os que funcionam.
 
 O GitHub remove atributos como `onerror` do README, então uma imagem quebrada
-não pode se esconder sozinha. Este script roda no GitHub Actions, faz uma
-requisição para cada card e monta o bloco entre os marcadores
-<!-- STATS:START --> e <!-- STATS:END --> apenas com os que respondem uma
-imagem SVG. Se nenhum funcionar, a seção inteira some.
+não pode se esconder sozinha. Este script roda no GitHub Actions e monta o
+bloco entre os marcadores <!-- STATS:START --> e <!-- STATS:END --> apenas com
+os cards disponíveis: os gerados localmente (gerar_cards.py) entram se o
+arquivo existir, e os externos entram se responderem uma imagem SVG. Se nenhum
+estiver disponível, a seção inteira some.
 """
 
 import re
@@ -18,11 +19,13 @@ README = Path(__file__).resolve().parents[2] / "README.md"
 INICIO, FIM = "<!-- STATS:START -->", "<!-- STATS:END -->"
 
 CARDS = [
+    # Gerados por gerar_cards.py dentro do próprio repositório.
     {
         "nome": "Gráfico de atividade",
-        "url": f"https://github-readme-activity-graph.vercel.app/graph?username={USUARIO}&theme=merko",
-        "html": '  <img src="{url}" alt="Gráfico de atividade do GitHub" />',
+        "arquivo": "assets/stats/atividade.svg",
+        "html": '  <img src="./{arquivo}" alt="Gráfico de contribuições dos últimos 31 dias" />',
     },
+    # Serviço externo: entra só se estiver respondendo.
     {
         "nome": "Streak",
         "url": f"https://streak-stats.demolab.com?user={USUARIO}&theme=merko",
@@ -30,19 +33,13 @@ CARDS = [
     },
     {
         "nome": "Stats",
-        "url": (
-            f"https://github-readme-stats.vercel.app/api?username={USUARIO}&show_icons=true"
-            "&include_all_commits=true&count_private=true&theme=merko&rank_icon=github&border_radius=10"
-        ),
-        "html": '  <img src="{url}" height="150" alt="Estatísticas GitHub" />',
+        "arquivo": "assets/stats/stats.svg",
+        "html": '  <img src="./{arquivo}" height="170" alt="Estatísticas do GitHub" />',
     },
     {
-        "nome": "Top Langs",
-        "url": (
-            f"https://github-readme-stats.vercel.app/api/top-langs?username={USUARIO}&locale=en"
-            "&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=merko&border_radius=10"
-        ),
-        "html": '  <img src="{url}" height="150" alt="Linguagens mais usadas" />',
+        "nome": "Linguagens",
+        "arquivo": "assets/stats/linguagens.svg",
+        "html": '  <img src="./{arquivo}" height="170" alt="Linguagens mais usadas" />',
     },
 ]
 
@@ -62,7 +59,10 @@ def funciona(url: str) -> bool:
 def montar_bloco(ativos: list[dict]) -> str:
     if not ativos:
         return f"{INICIO}\n{FIM}"
-    imagens = "\n\n".join(c["html"].format(url=c["url"].replace("&", "&amp;")) for c in ativos)
+    imagens = "\n\n".join(
+        c["html"].format(url=c.get("url", "").replace("&", "&amp;"), arquivo=c.get("arquivo", ""))
+        for c in ativos
+    )
     return (
         f"{INICIO}\n### 📊 Estatísticas\n\n<div align=\"center\">\n\n"
         f"{imagens}\n\n</div>\n\n---\n{FIM}"
@@ -72,7 +72,10 @@ def montar_bloco(ativos: list[dict]) -> str:
 def main() -> int:
     ativos = []
     for card in CARDS:
-        ok = funciona(card["url"])
+        if "arquivo" in card:
+            ok = (README.parent / card["arquivo"]).is_file()
+        else:
+            ok = funciona(card["url"])
         print(f"{'OK   ' if ok else 'FALHA'} {card['nome']}")
         if ok:
             ativos.append(card)
