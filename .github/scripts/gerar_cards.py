@@ -56,11 +56,16 @@ def graphql(query: str, variaveis: dict) -> dict:
 
 
 Q_USUARIO = """
-query($login: String!) {
+query($login: String!, $desde: DateTime!) {
   user(login: $login) {
     pullRequests { totalCount }
     issues { totalCount }
     repositoriesContributedTo(contributionTypes: [COMMIT, PULL_REQUEST, ISSUE, PULL_REQUEST_REVIEW]) { totalCount }
+    ano: contributionsCollection(from: $desde) {
+      totalCommitContributions
+      restrictedContributionsCount
+      contributionCalendar { totalContributions }
+    }
     contributionsCollection {
       totalCommitContributions
       restrictedContributionsCount
@@ -123,7 +128,7 @@ def fmt(n: int) -> str:
 
 
 def card_stats(usuario: dict, repos: list[dict]) -> str:
-    cc = usuario["contributionsCollection"]
+    cc = usuario["ano"]
     linhas = [
         ("Estrelas recebidas", sum(r["stargazerCount"] for r in repos)),
         (f"Commits em {date.today().year}", cc["totalCommitContributions"] + cc["restrictedContributionsCount"]),
@@ -222,7 +227,7 @@ def card_atividade(usuario: dict) -> str:
 
 
 def main() -> None:
-    usuario = graphql(Q_USUARIO, {"login": USUARIO})["user"]
+    usuario = graphql(Q_USUARIO, {"login": USUARIO, "desde": f"{date.today().year}-01-01T00:00:00Z"})["user"]
     repos = buscar_repos()
     SAIDA.mkdir(parents=True, exist_ok=True)
     arquivos = {
