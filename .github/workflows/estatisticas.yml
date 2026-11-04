@@ -1,0 +1,39 @@
+name: Atualizar estatísticas do README
+
+on:
+  # testa os cards a cada 6 h e também manualmente
+  schedule:
+    - cron: "30 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Testar cards e reescrever seção
+        run: python .github/scripts/atualizar_estatisticas.py
+
+      - name: Commit se mudou
+        run: |
+          if git diff --quiet README.md; then
+            echo "Nenhuma mudança."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Atualiza cards de estatísticas disponíveis"
+          git push
