@@ -1,45 +1,44 @@
-"""Testa os cards de estatísticas e reescreve a seção do README só com os que funcionam.
+"""Monta a seção de estatísticas do README só com os cards disponíveis.
 
 O GitHub remove atributos como `onerror` do README, então uma imagem quebrada
-não pode se esconder sozinha. Este script roda no GitHub Actions e monta o
-bloco entre os marcadores <!-- STATS:START --> e <!-- STATS:END --> apenas com
-os cards disponíveis: os gerados localmente (gerar_cards.py) entram se o
-arquivo existir, e os externos entram se responderem uma imagem SVG. Se nenhum
-estiver disponível, a seção inteira some.
+não pode se esconder sozinha. Este script roda no GitHub Actions e reescreve o
+bloco entre <!-- STATS:START --> e <!-- STATS:END -->:
+
+- cards gerados por gerar_cards.py entram se o arquivo existir;
+- cards de serviços externos (campo "url") entram só se responderem um SVG.
+
+Cards com o mesmo número de "linha" ficam lado a lado; a largura em % segue a
+grade de 900 px de gerar_cards.py. Se nada estiver disponível, a seção some.
 """
 
 import re
 import sys
 import urllib.error
 import urllib.request
+from itertools import groupby
 from pathlib import Path
 
-USUARIO = "AndreRuperto"
 README = Path(__file__).resolve().parents[2] / "README.md"
 INICIO, FIM = "<!-- STATS:START -->", "<!-- STATS:END -->"
 
 CARDS = [
-    # Gerados por gerar_cards.py dentro do próprio repositório.
     {
-        "nome": "Gráfico de atividade",
-        "arquivo": "assets/stats/atividade.svg",
-        "html": '  <img src="./{arquivo}" alt="Gráfico de contribuições dos últimos 31 dias" />',
-    },
-    # Serviço externo: entra só se estiver respondendo.
-    {
-        "nome": "Streak",
-        "url": f"https://streak-stats.demolab.com?user={USUARIO}&theme=merko",
-        "html": '  <a href="https://git.io/streak-stats">\n    <img src="{url}" alt="GitHub Streak" />\n  </a>',
+        "linha": 1,
+        "arquivo": "assets/stats/resumo.svg",
+        "alt": "Resumo do GitHub",
+        "largura": "54.5%",  # 495 / 900, com folga para o espaço entre as imagens
     },
     {
-        "nome": "Stats",
-        "arquivo": "assets/stats/stats.svg",
-        "html": '  <img src="./{arquivo}" height="170" alt="Estatísticas do GitHub" />',
-    },
-    {
-        "nome": "Linguagens",
+        "linha": 1,
         "arquivo": "assets/stats/linguagens.svg",
-        "html": '  <img src="./{arquivo}" height="170" alt="Linguagens mais usadas" />',
+        "alt": "Linguagens mais usadas",
+        "largura": "43.3%",  # 395 / 900
+    },
+    {
+        "linha": 2,
+        "arquivo": "assets/stats/atividade.svg",
+        "alt": "Gráfico de contribuições dos últimos 31 dias",
+        "largura": "98.6%",  # alinha com as bordas da linha 1
     },
 ]
 
@@ -56,27 +55,35 @@ def funciona(url: str) -> bool:
         return False
 
 
+def disponivel(card: dict) -> bool:
+    if "arquivo" in card:
+        return (README.parent / card["arquivo"]).is_file()
+    return funciona(card["url"])
+
+
+def img(card: dict) -> str:
+    src = f'./{card["arquivo"]}' if "arquivo" in card else card["url"].replace("&", "&amp;")
+    return f'<img src="{src}" width="{card["largura"]}" alt="{card["alt"]}" />'
+
+
 def montar_bloco(ativos: list[dict]) -> str:
     if not ativos:
         return f"{INICIO}\n{FIM}"
-    imagens = "\n\n".join(
-        c["html"].format(url=c.get("url", "").replace("&", "&amp;"), arquivo=c.get("arquivo", ""))
-        for c in ativos
-    )
+    # Imagens da mesma linha ficam no mesmo parágrafo (sem linha em branco entre elas).
+    linhas = ["  " + "\n  ".join(img(c) for c in grupo)
+              for _, grupo in groupby(ativos, key=lambda c: c["linha"])]
+    corpo = "\n\n".join(linhas)
     return (
         f"{INICIO}\n### 📊 Estatísticas\n\n<div align=\"center\">\n\n"
-        f"{imagens}\n\n</div>\n\n---\n{FIM}"
+        f"{corpo}\n\n</div>\n\n---\n{FIM}"
     )
 
 
 def main() -> int:
     ativos = []
     for card in CARDS:
-        if "arquivo" in card:
-            ok = (README.parent / card["arquivo"]).is_file()
-        else:
-            ok = funciona(card["url"])
-        print(f"{'OK   ' if ok else 'FALHA'} {card['nome']}")
+        ok = disponivel(card)
+        print(f"{'OK   ' if ok else 'FALHA'} {card['alt']}")
         if ok:
             ativos.append(card)
 
@@ -88,7 +95,7 @@ def main() -> int:
 
     novo = padrao.sub(lambda _: montar_bloco(ativos), texto)
     if novo != texto:
-        README.write_text(novo, encoding="utf-8")
+        README.write_text(novo, encoding="utf-8", newline="\n")
         print("README atualizado.")
     else:
         print("Nada mudou.")

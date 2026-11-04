@@ -59,15 +59,10 @@
 
 <div align="center">
 
-  <img src="./assets/stats/atividade.svg" alt="Gráfico de contribuições dos últimos 31 dias" />
+  <img src="./assets/stats/resumo.svg" width="54.5%" alt="Resumo do GitHub" />
+  <img src="./assets/stats/linguagens.svg" width="43.3%" alt="Linguagens mais usadas" />
 
-  <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com?user=AndreRuperto&amp;theme=merko" alt="GitHub Streak" />
-  </a>
-
-  <img src="./assets/stats/stats.svg" height="170" alt="Estatísticas do GitHub" />
-
-  <img src="./assets/stats/linguagens.svg" height="170" alt="Linguagens mais usadas" />
+  <img src="./assets/stats/atividade.svg" width="98.6%" alt="Gráfico de contribuições dos últimos 31 dias" />
 
 </div>
 

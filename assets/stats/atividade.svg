@@ -4,10 +4,11 @@
     .titulo { font: 600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #abd200; }
     .texto  { font: 600 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #68b587; }
     .valor  { font: 700 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #abd200; }
+    .grande { font: 700 28px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #abd200; }
     .menor  { font: 400 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #68b587; }
   </style>
   <rect x="0.5" y="0.5" rx="10" width="899" height="299" fill="#0a0f0b" stroke="#e4e2e2" stroke-opacity="0.8"/>
-  <text x="25" y="35" class="titulo">Contribuições de André Ruperto nos últimos 31 dias</text>
+  <text x="25" y="35" class="titulo">Atividade nos últimos 31 dias</text>
   <line x1="60" x2="870" y1="250.0" y2="250.0" stroke="#1f2a21"/>
   <text x="50" y="254.0" text-anchor="end" class="menor">0</text>
   <line x1="60" x2="870" y1="202.5" y2="202.5" stroke="#1f2a21"/>
