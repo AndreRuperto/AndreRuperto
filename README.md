@@ -75,20 +75,40 @@
 ![Linguagens](https://skillicons.dev/icons?i=py,ts,js,c,cpp,html,css)
 
 ### 🧠 &nbsp;Dados, Machine Learning & IA
-![Dados e ML](https://skillicons.dev/icons?i=sklearn,tensorflow,pytorch,opencv,selenium)
+<p align="left">
+  <img src="./assets/icons/pandas.svg" alt="pandas" height="48" />
+  <span>&nbsp;</span>
+  <img src="./assets/icons/numpy.svg" alt="NumPy" height="48" />
+  <span>&nbsp;</span>
+  <img src="https://skillicons.dev/icons?i=sklearn" alt="Scikit-learn" height="48" />
+  <span>&nbsp;</span>
+  <img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow" height="48" />
+  <span>&nbsp;</span>
+  <img src="https://skillicons.dev/icons?i=pytorch" alt="PyTorch" height="48" />
+  <span>&nbsp;</span>
+  <img src="https://skillicons.dev/icons?i=opencv" alt="OpenCV" height="48" />
+</p>
 
-<sub>Pandas · NumPy · XGBoost · LightGBM · SHAP · LLMs e RAG · EDA · modelagem de dados</sub>
+<sub>XGBoost · LightGBM · SHAP · LLMs e RAG · EDA · modelagem de dados</sub>
 
 ### ⚙️ &nbsp;Engenharia de Dados, BI & Automação
 <p align="left">
-  <img src="./assets/icons/airflow.svg" alt="Apache Airflow" width="48" />
+  <img src="./assets/icons/airflow.svg" alt="Apache Airflow" height="48" />
   <span>&nbsp;</span>
-  <img src="./assets/icons/powerbi.svg" alt="Power BI" width="48" />
+  <img src="./assets/icons/databricks.svg" alt="Databricks" height="48" />
   <span>&nbsp;</span>
-  <img src="./assets/icons/qlik.svg" alt="Qlik Sense" width="48" />
+  <img src="./assets/icons/powerbi.svg" alt="Power BI" height="48" />
+  <span>&nbsp;</span>
+  <img src="./assets/icons/qlik.svg" alt="Qlik Sense" height="48" />
+  <span>&nbsp;</span>
+  <img src="./assets/icons/streamlit.svg" alt="Streamlit" height="48" />
+  <span>&nbsp;</span>
+  <img src="https://skillicons.dev/icons?i=graphql" alt="GraphQL" height="48" />
+  <span>&nbsp;</span>
+  <img src="https://skillicons.dev/icons?i=selenium" alt="Selenium" height="48" />
 </p>
 
-<sub>Apache Airflow (DAGs) · Databricks · Power BI (incluindo Embedded) · Qlik Sense · Streamlit · Playwright · web scraping · APIs REST e GraphQL</sub>
+<sub>Airflow (DAGs) · Power BI Embedded · Playwright · web scraping · APIs REST e GraphQL</sub>
 
 ### 🌐 &nbsp;Desenvolvimento Web
 ![Web](https://skillicons.dev/icons?i=react,vite,tailwind,astro,d3,nodejs,express,bun,fastapi,prisma,redis)
