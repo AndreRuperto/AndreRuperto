@@ -10,23 +10,23 @@
   <text x="25" y="35" class="titulo">Linguagens mais usadas</text>
   <mask id="barra"><rect x="25" y="55" width="300" height="8" rx="5" fill="white"/></mask>
   <g mask="url(#barra)">
-    <rect x="25.00" y="55" width="112.98" height="8" fill="#3178c6"/>
-    <rect x="137.98" y="55" width="55.20" height="8" fill="#663399"/>
-    <rect x="193.19" y="55" width="50.77" height="8" fill="#e34c26"/>
-    <rect x="243.95" y="55" width="47.22" height="8" fill="#f1e05a"/>
-    <rect x="291.17" y="55" width="28.48" height="8" fill="#3572A5"/>
-    <rect x="319.65" y="55" width="5.35" height="8" fill="#ff5a03"/>
+    <rect x="25.00" y="55" width="127.54" height="8" fill="#e34c26"/>
+    <rect x="152.54" y="55" width="83.82" height="8" fill="#3178c6"/>
+    <rect x="236.36" y="55" width="58.35" height="8" fill="#f1e05a"/>
+    <rect x="294.71" y="55" width="21.63" height="8" fill="#3572A5"/>
+    <rect x="316.34" y="55" width="6.94" height="8" fill="#663399"/>
+    <rect x="323.28" y="55" width="1.72" height="8" fill="#DA5B0B"/>
   </g>
-  <circle cx="30" cy="84" r="5" fill="#3178c6"/>
-  <text x="42" y="88" class="menor">TypeScript 37.7%</text>
-  <circle cx="190" cy="84" r="5" fill="#663399"/>
-  <text x="202" y="88" class="menor">CSS 18.4%</text>
-  <circle cx="30" cy="109" r="5" fill="#e34c26"/>
-  <text x="42" y="113" class="menor">HTML 16.9%</text>
-  <circle cx="190" cy="109" r="5" fill="#f1e05a"/>
-  <text x="202" y="113" class="menor">JavaScript 15.7%</text>
-  <circle cx="30" cy="134" r="5" fill="#3572A5"/>
-  <text x="42" y="138" class="menor">Python 9.5%</text>
-  <circle cx="190" cy="134" r="5" fill="#ff5a03"/>
-  <text x="202" y="138" class="menor">Astro 1.8%</text>
+  <circle cx="30" cy="84" r="5" fill="#e34c26"/>
+  <text x="42" y="88" class="menor">HTML 42.5%</text>
+  <circle cx="190" cy="84" r="5" fill="#3178c6"/>
+  <text x="202" y="88" class="menor">TypeScript 27.9%</text>
+  <circle cx="30" cy="109" r="5" fill="#f1e05a"/>
+  <text x="42" y="113" class="menor">JavaScript 19.4%</text>
+  <circle cx="190" cy="109" r="5" fill="#3572A5"/>
+  <text x="202" y="113" class="menor">Python 7.2%</text>
+  <circle cx="30" cy="134" r="5" fill="#663399"/>
+  <text x="42" y="138" class="menor">CSS 2.3%</text>
+  <circle cx="190" cy="134" r="5" fill="#DA5B0B"/>
+  <text x="202" y="138" class="menor">Jupyter Notebook 0.6%</text>
 </svg>
