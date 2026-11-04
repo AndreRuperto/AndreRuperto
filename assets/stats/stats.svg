@@ -13,7 +13,7 @@
   <text x="245" y="70" class="valor">12</text>
   <circle cx="31" cy="90" r="4" fill="#b7d364"/>
   <text x="50" y="95" class="texto">Commits em 2026:</text>
-  <text x="245" y="95" class="valor">2.955</text>
+  <text x="245" y="95" class="valor">2.674</text>
   <circle cx="31" cy="115" r="4" fill="#b7d364"/>
   <text x="50" y="120" class="texto">Pull requests:</text>
   <text x="245" y="120" class="valor">41</text>
@@ -24,6 +24,6 @@
   <text x="50" y="170" class="texto">Contribuiu em (repos):</text>
   <text x="245" y="170" class="valor">4</text>
   <circle cx="370" cy="110" r="45" fill="none" stroke="#abd200" stroke-width="6"/>
-  <text x="370" y="116" text-anchor="middle" class="titulo">3.041</text>
+  <text x="370" y="116" text-anchor="middle" class="titulo">2.751</text>
   <text x="370" y="178" text-anchor="middle" class="menor">contribuições no ano</text>
 </svg>
