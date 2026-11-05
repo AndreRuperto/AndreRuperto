@@ -41,8 +41,8 @@
 | Projeto | Descrição | Links |
 |---|---|---|
 | 🗳️ **Turnos: Eleições 2026** | Portal de jornalismo de dados sobre os dois turnos, com mapas, hemiciclos do Congresso de 2027 e 596 perfis de candidatos | [Site](https://1e2turnos.up.railway.app/) · [Código](https://github.com/AndreRuperto/turnos) |
-| 🏥 **Triagegeist** | IA para triagem em pronto-socorro (ESI 1–5) com explicação via SHAP; identifiquei vazamento de dados na base do desafio Kaggle | [Site](https://triagegeist-kaggle.up.railway.app/) · [Código](https://github.com/AndreRuperto/triagegeist-kaggle) · [Kaggle](https://www.kaggle.com/competitions/triagegeist/overview) |
-| ⚽ **DataBola** | Análise estatística do Brasileirão Série A | [Site](https://databola.up.railway.app/) · [Código](https://github.com/AndreRuperto/databola) |
+| 🏥 **Triagegeist** | IA para triagem em pronto-socorro (ESI 1–5) com explicação via SHAP; identifiquei vazamento de dados na base do desafio Kaggle | [Site](https://triagegeist-kaggle.up.railway.app/) · [Kaggle](https://www.kaggle.com/competitions/triagegeist/overview) |
+| ⚽ **DataBola** | Análise estatística do Brasileirão Série A | [Site](https://databola.up.railway.app/) |
 | 🧬 **Genética da Gravidez Explicada** | Site educativo com calculadora de risco, guias de alterações cromossômicas e fontes em cada número | [Site](https://genetica-na-gestacao.up.railway.app/) · [Código](https://github.com/AndreRuperto/genetica-na-gestacao) |
 | 🌎 **Good Cities** | Compara qualidade e custo de vida em 99 cidades das Américas | [Site](https://good-cities.up.railway.app/) |
 | 📋 **Modelo de Credenciamento — PNCP** | ML (Random Forest, XGBoost) que reduziria em 93,5% as análises manuais de credenciamento | — |
