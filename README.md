@@ -29,10 +29,10 @@
 
 | Período | Cargo | Onde |
 |---|---|---|
-| Ago/2025 – Out/2026 | **Desenvolvedor FullStack Júnior** — sistema interno com mais de 30 módulos (React 18 + TypeScript, Node.js + Express, PostgreSQL, Airflow) | Resende Mori Hutchison |
-| Fev/2026 – Mai/2026 | **Desenvolvedor Web Freelancer** — sites e sistemas sob medida, do planejamento ao deploy | Autônomo |
-| Mai/2025 – Ago/2025 | **Analista de Dados Júnior** — pipelines em Python/pandas, dashboards em Power BI e Qlik | Resende Mori Hutchison |
-| Jan/2024 – Mai/2025 | **Estagiário, Equipe de Dados (COTIN)** — scrapers, Power BI, documentação da API do Compras.gov.br | Ministério da Gestão e da Inovação (MGI) |
+| Ago/2025&nbsp;–&nbsp;Out/2026 | **Desenvolvedor FullStack Júnior** — sistema interno com mais de 30 módulos (React 18 + TypeScript, Node.js + Express, PostgreSQL, Airflow) | Resende Mori Hutchison |
+| Fev/2026&nbsp;–&nbsp;Mai/2026 | **Desenvolvedor Web Freelancer** — sites e sistemas sob medida, do planejamento ao deploy | Autônomo |
+| Mai/2025&nbsp;–&nbsp;Ago/2025 | **Analista de Dados Júnior** — pipelines em Python/pandas, dashboards em Power BI e Qlik | Resende Mori Hutchison |
+| Jan/2024&nbsp;–&nbsp;Mai/2025 | **Estagiário, Equipe de Dados (COTIN)** — scrapers, Power BI, documentação da API do Compras.gov.br | Ministério da Gestão e da Inovação (MGI) |
 
 ---
 
