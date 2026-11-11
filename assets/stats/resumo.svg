@@ -11,13 +11,13 @@
   <text x="25" y="35" class="titulo">Resumo do GitHub de André Ruperto</text>
   <circle cx="31" cy="67" r="4" fill="#b7d364"/>
   <text x="45" y="72" class="texto">Contribuições totais</text>
-  <text x="300" y="72" text-anchor="end" class="valor">5.662</text>
+  <text x="300" y="72" text-anchor="end" class="valor">5.670</text>
   <circle cx="31" cy="92" r="4" fill="#b7d364"/>
   <text x="45" y="97" class="texto">Commits em 2026</text>
-  <text x="300" y="97" text-anchor="end" class="valor">4.175</text>
+  <text x="300" y="97" text-anchor="end" class="valor">4.180</text>
   <circle cx="31" cy="117" r="4" fill="#b7d364"/>
   <text x="45" y="122" class="texto">Pull requests</text>
-  <text x="300" y="122" text-anchor="end" class="valor">158</text>
+  <text x="300" y="122" text-anchor="end" class="valor">161</text>
   <circle cx="31" cy="142" r="4" fill="#b7d364"/>
   <text x="45" y="147" class="texto">Estrelas recebidas</text>
   <text x="300" y="147" text-anchor="end" class="valor">12</text>
@@ -26,7 +26,7 @@
   <text x="300" y="172" text-anchor="end" class="valor">48 dias</text>
   <line x1="330" x2="330" y1="55" y2="175" stroke="#1f2a21" stroke-width="2"/>
   <circle cx="400" cy="100" r="42" fill="none" stroke="#abd200" stroke-width="5"/>
-  <text x="400" y="110" text-anchor="middle" class="grande">22</text>
+  <text x="400" y="110" text-anchor="middle" class="grande">23</text>
   <text x="400" y="164" text-anchor="middle" class="valor">Sequência atual</text>
-  <text x="400" y="182" text-anchor="middle" class="menor">20 out – 10 nov</text>
+  <text x="400" y="182" text-anchor="middle" class="menor">20 out – 11 nov</text>
 </svg>
