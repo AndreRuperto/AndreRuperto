@@ -11,13 +11,13 @@
   <text x="25" y="35" class="titulo">Resumo do GitHub de André Ruperto</text>
   <circle cx="31" cy="67" r="4" fill="#b7d364"/>
   <text x="45" y="72" class="texto">Contribuições totais</text>
-  <text x="300" y="72" text-anchor="end" class="valor">5.792</text>
+  <text x="300" y="72" text-anchor="end" class="valor">5.825</text>
   <circle cx="31" cy="92" r="4" fill="#b7d364"/>
   <text x="45" y="97" class="texto">Commits em 2026</text>
-  <text x="300" y="97" text-anchor="end" class="valor">4.279</text>
+  <text x="300" y="97" text-anchor="end" class="valor">4.307</text>
   <circle cx="31" cy="117" r="4" fill="#b7d364"/>
   <text x="45" y="122" class="texto">Pull requests</text>
-  <text x="300" y="122" text-anchor="end" class="valor">181</text>
+  <text x="300" y="122" text-anchor="end" class="valor">186</text>
   <circle cx="31" cy="142" r="4" fill="#b7d364"/>
   <text x="45" y="147" class="texto">Estrelas recebidas</text>
   <text x="300" y="147" text-anchor="end" class="valor">12</text>
