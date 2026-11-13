@@ -11,25 +11,25 @@
   <text x="25" y="35" class="titulo">Linguagens mais usadas</text>
   <mask id="barra"><rect x="25" y="60" width="345" height="8" rx="4" fill="white"/></mask>
   <g mask="url(#barra)">
-    <rect x="25.00" y="60" width="139.79" height="8" fill="#e34c26"/>
-    <rect x="164.79" y="60" width="95.97" height="8" fill="#3178c6"/>
-    <rect x="260.76" y="60" width="70.59" height="8" fill="#f1e05a"/>
-    <rect x="331.35" y="60" width="27.76" height="8" fill="#3572A5"/>
-    <rect x="359.11" y="60" width="9.26" height="8" fill="#663399"/>
-    <rect x="368.37" y="60" width="1.63" height="8" fill="#DA5B0B"/>
+    <rect x="25.00" y="60" width="139.15" height="8" fill="#e34c26"/>
+    <rect x="164.15" y="60" width="95.72" height="8" fill="#3178c6"/>
+    <rect x="259.87" y="60" width="71.08" height="8" fill="#f1e05a"/>
+    <rect x="330.95" y="60" width="28.13" height="8" fill="#3572A5"/>
+    <rect x="359.08" y="60" width="9.31" height="8" fill="#663399"/>
+    <rect x="368.38" y="60" width="1.62" height="8" fill="#DA5B0B"/>
   </g>
   <circle cx="31.0" cy="100" r="5" fill="#e34c26"/>
   <text x="44.0" y="105" class="texto">HTML</text>
-  <text x="188.5" y="105" text-anchor="end" class="menor">40,5%</text>
+  <text x="188.5" y="105" text-anchor="end" class="menor">40,3%</text>
   <circle cx="203.5" cy="100" r="5" fill="#3178c6"/>
   <text x="216.5" y="105" class="texto">TypeScript</text>
-  <text x="361.0" y="105" text-anchor="end" class="menor">27,8%</text>
+  <text x="361.0" y="105" text-anchor="end" class="menor">27,7%</text>
   <circle cx="31.0" cy="130" r="5" fill="#f1e05a"/>
   <text x="44.0" y="135" class="texto">JavaScript</text>
-  <text x="188.5" y="135" text-anchor="end" class="menor">20,5%</text>
+  <text x="188.5" y="135" text-anchor="end" class="menor">20,6%</text>
   <circle cx="203.5" cy="130" r="5" fill="#3572A5"/>
   <text x="216.5" y="135" class="texto">Python</text>
-  <text x="361.0" y="135" text-anchor="end" class="menor">8,0%</text>
+  <text x="361.0" y="135" text-anchor="end" class="menor">8,2%</text>
   <circle cx="31.0" cy="160" r="5" fill="#663399"/>
   <text x="44.0" y="165" class="texto">CSS</text>
   <text x="188.5" y="165" text-anchor="end" class="menor">2,7%</text>
