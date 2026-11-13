@@ -11,22 +11,22 @@
   <text x="25" y="35" class="titulo">Linguagens mais usadas</text>
   <mask id="barra"><rect x="25" y="60" width="345" height="8" rx="4" fill="white"/></mask>
   <g mask="url(#barra)">
-    <rect x="25.00" y="60" width="139.99" height="8" fill="#e34c26"/>
-    <rect x="164.99" y="60" width="96.23" height="8" fill="#3178c6"/>
-    <rect x="261.22" y="60" width="70.40" height="8" fill="#f1e05a"/>
-    <rect x="331.63" y="60" width="27.53" height="8" fill="#3572A5"/>
-    <rect x="359.16" y="60" width="9.21" height="8" fill="#663399"/>
+    <rect x="25.00" y="60" width="139.79" height="8" fill="#e34c26"/>
+    <rect x="164.79" y="60" width="95.97" height="8" fill="#3178c6"/>
+    <rect x="260.76" y="60" width="70.59" height="8" fill="#f1e05a"/>
+    <rect x="331.35" y="60" width="27.76" height="8" fill="#3572A5"/>
+    <rect x="359.11" y="60" width="9.26" height="8" fill="#663399"/>
     <rect x="368.37" y="60" width="1.63" height="8" fill="#DA5B0B"/>
   </g>
   <circle cx="31.0" cy="100" r="5" fill="#e34c26"/>
   <text x="44.0" y="105" class="texto">HTML</text>
-  <text x="188.5" y="105" text-anchor="end" class="menor">40,6%</text>
+  <text x="188.5" y="105" text-anchor="end" class="menor">40,5%</text>
   <circle cx="203.5" cy="100" r="5" fill="#3178c6"/>
   <text x="216.5" y="105" class="texto">TypeScript</text>
-  <text x="361.0" y="105" text-anchor="end" class="menor">27,9%</text>
+  <text x="361.0" y="105" text-anchor="end" class="menor">27,8%</text>
   <circle cx="31.0" cy="130" r="5" fill="#f1e05a"/>
   <text x="44.0" y="135" class="texto">JavaScript</text>
-  <text x="188.5" y="135" text-anchor="end" class="menor">20,4%</text>
+  <text x="188.5" y="135" text-anchor="end" class="menor">20,5%</text>
   <circle cx="203.5" cy="130" r="5" fill="#3572A5"/>
   <text x="216.5" y="135" class="texto">Python</text>
   <text x="361.0" y="135" text-anchor="end" class="menor">8,0%</text>
