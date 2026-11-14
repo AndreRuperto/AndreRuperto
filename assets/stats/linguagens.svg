@@ -11,19 +11,19 @@
   <text x="25" y="35" class="titulo">Linguagens mais usadas</text>
   <mask id="barra"><rect x="25" y="60" width="345" height="8" rx="4" fill="white"/></mask>
   <g mask="url(#barra)">
-    <rect x="25.00" y="60" width="138.92" height="8" fill="#e34c26"/>
-    <rect x="163.92" y="60" width="95.82" height="8" fill="#3178c6"/>
-    <rect x="259.74" y="60" width="70.51" height="8" fill="#f1e05a"/>
-    <rect x="330.25" y="60" width="28.84" height="8" fill="#3572A5"/>
-    <rect x="359.09" y="60" width="9.33" height="8" fill="#663399"/>
-    <rect x="368.41" y="60" width="1.59" height="8" fill="#DA5B0B"/>
+    <rect x="25.00" y="60" width="139.42" height="8" fill="#e34c26"/>
+    <rect x="164.42" y="60" width="95.52" height="8" fill="#3178c6"/>
+    <rect x="259.94" y="60" width="70.24" height="8" fill="#f1e05a"/>
+    <rect x="330.18" y="60" width="28.95" height="8" fill="#3572A5"/>
+    <rect x="359.13" y="60" width="9.29" height="8" fill="#663399"/>
+    <rect x="368.42" y="60" width="1.58" height="8" fill="#DA5B0B"/>
   </g>
   <circle cx="31.0" cy="100" r="5" fill="#e34c26"/>
   <text x="44.0" y="105" class="texto">HTML</text>
-  <text x="188.5" y="105" text-anchor="end" class="menor">40,3%</text>
+  <text x="188.5" y="105" text-anchor="end" class="menor">40,4%</text>
   <circle cx="203.5" cy="100" r="5" fill="#3178c6"/>
   <text x="216.5" y="105" class="texto">TypeScript</text>
-  <text x="361.0" y="105" text-anchor="end" class="menor">27,8%</text>
+  <text x="361.0" y="105" text-anchor="end" class="menor">27,7%</text>
   <circle cx="31.0" cy="130" r="5" fill="#f1e05a"/>
   <text x="44.0" y="135" class="texto">JavaScript</text>
   <text x="188.5" y="135" text-anchor="end" class="menor">20,4%</text>
