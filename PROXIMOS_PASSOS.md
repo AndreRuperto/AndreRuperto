@@ -1,6 +1,6 @@
 # Próximos passos
 
-**Data:** 19/11/2026 · **Branch:** `claude/cartoes-mais-projetos` (PR 2, aberto)
+**Data:** 19/11/2026 · **Branch:** `claude/mais-projetos-completo` (PR 3)
 
 ## O que foi feito nesta sessão
 
@@ -12,10 +12,10 @@ Já na `main` (PR 1, mergeado):
 - `alternador.yml` corrigido; cobra e Pac-Man na paleta. O tema `brasa` do Pac-Man foi criado e mergeado em `svg-pacman-contributions`.
 - Descrições, sites e tópicos preenchidos em `turnos`, `genetica-na-gestacao`, `AndreRuperto`, `Portfolio-AndreRuperto`, `whatsapp_gastos_ai`, `2turno`, `mercado-eleicoes`, `leis-rag` e `melhores-restaurantes`.
 
-No PR 2 (https://github.com/AndreRuperto/AndreRuperto/pull/2):
+Do PR 2 (mergeado) e do PR 3:
 
 - Seis destaques: Turnos, Triagegeist, Good Cities, DataBola, A Carta e Cronomapa. Turnos, DataBola, A Carta e Cronomapa têm carrossel próprio em WebP.
-- "Mais projetos" em cartões gerados (Genética, modelo do PNCP, Alice × ComprasGov, Pac-Man, WhatsApp), no lugar da tabela.
+- "Mais projetos" em 14 cartões gerados, no lugar da tabela: os cinco que já existiam e mais Cobra o L, 2 Turno, Mercado & Eleições, Capi3D, Mangueira & Peixoto, Blue Mais, documentação da API do Compras.gov.br, simulador de autenticação e leis-rag.
 - Modelo do PNCP corrigido: foi feito no estágio no MGI, não no TCC.
 - Montador de carrosséis no repositório: `.github/scripts/gerar_carrossel.py`.
 
@@ -28,7 +28,6 @@ No PR 2 (https://github.com/AndreRuperto/AndreRuperto/pull/2):
 
 ## Próximos passos
 
-- [ ] Fazer o merge do PR 2 e conferir o perfil (troca para celular, carrosséis animando, cartões clicáveis)
 - [ ] Conferir a primeira execução da cobra na paleta nova
 - [ ] Fixar os repositórios no perfil (manual): `turnos`, `genetica-na-gestacao`, `svg-pacman-contributions`, `whatsapp_gastos_ai`, `Portfolio-AndreRuperto`, `simulador-sistemas-autenticacao`
 - [ ] Revisar os textos em inglês e a lista de skills (a contagem veio das dependências dos projetos, não do domínio de cada uma)

@@ -75,6 +75,28 @@ TEXTOS = {
              "Transforma o gráfico de contribuições do GitHub em um jogo de Pac-Man via GitHub Actions", "Código"),
             ("whatsapp", "Controle Financeiro via WhatsApp",
              "Bot de despesas com categorização automática, parcelas e alertas de vencimento", "Código"),
+            ("cobraol", "Cobra o L",
+             "Acompanha, com fontes públicas, o cumprimento das promessas do mandato 2023–2026 do presidente Lula, "
+             "com um de cinco status para cada promessa", "Site"),
+            ("2turno", "2 Turno",
+             "Quiz do 2º turno de 2026: responda sobre doze temas e veja de qual candidato você está mais próximo, "
+             "com fonte para cada posição", "Site"),
+            ("mercado", "Mercado & Eleições",
+             "Compara quanto os preços subiram nos governos Bolsonaro e Lula, produto a produto, com o IPCA do IBGE "
+             "atualizado todo dia", "Código"),
+            ("capi3d", "Capi3D", "Plataforma de visualização e modelagem 3D, da qual sou cocriador", "Código"),
+            ("mangueira", "Mangueira & Peixoto Advocacia",
+             "Site institucional de um escritório de advocacia, feito como freelancer", "Site"),
+            ("bluemais", "Blue Mais", "Plataforma web da academia Blue+, feita como freelancer", "Site"),
+            ("apicompras", "Documentação da API do Compras.gov.br",
+             "Documentação oficial da API de dados abertos do Compras.gov.br, com endpoints, parâmetros e exemplos, "
+             "feita no estágio no MGI", "Documentação"),
+            ("simulador", "Simulador de Sistemas de Autenticação",
+             "Simulador educacional que modela login, cadastro e 2FA com autômatos finitos; projeto acadêmico de "
+             "Linguagens Formais e Autômatos", "Site"),
+            ("leisrag", "leis-rag",
+             "Pesquisa jurídica com RAG sobre uma base de legislação brasileira, com respostas fundamentadas nas "
+             "fontes", "Código"),
         ],
         "skills_titulo": "Skills técnicas. ",
         "skills": {},
@@ -117,6 +139,27 @@ TEXTOS = {
              "Turns the GitHub contribution graph into a Pac-Man game through GitHub Actions", "Code"),
             ("whatsapp", "Expense tracking over WhatsApp",
              "Expense bot with automatic categorization, installments and due-date alerts", "Code"),
+            ("cobraol", "Cobra o L",
+             "Tracks, with public sources, how far President Lula's 2023–2026 campaign promises have been kept, "
+             "with one of five statuses for each promise", "Site"),
+            ("2turno", "2 Turno",
+             "Quiz for Brazil's 2026 presidential runoff: answer on twelve topics and see which candidate you are "
+             "closer to, with a source for every position", "Site"),
+            ("mercado", "Mercado & Eleições",
+             "Compares how much prices rose under the Bolsonaro and Lula governments, product by product, using "
+             "Brazil's official inflation index, updated daily", "Code"),
+            ("capi3d", "Capi3D", "3D visualization and modeling platform, which I co-created", "Code"),
+            ("mangueira", "Mangueira & Peixoto Advocacia", "Institutional website for a law firm, built as a freelancer", "Site"),
+            ("bluemais", "Blue Mais", "Web platform for the Blue+ gym, built as a freelancer", "Site"),
+            ("apicompras", "Compras.gov.br API documentation",
+             "Official documentation of the open-data API of Brazil's federal procurement system, with endpoints, "
+             "parameters and examples, written during my internship at MGI", "Docs"),
+            ("simulador", "Authentication Systems Simulator",
+             "Educational simulator that models login, sign-up and 2FA with finite automata; an academic project "
+             "for a Formal Languages and Automata course", "Site"),
+            ("leisrag", "leis-rag",
+             "Legal research with RAG over a collection of Brazilian legislation, with answers grounded in the "
+             "sources", "Code"),
         ],
         "skills_titulo": "Technical skills. ",
         "skills": {
@@ -136,6 +179,15 @@ MAIS_LINKS = {  # destino de cada cartão de "Mais projetos"; None = sem link p�
     "alice": "https://www.youtube.com/watch?v=234EGymqotI",
     "pacman": "https://github.com/AndreRuperto/svg-pacman-contributions",
     "whatsapp": "https://github.com/AndreRuperto/whatsapp_gastos_ai",
+    "cobraol": "https://cobraol.up.railway.app",
+    "2turno": "https://2turno.up.railway.app/",
+    "mercado": "https://github.com/AndreRuperto/mercado-eleicoes",
+    "capi3d": "https://github.com/AndreRuperto/Capi3D",
+    "mangueira": "https://mangueiraepeixoto.com.br",
+    "bluemais": "https://bluemais.up.railway.app",
+    "apicompras": "https://documenter.getpostman.com/view/13166820/2sA3XJjPpR",
+    "simulador": "https://simulador-sistemas-autenticacao.vercel.app",
+    "leisrag": "https://github.com/AndreRuperto/leis-rag",
 }
 
 CONTATOS = [  # (arquivo, rótulo padrão, detalhe em mono, ícone, botão cheio?)
