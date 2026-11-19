@@ -69,12 +69,37 @@ Compara qualidade de vida e custo em 99 cidades de 15 países das Américas, do 
 
 [Site](https://good-cities.up.railway.app/)
 
+#### 04 / DataBola
+
+<a href="https://databola.up.railway.app/"><img src="./assets/projetos/databola.webp" width="100%" alt="Carrossel com três telas do DataBola: a escolha do time da Série A, o painel do time com posição e números da temporada, e os resultados com o aproveitamento acumulado" /></a>
+
+Dashboard de dados do Brasileirão Série A, com coleta automatizada, painel por time, mapa de campo interativo e modo ao vivo.
+
+- **Recursos:** painel por time (visão geral, gols por minuto, artilheiros, escalações, próximos jogos), mapa de campo com replay dos eventos, modo ao vivo e PDF dos jogos do dia
+- **Dados:** coleta automática via API-Football, com armazenamento em PostgreSQL
+- **Stack:** Python, FastAPI, PostgreSQL e login com Google
+- **Estado:** site no ar; código em repositório privado
+
+[Site](https://databola.up.railway.app/)
+
+#### 05 / A Carta
+
+<a href="https://melhores-restaurantes.up.railway.app/"><img src="./assets/projetos/carta.webp" width="100%" alt="Carrossel com seis telas da A Carta: a capa da carta, a carta aberta, o mapa dos 100 restaurantes, os brasileiros na lista, a lista com filtros e a página de um restaurante" /></a>
+
+Os 100 melhores restaurantes do mundo em 2026, segundo o The 50 Best, apresentados como uma carta que se abre: mapa, ranking, recortes por continente, país e Brasil, e uma página por restaurante.
+
+- **Recursos:** abertura animada em forma de carta, mapa interativo, lista com busca e filtros, e 100 perfis de restaurante
+- **Stack:** React, Vite, Tailwind CSS, D3 e TopoJSON
+- **Qualidade:** testes com Playwright e axe, e Lighthouse acima de 90 nas páginas principais
+- **Estado:** no ar
+
+[Site](https://melhores-restaurantes.up.railway.app/) · [Código](https://github.com/AndreRuperto/melhores-restaurantes)
+
 #### Mais projetos
 
-<a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.webp" width="100%" alt="Carrossel com seis telas: no DataBola, a escolha do time, o painel do time e o aproveitamento; no Genética da Gravidez Explicada, a página inicial, a calculadora de risco e os guias de síndromes" /></a>
+<a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.webp" width="100%" alt="Carrossel com três telas do Genética da Gravidez Explicada: a página inicial, a calculadora de risco e os guias de síndromes" /></a>
 
 <p>
-<a href="https://databola.up.railway.app/"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-databola-mobile.svg" /><img src="./assets/perfil/projeto-databola.svg" width="100%" alt="DataBola: Análise estatística do Brasileirão Série A. Site" /></picture></a>
 <a href="https://genetica-na-gestacao.up.railway.app/"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-genetica-mobile.svg" /><img src="./assets/perfil/projeto-genetica.svg" width="100%" alt="Genética da Gravidez Explicada: Site educativo com calculadora de risco, guias de alterações cromossômicas e fontes em cada número. Site" /></picture></a>
 <picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-pncp-mobile.svg" /><img src="./assets/perfil/projeto-pncp.svg" width="100%" alt="Modelo de Credenciamento — PNCP: ML feito no estágio no MGI (Random Forest, XGBoost) que reduziria de 1.494 para 97 os pedidos analisados manualmente, com acurácia de 94,65%. Estágio · MGI" /></picture>
 <a href="https://www.youtube.com/watch?v=234EGymqotI"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-alice-mobile.svg" /><img src="./assets/perfil/projeto-alice.svg" width="100%" alt="Integração Alice × ComprasGov: Pipelines com Airflow e Databricks entre o ComprasGov e o robô de auditoria Alice (CGU). Webinar" /></picture></a>

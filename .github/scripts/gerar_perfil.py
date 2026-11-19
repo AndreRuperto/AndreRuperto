@@ -64,7 +64,6 @@ TEXTOS = {
         "rodape_consulta": "{n} linhas · quase 3 anos",
         "contatos": {"portfolio": "Portfólio", "email": "E-mail"},
         "mais": [  # (arquivo, nome, descrição, rótulo do link); o endereço fica em MAIS_LINKS
-            ("databola", "DataBola", "Análise estatística do Brasileirão Série A", "Site"),
             ("genetica", "Genética da Gravidez Explicada",
              "Site educativo com calculadora de risco, guias de alterações cromossômicas e fontes em cada número", "Site"),
             ("pncp", "Modelo de Credenciamento — PNCP",
@@ -105,7 +104,6 @@ TEXTOS = {
         "rodape_consulta": "{n} rows · almost 3 years",
         "contatos": {"portfolio": "Portfolio", "email": "Email"},
         "mais": [
-            ("databola", "DataBola", "Statistical analysis of Brazil's top football league", "Site"),
             ("genetica", "Genética da Gravidez Explicada",
              "Educational site about genetics in pregnancy, with a risk calculator, guides to chromosomal conditions "
              "and a source for every number", "Site"),
@@ -133,7 +131,6 @@ TEXTOS = {
 L = TEXTOS["pt"]  # textos do idioma em geração; main() troca a cada idioma
 
 MAIS_LINKS = {  # destino de cada cartão de "Mais projetos"; None = sem link público
-    "databola": "https://databola.up.railway.app/",
     "genetica": "https://genetica-na-gestacao.up.railway.app/",
     "pncp": None,
     "alice": "https://www.youtube.com/watch?v=234EGymqotI",
