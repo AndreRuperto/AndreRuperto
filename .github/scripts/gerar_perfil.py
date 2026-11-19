@@ -68,8 +68,8 @@ TEXTOS = {
             ("genetica", "Genética da Gravidez Explicada",
              "Site educativo com calculadora de risco, guias de alterações cromossômicas e fontes em cada número", "Site"),
             ("pncp", "Modelo de Credenciamento — PNCP",
-             "ML do meu TCC (Random Forest, XGBoost) que reduziria de 1.494 para 97 os pedidos analisados manualmente, "
-             "com acurácia de 94,65%", "Trabalho acadêmico"),
+             "ML feito no estágio no MGI (Random Forest, XGBoost) que reduziria de 1.494 para 97 os pedidos analisados manualmente, "
+             "com acurácia de 94,65%", "Estágio · MGI"),
             ("alice", "Integração Alice × ComprasGov",
              "Pipelines com Airflow e Databricks entre o ComprasGov e o robô de auditoria Alice (CGU)", "Webinar"),
             ("pacman", "Pac-Man Contributions",
@@ -110,8 +110,8 @@ TEXTOS = {
              "Educational site about genetics in pregnancy, with a risk calculator, guides to chromosomal conditions "
              "and a source for every number", "Site"),
             ("pncp", "Credentialing model — PNCP",
-             "Thesis ML model (Random Forest, XGBoost) that would cut manually reviewed requests on Brazil's public "
-             "procurement portal from 1,494 to 97, at 94.65% accuracy", "Academic thesis"),
+             "ML model built during my internship at MGI (Random Forest, XGBoost) that would cut manually reviewed requests on Brazil's public "
+             "procurement portal from 1,494 to 97, at 94.65% accuracy", "Internship · MGI"),
             ("alice", "Alice × ComprasGov integration",
              "Airflow and Databricks pipelines between ComprasGov and Alice, the audit bot of Brazil's Comptroller "
              "General (CGU)", "Webinar"),
