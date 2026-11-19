@@ -342,28 +342,37 @@ ICONES_PROPRIOS = {
     "lupa": '<circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21M8 13v-2M10.5 13V8M13 13v-3.5"/>',
     "tabelas": '<rect x="3" y="4" width="8" height="6" rx="1"/><rect x="13" y="14" width="8" height="6" rx="1"/><path d="M7 10v5a2 2 0 0 0 2 2h4"/>',
     "coleta": '<rect x="3" y="3" width="18" height="11" rx="2"/><path d="M3 7h18M12 10.5V21M8.5 17.5L12 21l3.5-3.5"/>',
+    "grafico_linha": '<path d="M4 4v16h16M7 15l4-5 3 3 5-7"/>',
+    "grafico_barras": '<path d="M4 4v16h16M8 16v-4M12 16V8M16 16v-6"/>',
     "chaves": '<path d="M8 4c-2 0-3 1-3 3v2c0 1.5-1 3-2 3 1 0 2 1.5 2 3v2c0 2 1 3 3 3M16 4c2 0 3 1 3 3v2c0 1.5 1 3 2 3-1 0-2 1.5-2 3v2c0 2-1 3-3 3"/>',
 }
 
 SKILLS = [  # (grupo, [(nome, ícone)]) — ícone é um arquivo de assets/icones ou uma chave de ICONES_PROPRIOS
     ("Linguagens", [("Python", "python"), ("TypeScript", "typescript"), ("JavaScript", "javascript"), ("C", "c"),
-                    ("C++", "cplusplus"), ("HTML", "html5"), ("CSS", "css3")]),
+                    ("C++", "cplusplus"), ("Rust", "rust"), ("HTML", "html5"), ("CSS", "css3")]),
     ("Dados, Machine Learning e IA", [
         ("pandas", "pandas"), ("NumPy", "numpy"), ("scikit-learn", "scikitlearn"), ("TensorFlow", "tensorflow"),
         ("PyTorch", "pytorch"), ("OpenCV", "opencv"), ("XGBoost", "arvore"), ("LightGBM", "raio"), ("SHAP", "barras"),
-        ("LLMs e RAG", "conversa"), ("EDA", "lupa"), ("Modelagem de dados", "tabelas")]),
+        ("Matplotlib", "grafico_linha"), ("Jupyter", "jupyter"), ("LLMs e RAG", "conversa"), ("EDA", "lupa"),
+        ("Modelagem de dados", "tabelas")]),
     ("Engenharia de dados, BI e automação", [
         ("Apache Airflow", "apacheairflow"), ("Databricks", "databricks"), ("Power BI", "powerbi"), ("Qlik Sense", "qlik"),
-        ("Streamlit", "streamlit"), ("GraphQL", "graphql"), ("Selenium", "selenium"), ("Playwright", "playwright"),
-        ("Web scraping", "coleta"), ("APIs REST", "chaves")]),
-    ("Desenvolvimento web", [
-        ("React", "react"), ("Vite", "vite"), ("Tailwind CSS", "tailwindcss"), ("Astro", "astro"), ("D3.js", "d3dotjs"),
-        ("Node.js", "nodedotjs"), ("Express", "express"), ("Bun", "bun"), ("FastAPI", "fastapi"), ("Prisma", "prisma"),
-        ("Redis", "redis")]),
-    ("Bancos de dados", [("PostgreSQL", "postgresql"), ("MySQL", "mysql"), ("SQLite", "sqlite")]),
+        ("Streamlit", "streamlit"), ("Selenium", "selenium"), ("Playwright", "playwright"), ("Web scraping", "coleta"),
+        ("APIs REST", "chaves"), ("GraphQL", "graphql")]),
+    ("Frontend e desktop", [
+        ("React", "react"), ("Vite", "vite"), ("Tailwind CSS", "tailwindcss"), ("shadcn/ui", "shadcnui"),
+        ("React Router", "reactrouter"), ("TanStack Query", "reactquery"), ("Zod", "zod"), ("Recharts", "grafico_barras"),
+        ("D3.js", "d3dotjs"), ("Framer Motion", "framer"), ("Three.js", "threedotjs"), ("Next.js", "nextdotjs"),
+        ("Astro", "astro"), ("Electron", "electron"), ("Tauri", "tauri")]),
+    ("Backend e bancos de dados", [
+        ("Node.js", "nodedotjs"), ("Express", "express"), ("Bun", "bun"), ("FastAPI", "fastapi"), ("Pydantic", "pydantic"),
+        ("Prisma", "prisma"), ("Drizzle ORM", "drizzle"), ("SQLAlchemy", "sqlalchemy"), ("PostgreSQL", "postgresql"),
+        ("MySQL", "mysql"), ("SQLite", "sqlite"), ("Redis", "redis")]),
     ("Ferramentas e DevOps", [
-        ("Git", "git"), ("GitHub", "github"), ("GitHub Actions", "githubactions"), ("Docker", "docker"), ("Vitest", "vitest"),
-        ("Postman", "postman"), ("Vercel", "vercel"), ("VS Code", "visualstudiocode"), ("Figma", "figma")]),
+        ("Git", "git"), ("GitHub", "github"), ("GitHub Actions", "githubactions"), ("Docker", "docker"),
+        ("Railway", "railway"), ("Vercel", "vercel"), ("Vitest", "vitest"), ("Testing Library", "testinglibrary"),
+        ("pytest", "pytest"), ("ESLint", "eslint"), ("Postman", "postman"), ("VS Code", "visualstudiocode"),
+        ("Figma", "figma")]),
 ]
 
 
