@@ -76,7 +76,7 @@ Modelo de Machine Learning do meu TCC (nota 10) que separa os pedidos de credenc
 
 </details>
 
-<a href="https://www.andreruperto.dev"><img src="./assets/perfil/portfolio.gif" width="100%" alt="Carrossel com as telas do portfólio andreruperto.dev: início, sobre mim, currículo, habilidades, projetos, vitrine digital, diferenciais, depoimentos e contato" /></a>
+<a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.gif" width="100%" alt="Carrossel com as telas de cinco projetos: Turnos: Eleições 2026, Triagegeist, DataBola, Genética da Gravidez Explicada e Good Cities" /></a>
 
 <p align="center"><a href="https://www.andreruperto.dev/#projects">Ver todos os projetos no portfólio →</a></p>
 
