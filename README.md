@@ -1,4 +1,6 @@
-<picture><source media="(max-width: 600px)" srcset="./assets/perfil/hero-mobile.svg" /><img src="./assets/perfil/hero.svg" width="100%" alt="André Ruperto, cientista de dados e desenvolvedor fullstack. Tiro trabalho manual do caminho. Gráfico do modelo de credenciamento do PNCP: pedidos analisados manualmente cairiam de 1.494 para 97, 93,5% a menos, com acurácia de 94,65%." /></picture>
+<p align="right"><b>Português</b> · <a href="README.en.md">English</a></p>
+
+<picture><source media="(max-width: 600px)" srcset="./assets/perfil/hero-mobile.svg" /><img src="./assets/perfil/hero.svg" width="100%" alt="André Ruperto, cientista de dados e desenvolvedor fullstack. Modelo de credenciamento do PNCP: pedidos analisados manualmente cairiam de 1.494 para 97 (93,5% a menos), com acurácia de 94,65%." /></picture>
 
 <p>
   <a href="https://www.andreruperto.dev"><img src="./assets/perfil/contato-portfolio.svg" height="40" alt="Portfólio: andreruperto.dev" /></a>
@@ -7,19 +9,19 @@
   <a href="https://instagram.com/andreruperto.dev"><img src="./assets/perfil/contato-instagram.svg" height="40" alt="Instagram" /></a>
 </p>
 
-### 🧠 Sobre Mim
+### Sobre mim
 
-<picture><source media="(max-width: 600px)" srcset="./assets/perfil/numeros-mobile.svg" /><img src="./assets/perfil/numeros.svg" width="100%" alt="Em números: CR 9,38 no bacharelado em Ciência da Computação (UDF), com láurea acadêmica; quase 3 anos em dados e desenvolvimento; 120 horas por mês de trabalho manual economizadas com pipelines; mais de 30 módulos em um sistema fullstack interno." /></picture>
+<picture><source media="(max-width: 600px)" srcset="./assets/perfil/numeros-mobile.svg" /><img src="./assets/perfil/numeros.svg" width="100%" alt="Em números: 9,38 CR no bacharelado em Ciência da Computação (UDF), com láurea acadêmica; ~3 anos em dados e desenvolvimento: MGI, Resende Mori Hutchison e freelas; 120 h/mês de trabalho manual economizadas com pipelines de dados; 30+ módulos em um sistema fullstack interno (React, Node.js, PostgreSQL)." /></picture>
 
-- 🎓 **Bacharel em Ciência da Computação** pelo **Centro Universitário UDF** (2022–2025) — Láurea Acadêmica e nota 10 no TCC em Ciência de Dados e Machine Learning
-- 🔍 **Aberto a vagas** de dados (análise e engenharia) e de desenvolvimento de sistemas orientados a dados
-- 🚀 **Disponível para freelas** de sites, sistemas web, dashboards e automação — [andreruperto.dev](https://www.andreruperto.dev)
+- **Bacharel em Ciência da Computação** pelo **Centro Universitário UDF** (2022–2025) — Láurea Acadêmica e nota 10 no TCC em Ciência de Dados e Machine Learning
+- **Aberto a vagas** de dados (análise e engenharia) e de desenvolvimento de sistemas orientados a dados
+- **Disponível para freelas** de sites, sistemas web, dashboards e automação — [andreruperto.dev](https://www.andreruperto.dev)
 
 ---
 
-### 💼 Experiência
+### Experiência
 
-<picture><source media="(max-width: 600px)" srcset="./assets/perfil/experiencia-mobile.svg" /><img src="./assets/perfil/experiencia.svg" width="100%" alt="Experiência, da mais recente para a mais antiga: Desenvolvedor FullStack Júnior na Resende Mori Hutchison, de agosto de 2025 a outubro de 2026; Desenvolvedor Web Freelancer, autônomo, de fevereiro a maio de 2026; Analista de Dados Júnior na Resende Mori Hutchison, de maio a agosto de 2025; Estagiário na Equipe de Dados do MGI, de janeiro de 2024 a maio de 2025." /></picture>
+<picture><source media="(max-width: 600px)" srcset="./assets/perfil/experiencia-mobile.svg" /><img src="./assets/perfil/experiencia.svg" width="100%" alt="Experiência, da mais recente para a mais antiga: Desenvolvedor FullStack Júnior, Resende Mori Hutchison, ago/2025 – out/2026; Desenvolvedor Web Freelancer, Autônomo, fev/2026 – mai/2026; Analista de Dados Júnior, Resende Mori Hutchison, mai/2025 – ago/2025; Estagiário, Equipe de Dados, MGI, jan/2024 – mai/2025." /></picture>
 
 - **Desenvolvedor FullStack Júnior** · Resende Mori Hutchison — sistema interno com mais de 30 módulos (React 18 + TypeScript, Node.js + Express, PostgreSQL, Airflow)
 - **Desenvolvedor Web Freelancer** · Autônomo — sites e sistemas sob medida, do planejamento ao deploy
@@ -28,9 +30,9 @@
 
 ---
 
-### 🚀 Projetos em Destaque
+### Projetos em destaque
 
-#### 01 / 🗳️ Turnos: Eleições 2026
+#### 01 / Turnos: Eleições 2026
 
 <a href="https://1e2turnos.up.railway.app/"><img src="./assets/projetos/turnos.webp" width="100%" alt="Carrossel com sete telas do Turnos: resultado do 1º turno, presidente da República, cartograma por estado, governadores, hemiciclos do Congresso de 2027, mapa interativo e análise entre os dois turnos" /></a>
 
@@ -42,7 +44,7 @@ Portal de jornalismo de dados sobre os dois turnos das eleições gerais de 2026
 
 [Site](https://1e2turnos.up.railway.app/) · [Código](https://github.com/AndreRuperto/turnos)
 
-#### 02 / 🏥 Triagegeist
+#### 02 / Triagegeist
 
 <a href="https://triagegeist-kaggle.up.railway.app/"><img src="./assets/projetos/triagegeist.jpg" width="100%" alt="Tela do Triagegeist: distribuição de 100 mil pacientes por nível de acuidade ESI e sinais vitais médios por nível" /></a>
 
@@ -50,40 +52,48 @@ IA para triagem em pronto-socorro, que classifica o paciente de ESI 1 a 5 e expl
 
 - **Recursos:** exploração dos dados, previsão interativa, notebooks e relatório, em português e inglês
 - **Dados:** 100 mil pacientes sintéticos do desafio e a base real NHAMCS
+- **Stack:** Python, FastAPI, scikit-learn, LightGBM, XGBoost, SHAP e UMAP
 - **Estado:** site no ar; código em repositório privado
 
 [Site](https://triagegeist-kaggle.up.railway.app/) · [Desafio no Kaggle](https://www.kaggle.com/competitions/triagegeist/overview)
 
-#### 03 / 📋 Modelo de Credenciamento — PNCP
+#### 03 / Good Cities
 
-Modelo de Machine Learning do meu TCC (nota 10) que separa os pedidos de credenciamento do PNCP que precisam de análise manual. Reduziria a fila de **1.494 para 97** pedidos (93,5% a menos), com acurácia de 94,65%.
+<a href="https://good-cities.up.railway.app/"><img src="./assets/projetos/good-cities.jpg" width="100%" alt="Tela do Good Cities: título sobre qualidade de vida e custo nas Américas, e cartões com as cidades de maior qualidade de vida e de melhor custo-benefício" /></a>
 
-- **Stack:** Python, Random Forest e XGBoost
-- **Estado:** trabalho acadêmico concluído; não está em produção e não tem repositório público
+Compara qualidade de vida e custo em 99 cidades de 15 países das Américas, do Canadá aos Andes, para mostrar onde se vive melhor pagando menos.
 
-<details>
-<summary><b>Mais projetos</b></summary>
-<br>
+- **Recursos:** gráfico de qualidade por custo, ranking, recortes por região e por Brasil, página por cidade e metodologia aberta
+- **Stack:** React, TypeScript, Vite, Tailwind CSS, Leaflet e Framer Motion
+- **Estado:** site no ar; código em repositório privado
+
+[Site](https://good-cities.up.railway.app/)
+
+#### Mais projetos
+
+<a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.webp" width="100%" alt="Carrossel com seis telas: no DataBola, a escolha do time, o painel do time e o aproveitamento; no Genética da Gravidez Explicada, a página inicial, a calculadora de risco e os guias de síndromes" /></a>
 
 | Projeto | Descrição | Links |
 |---|---|---|
-| ⚽ **DataBola** | Análise estatística do Brasileirão Série A | [Site](https://databola.up.railway.app/) |
-| 🧬 **Genética da Gravidez Explicada** | Site educativo com calculadora de risco, guias de alterações cromossômicas e fontes em cada número | [Site](https://genetica-na-gestacao.up.railway.app/) · [Código](https://github.com/AndreRuperto/genetica-na-gestacao) |
-| 🌎 **Good Cities** | Compara qualidade e custo de vida em 99 cidades das Américas | [Site](https://good-cities.up.railway.app/) |
-| 🔗 **Integração Alice × ComprasGov** | Pipelines com Airflow e Databricks entre o ComprasGov e o robô de auditoria Alice (CGU) | [Webinar](https://www.youtube.com/watch?v=234EGymqotI) |
-| 👾 **Pac-Man Contributions** | Transforma o gráfico de contribuições do GitHub em um jogo de Pac-Man via GitHub Actions | [Código](https://github.com/AndreRuperto/svg-pacman-contributions) |
-| 💸 **Controle Financeiro via WhatsApp** | Bot de despesas com categorização automática, parcelas e alertas de vencimento | [Código](https://github.com/AndreRuperto/whatsapp_gastos_ai) |
-
-</details>
-
-<a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.webp" width="100%" alt="Carrossel com as telas de cinco projetos: Turnos: Eleições 2026, Triagegeist, DataBola, Genética da Gravidez Explicada e Good Cities" /></a>
+| **DataBola** | Análise estatística do Brasileirão Série A | [Site](https://databola.up.railway.app/) |
+| **Genética da Gravidez Explicada** | Site educativo com calculadora de risco, guias de alterações cromossômicas e fontes em cada número | [Site](https://genetica-na-gestacao.up.railway.app/) · [Código](https://github.com/AndreRuperto/genetica-na-gestacao) |
+| **Modelo de Credenciamento — PNCP** | ML do meu TCC (Random Forest, XGBoost) que reduziria de 1.494 para 97 os pedidos analisados manualmente, com acurácia de 94,65% | — |
+| **Integração Alice × ComprasGov** | Pipelines com Airflow e Databricks entre o ComprasGov e o robô de auditoria Alice (CGU) | [Webinar](https://www.youtube.com/watch?v=234EGymqotI) |
+| **Pac-Man Contributions** | Transforma o gráfico de contribuições do GitHub em um jogo de Pac-Man via GitHub Actions | [Código](https://github.com/AndreRuperto/svg-pacman-contributions) |
+| **Controle Financeiro via WhatsApp** | Bot de despesas com categorização automática, parcelas e alertas de vencimento | [Código](https://github.com/AndreRuperto/whatsapp_gastos_ai) |
 
 <p align="center"><a href="https://www.andreruperto.dev/#projects">Ver todos os projetos no portfólio →</a></p>
 
 ---
 
+### Skills técnicas
+
+<picture><source media="(max-width: 600px)" srcset="./assets/perfil/skills-mobile.svg" /><img src="./assets/perfil/skills.svg" width="100%" alt="Skills técnicas. Linguagens: Python, TypeScript, JavaScript, C, C++, Rust, HTML, CSS. Dados, Machine Learning e IA: pandas, NumPy, scikit-learn, TensorFlow, PyTorch, OpenCV, XGBoost, LightGBM, SHAP, Matplotlib, Jupyter, LLMs e RAG, EDA, Modelagem de dados. Engenharia de dados, BI e automação: Apache Airflow, Databricks, Power BI, Qlik Sense, Streamlit, Selenium, Playwright, Web scraping, APIs REST, GraphQL. Frontend e desktop: React, Vite, Tailwind CSS, shadcn/ui, React Router, TanStack Query, Zod, Recharts, D3.js, Framer Motion, Three.js, Next.js, Astro, Electron, Tauri. Backend e bancos de dados: Node.js, Express, Bun, FastAPI, Pydantic, Prisma, Drizzle ORM, SQLAlchemy, PostgreSQL, MySQL, SQLite, Redis. Ferramentas e DevOps: Git, GitHub, GitHub Actions, Docker, Railway, Vercel, Vitest, Testing Library, pytest, ESLint, Postman, VS Code, Figma." /></picture>
+
+---
+
 <!-- STATS:START -->
-### 📊 Estatísticas
+### Estatísticas
 
 <div align="center">
 
@@ -93,15 +103,7 @@ Modelo de Machine Learning do meu TCC (nota 10) que separa os pedidos de credenc
   <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/stats/atividade.svg" width="98.6%" alt="Gráfico de contribuições dos últimos 31 dias" />
 
 </div>
-
----
 <!-- STATS:END -->
-
-### 💻 Skills Técnicas
-
-<picture><source media="(max-width: 600px)" srcset="./assets/perfil/skills-mobile.svg" /><img src="./assets/perfil/skills.svg" width="100%" alt="Skills técnicas. Linguagens: Python, TypeScript, JavaScript, C, C++, Rust, HTML, CSS. Dados, Machine Learning e IA: pandas, NumPy, scikit-learn, TensorFlow, PyTorch, OpenCV, XGBoost, LightGBM, SHAP, Matplotlib, Jupyter, LLMs e RAG, EDA, Modelagem de dados. Engenharia de dados, BI e automação: Apache Airflow, Databricks, Power BI, Qlik Sense, Streamlit, Selenium, Playwright, Web scraping, APIs REST, GraphQL. Frontend e desktop: React, Vite, Tailwind CSS, shadcn/ui, React Router, TanStack Query, Zod, Recharts, D3.js, Framer Motion, Three.js, Next.js, Astro, Electron, Tauri. Backend e bancos de dados: Node.js, Express, Bun, FastAPI, Pydantic, Prisma, Drizzle ORM, SQLAlchemy, PostgreSQL, MySQL, SQLite, Redis. Ferramentas e DevOps: Git, GitHub, GitHub Actions, Docker, Railway, Vercel, Vitest, Testing Library, pytest, ESLint, Postman, VS Code, Figma." /></picture>
-
-<br>
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/github-contribution-grid.svg" alt="Animação do gráfico de contribuições" />

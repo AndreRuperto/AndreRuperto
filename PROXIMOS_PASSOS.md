@@ -13,6 +13,9 @@ Melhorias no perfil inspiradas no repositório `anjennlical`:
 - Cards de estatísticas passaram do verde para a mesma paleta.
 - Skills em painel gerado (`skills.svg`), com ícones do Simple Icons em `assets/icones/` e oito ícones próprios para o que não tem logotipo.
 - Carrosséis em WebP animado: `assets/projetos/turnos.webp` (7 telas) e `assets/perfil/projetos.webp` (5 projetos).
+- Versão em inglês: `README.en.md`, com imagens `-en` do mesmo gerador. Os carrosséis e os cards de estatísticas são os mesmos nos dois idiomas, em português.
+- Ordem nova: topo, sobre, experiência, projetos, skills, estatísticas. Títulos sem emoji. Destaque 03 passou a ser o Good Cities; o modelo do PNCP foi para "Mais projetos".
+- Animação da cobra na paleta do portfólio (o Pac-Man continua no tema github-dark, que é o que a action oferece).
 - Prancha de design do topo: https://claude.ai/artifact/LYzNB8zYwFmMqEPjeN952k
 
 ## Estado atual
@@ -23,11 +26,10 @@ Melhorias no perfil inspiradas no repositório `anjennlical`:
 
 ## Próximos passos
 
+- [ ] Preencher descrição, site e tópicos dos repositórios públicos e revisar os fixados
 - [ ] Depois do merge, conferir a execução de "Atualizar estatísticas do README" e os cards no perfil
 - [ ] Revisar os textos dos três projetos em destaque (stack do Triagegeist ficou de fora por falta de fonte)
 - [ ] Refazer o carrossel (`assets/perfil/projetos.webp` e `assets/projetos/turnos.webp`) quando os sites dos projetos mudarem; foi montado à mão a partir de capturas
-- [ ] Versão em inglês (`README.en.md`) com seletor de idioma
-- [ ] Uma frase de contexto por grupo de skills
 - [ ] Validação automática do README (links, âncoras, texto alternativo, peso das imagens)
 
 ## Comandos úteis

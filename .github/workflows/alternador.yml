@@ -37,26 +37,14 @@ jobs:
         echo "current=$(cat mode.txt)" >> "$GITHUB_OUTPUT"
 
     # ─────────────────────────── 2 ▪ S N A K E  ────────────────────────────
-    - name: Gerar cor aleatória (Snake)
-      if: steps.mode.outputs.current == 'snake'
-      id: snakeColor
-      run: |
-        python3 - <<'PY'
-        import random, os
-        colors = ["#FFA500", "#00FFFF", "#32CD32", "#FF69B4", "#FFD700",
-                  "#DC143C", "#4B0082", "#008080", "#800080", "#FF8C00",
-                  "#98FF98", "#FF4500"]
-        with open(os.environ["GITHUB_OUTPUT"], "a") as saida:
-            print(f"color={random.choice(colors)}", file=saida)
-        PY
-
+    # Cores da identidade do portfólio: cobra em Brasa e quadrados do carvão ao laranja.
     - name: Gerar Snake
       if: steps.mode.outputs.current == 'snake'
       uses: Platane/snk@v3
       with:
         github_user_name: ${{ github.repository_owner }}
         outputs: |
-          dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=${{ steps.snakeColor.outputs.color }}
+          dist/github-contribution-grid-snake.svg?color_snake=#FBFAF9&color_dots=#1A1614,#5C2D0F,#994B19,#CC6521,#FF7E29
 
     - name: Copiar Snake para nome genérico
       if: steps.mode.outputs.current == 'snake'

@@ -65,7 +65,7 @@ jobs:
       # Só há commit na main quando o conjunto de cards disponíveis muda.
       - name: Commit do README se mudou
         run: |
-          git add README.md
+          git add README.md README.en.md
           if git diff --cached --quiet; then
             echo "README sem mudança."
             exit 0

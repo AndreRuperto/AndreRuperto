@@ -10,7 +10,8 @@ Rodar à mão depois de editar os textos abaixo (não faz parte de nenhum workfl
     pip install fonttools
     python .github/scripts/gerar_perfil.py
 
-Cada imagem larga tem uma versão "-mobile", trocada pelo <picture> do README.
+Cada imagem larga tem uma versão "-mobile", trocada pelo <picture> do README, e
+tudo sai em português e em inglês (sufixo "-en", usado pelo README.en.md).
 """
 
 import re
@@ -35,24 +36,73 @@ W, WM = 960, 420  # largura das versões de desktop e de celular
 
 # ───────────────────────────── Conteúdo ─────────────────────────────
 
-FRASE = "Cientista de dados e desenvolvedor fullstack. Tiro trabalho manual do caminho."
 SITE = "andreruperto.dev"
 
-NUMEROS = [
-    ("9,38", "CR no bacharelado em Ciência da Computação (UDF), com láurea acadêmica"),
-    ("~3 anos", "em dados e desenvolvimento: MGI, Resende Mori Hutchison e freelas"),
-    ("120 h/mês", "de trabalho manual economizadas com pipelines de dados"),
-    ("30+", "módulos em um sistema fullstack interno (React, Node.js, PostgreSQL)"),
-]
+TEXTOS = {
+    "pt": {
+        "frase": "Cientista de dados e desenvolvedor fullstack. Tiro trabalho manual do caminho.",
+        "titulo_hero": "André Ruperto, cientista de dados e desenvolvedor fullstack. Modelo de credenciamento do PNCP: "
+                       "pedidos analisados manualmente cairiam de 1.494 para 97 (93,5% a menos), com acurácia de 94,65%.",
+        "grafico": ("MODELO DE CREDENCIAMENTO · PNCP", "Pedidos analisados manualmente", "Hoje", "1.494",
+                    "Com o modelo (estimado)", "93,5% a menos · acurácia de 94,65%"),
+        "numeros_titulo": "Em números: ",
+        "numeros": [
+            ("9,38", "CR no bacharelado em Ciência da Computação (UDF), com láurea acadêmica"),
+            ("~3 anos", "em dados e desenvolvimento: MGI, Resende Mori Hutchison e freelas"),
+            ("120 h/mês", "de trabalho manual economizadas com pipelines de dados"),
+            ("30+", "módulos em um sistema fullstack interno (React, Node.js, PostgreSQL)"),
+        ],
+        "experiencia_titulo": "Experiência, da mais recente para a mais antiga: ",
+        "experiencia": [
+            ("Desenvolvedor FullStack Júnior", "Resende Mori Hutchison", "ago/2025 – out/2026"),
+            ("Desenvolvedor Web Freelancer", "Autônomo", "fev/2026 – mai/2026"),
+            ("Analista de Dados Júnior", "Resende Mori Hutchison", "mai/2025 – ago/2025"),
+            ("Estagiário, Equipe de Dados", "MGI", "jan/2024 – mai/2025"),
+        ],
+        "consulta": (" cargo, onde, periodo", " experiencia", " periodo "),
+        "colunas": ("CARGO", "ONDE", "PERÍODO"),
+        "rodape_consulta": "{n} linhas · quase 3 anos",
+        "contatos": {"portfolio": "Portfólio", "email": "E-mail"},
+        "skills_titulo": "Skills técnicas. ",
+        "skills": {},
+    },
+    "en": {
+        "frase": "Data scientist and full-stack developer. I take manual work out of the way.",
+        "titulo_hero": "André Ruperto, data scientist and full-stack developer. Credentialing model for PNCP, Brazil's public "
+                       "procurement portal: requests reviewed manually would drop from 1,494 to 97 (93.5% fewer), at 94.65% accuracy.",
+        "grafico": ("CREDENTIALING MODEL · PNCP", "Requests reviewed manually", "Today", "1,494",
+                    "With the model (estimated)", "93.5% fewer · 94.65% accuracy"),
+        "numeros_titulo": "In numbers: ",
+        "numeros": [
+            ("9.38", "GPA out of 10 in the Computer Science bachelor's degree (UDF), with academic honors"),
+            ("~3 years", "in data and development: MGI, Resende Mori Hutchison and freelance work"),
+            ("120 h/month", "of manual work saved with data pipelines"),
+            ("30+", "modules in an internal full-stack system (React, Node.js, PostgreSQL)"),
+        ],
+        "experiencia_titulo": "Experience, most recent first: ",
+        "experiencia": [
+            ("Junior Full-Stack Developer", "Resende Mori Hutchison", "Aug 2025 – Oct 2026"),
+            ("Freelance Web Developer", "Self-employed", "Feb 2026 – May 2026"),
+            ("Junior Data Analyst", "Resende Mori Hutchison", "May 2025 – Aug 2025"),
+            ("Intern, Data Team", "MGI", "Jan 2024 – May 2025"),
+        ],
+        "consulta": (" role, company, period", " experience", " period "),
+        "colunas": ("ROLE", "COMPANY", "PERIOD"),
+        "rodape_consulta": "{n} rows · almost 3 years",
+        "contatos": {"portfolio": "Portfolio", "email": "Email"},
+        "skills_titulo": "Technical skills. ",
+        "skills": {
+            "Linguagens": "Languages", "Dados, Machine Learning e IA": "Data, Machine Learning & AI",
+            "Engenharia de dados, BI e automação": "Data engineering, BI & automation",
+            "Frontend e desktop": "Frontend & desktop", "Backend e bancos de dados": "Backend & databases",
+            "Ferramentas e DevOps": "Tools & DevOps", "LLMs e RAG": "LLMs & RAG",
+            "Modelagem de dados": "Data modeling", "APIs REST": "REST APIs",
+        },
+    },
+}
+L = TEXTOS["pt"]  # textos do idioma em geração; main() troca a cada idioma
 
-EXPERIENCIA = [
-    ("Desenvolvedor FullStack Júnior", "Resende Mori Hutchison", "ago/2025 – out/2026"),
-    ("Desenvolvedor Web Freelancer", "Autônomo", "fev/2026 – mai/2026"),
-    ("Analista de Dados Júnior", "Resende Mori Hutchison", "mai/2025 – ago/2025"),
-    ("Estagiário, Equipe de Dados", "MGI", "jan/2024 – mai/2025"),
-]
-
-CONTATOS = [  # (arquivo, rótulo, detalhe em mono, ícone, botão cheio?)
+CONTATOS = [  # (arquivo, rótulo padrão, detalhe em mono, ícone, botão cheio?)
     ("portfolio", "Portfólio", SITE, "globo", True),
     ("linkedin", "LinkedIn", "andrerup", "linkedin", False),
     ("email", "E-mail", "contato@andreruperto.dev", "carta", False),
@@ -190,47 +240,42 @@ def _grafico(x: float, y: float, w: float) -> tuple[list[str], float]:
     """Cartão com as duas barras do modelo do PNCP; devolve o SVG e a altura."""
     h, m = 260, 24
     dentro, direita = w - 2 * m, x + w - m
+    rotulo, titulo, hoje, valor_hoje, com_modelo, rodape = L["grafico"]
     p = [
         caixa(x, y, w, h, 12, CARVAO_900),
-        texto("MODELO DE CREDENCIAMENTO · PNCP", x + m, y + 32, "mono", 11, 400, APOIO, esp=1.4),
-        texto("Pedidos analisados manualmente", x + m, y + 55, "sora", 15, 600),
-        texto("Hoje", x + m, y + 110, "sora", 13, 400, APOIO),
-        texto("1.494", direita, y + 110, "mono", 20, 600, PAPEL, "end"),
+        texto(rotulo, x + m, y + 32, "mono", 11, 400, APOIO, esp=1.4),
+        texto(titulo, x + m, y + 55, "sora", 15, 600),
+        texto(hoje, x + m, y + 110, "sora", 13, 400, APOIO),
+        texto(valor_hoje, direita, y + 110, "mono", 20, 600, PAPEL, "end"),
         caixa(x + m, y + 119, dentro, 14, 3, APOIO, None),
-        texto("Com o modelo (estimado)", x + m, y + 164, "sora", 13, 400, APOIO),
+        texto(com_modelo, x + m, y + 164, "sora", 13, 400, APOIO),
         texto("97", direita, y + 164, "mono", 20, 600, BRASA, "end"),
         caixa(x + m, y + 173, dentro, 14, 3, CARVAO_800, None),
         caixa(x + m, y + 173, dentro * 97 / 1494, 14, 3, BRASA, None),
-        texto("93,5% a menos · acurácia de 94,65%", x + m, y + 236, "mono", 12, 400, APOIO),
+        texto(rodape, x + m, y + 236, "mono", 12, 400, APOIO),
     ]
     return p, h
-
-
-TITULO_HERO = (
-    "André Ruperto, cientista de dados e desenvolvedor fullstack. Modelo de credenciamento do PNCP: "
-    "pedidos analisados manualmente cairiam de 1.494 para 97 (93,5% a menos), com acurácia de 94,65%."
-)
 
 
 def hero() -> str:
     h = 340
     defs, marca = _marca(44, 142, 92)
-    frase, _ = paragrafo(FRASE, 46, 184, 430, 26, fonte="sora", tam=18, peso=500)
+    frase, _ = paragrafo(L["frase"], 46, 184, 430, 26, fonte="sora", tam=18, peso=500)
     grafico, _ = _grafico(W - 44 - 380, 40, 380)
     corpo = [moldura(W, h), texto("ANDRÉ RUPERTO", 46, 52, "mono", 12, 500, APOIO, esp=1.8), marca, frase,
              texto(SITE, 46, 297, "mono", 13, 400, APOIO), *grafico]
-    return svg(W, h, TITULO_HERO, corpo, defs)
+    return svg(W, h, L["titulo_hero"], corpo, defs)
 
 
 def hero_mobile() -> str:
     m = 24
     defs, marca = _marca(m - 2, 122, 84)
-    frase, fim = paragrafo(FRASE, m, 162, WM - 2 * m, 25, fonte="sora", tam=17, peso=500)
+    frase, fim = paragrafo(L["frase"], m, 162, WM - 2 * m, 25, fonte="sora", tam=17, peso=500)
     grafico, alt = _grafico(m, fim + 60, WM - 2 * m)
     h = fim + 60 + alt + m
     corpo = [moldura(WM, h), texto("ANDRÉ RUPERTO", m, 40, "mono", 12, 500, APOIO, esp=1.8), marca, frase,
              texto(SITE, m, fim + 34, "mono", 13, 400, APOIO), *grafico]
-    return svg(WM, h, TITULO_HERO, corpo, defs)
+    return svg(WM, h, L["titulo_hero"], corpo, defs)
 
 
 # ───────────────────────────── Números do "Sobre mim" ─────────────────────────────
@@ -239,74 +284,77 @@ def numeros(largura_total: float, colunas: int) -> str:
     vao, m = 12, 18
     w = (largura_total - vao * (colunas - 1)) / colunas
     opcoes = dict(fonte="sora", tam=13, peso=400)
-    maior = max(len(quebrar(d, w - 2 * m, **opcoes)) for _, d in NUMEROS)
+    maior = max(len(quebrar(d, w - 2 * m, **opcoes)) for _, d in L["numeros"])
     h = 62 + maior * 19.5 + 10
     corpo = []
-    for i, (valor, desc) in enumerate(NUMEROS):
+    for i, (valor, desc) in enumerate(L["numeros"]):
         x, y = (i % colunas) * (w + vao), (i // colunas) * (h + vao)
         corpo += [caixa(x + 0.5, y + 0.5, w - 1, h - 1, 12, CARVAO_900),
                   texto(valor, x + m, y + 44, "mono", 26, 600),
                   paragrafo(desc, x + m, y + 70, w - 2 * m, 19.5, APOIO, **opcoes)[0]]
-    linhas = -(-len(NUMEROS) // colunas)
-    titulo = "Em números: " + "; ".join(f"{v} {d}" for v, d in NUMEROS) + "."
+    linhas = -(-len(L["numeros"]) // colunas)
+    titulo = L["numeros_titulo"] + "; ".join(f"{v} {d}" for v, d in L["numeros"]) + "."
     return svg(largura_total, linhas * h + (linhas - 1) * vao, titulo, corpo)
 
 
 # ───────────────────────────── Experiência como consulta ─────────────────────────────
 
-CONSULTA = [
-    [("SELECT", BRASA), (" cargo, onde, periodo", PAPEL)],
-    [("FROM", BRASA), (" experiencia", PAPEL)],
-    [("ORDER BY", BRASA), (" periodo ", PAPEL), ("DESC", BRASA), (";", PAPEL)],
-]
-RODAPE_CONSULTA = f"{len(EXPERIENCIA)} linhas · quase 3 anos"
-TITULO_EXP = "Experiência, da mais recente para a mais antiga: " + "; ".join(
-    f"{c}, {o}, {p}" for c, o, p in EXPERIENCIA) + "."
+def _linhas_consulta() -> list:
+    campos, tabela, ordem = L["consulta"]
+    return [
+        [("SELECT", BRASA), (campos, PAPEL)],
+        [("FROM", BRASA), (tabela, PAPEL)],
+        [("ORDER BY", BRASA), (ordem, PAPEL), ("DESC", BRASA), (";", PAPEL)],
+    ]
+
+
+def _titulo_exp() -> str:
+    return L["experiencia_titulo"] + "; ".join(f"{c}, {o}, {p}" for c, o, p in L["experiencia"]) + "."
 
 
 def _consulta(x: float, y: float, w: float, h: float) -> list[str]:
     p = [caixa(x, y, w, h, 12, CARVAO_900)]
-    for i, linha in enumerate(CONSULTA):
+    for i, linha in enumerate(_linhas_consulta()):
         p.append(trechos(linha, x + 20, y + 34 + i * 24.5, fonte="mono", tam=14, peso=400))
-    p.append(texto(RODAPE_CONSULTA, x + 20, y + h - 18, "mono", 12, 400, APOIO))
+    p.append(texto(L["rodape_consulta"].format(n=len(L["experiencia"])), x + 20, y + h - 18, "mono", 12, 400, APOIO))
     return p
 
 
 def experiencia() -> str:
     m, cab, lin = 24, 36, 46
-    alt = cab + lin * len(EXPERIENCIA)
+    alt = cab + lin * len(L["experiencia"])
     h = alt + 2 * m
     tx, tw = m + 268 + 16, W - 2 * m - 268 - 16
     colunas = [tx + 18, tx + 18 + 250, tx + 18 + 250 + 190]
     corpo = [moldura(W, h), *_consulta(m, m, 268, alt), caixa(tx, m, tw, alt, 12, CARVAO_900),
              f'<path d="M{_n(tx)} {m + cab}.5h{_n(tw)}" stroke="{BORDA}"/>']
-    for rotulo, cx in zip(("CARGO", "ONDE", "PERÍODO"), colunas):
+    for rotulo, cx in zip(L["colunas"], colunas):
         corpo.append(texto(rotulo, cx, m + 23, "mono", 11, 400, APOIO, esp=1.2))
-    for i, (cargo, onde, periodo) in enumerate(EXPERIENCIA):
+    for i, (cargo, onde, periodo) in enumerate(L["experiencia"]):
         y = m + cab + i * lin
         if i:
             corpo.append(f'<path d="M{_n(tx + 1)} {_n(y)}.5h{_n(tw - 2)}" stroke="{CARVAO_800}"/>')
         corpo += [texto(cargo, colunas[0], y + 28, "sora", 13.5, 600),
                   texto(onde, colunas[1], y + 28, "sora", 13.5, 400, APOIO),
                   texto(periodo, colunas[2], y + 28, "mono", 12, 400, APOIO)]
-    return svg(W, h, TITULO_EXP, corpo)
+    return svg(W, h, _titulo_exp(), corpo)
 
 
 def experiencia_mobile() -> str:
     m, lin, alt_consulta = 16, 62, 132
     tw = WM - 2 * m
     ty = m + alt_consulta + 12
-    alt = lin * len(EXPERIENCIA)
+    alt = lin * len(L["experiencia"])
     h = ty + alt + m
     corpo = [moldura(WM, h), *_consulta(m, m, tw, alt_consulta), caixa(m, ty, tw, alt, 12, CARVAO_900)]
-    for i, (cargo, onde, periodo) in enumerate(EXPERIENCIA):
+    for i, (cargo, onde, periodo) in enumerate(L["experiencia"]):
         y = ty + i * lin
         if i:
             corpo.append(f'<path d="M{m + 1} {_n(y)}.5h{tw - 2}" stroke="{CARVAO_800}"/>')
         corpo += [texto(cargo, m + 18, y + 26, "sora", 15, 600),
                   texto(onde, m + 18, y + 47, "sora", 13, 400, APOIO),
                   texto(periodo, m + tw - 18, y + 47, "mono", 12, 400, APOIO, "end")]
-    return svg(WM, h, TITULO_EXP, corpo)
+    return svg(WM, h, _titulo_exp(), corpo)
 
 
 # ───────────────────────────── Botões de contato ─────────────────────────────
@@ -391,6 +439,7 @@ def _cartao_skills(titulo: str, itens: list, w: float) -> tuple[list[str], float
     m, alt, vao = 18, 32, 8
     pecas, x, y = [], m, 44
     for nome, chave in itens:
+        nome = L["skills"].get(nome, nome)
         larg = 10 + 16 + 7 + largura(nome, "sora", 13, 500) + 12
         if x + larg > w - m and x > m:
             x, y = m, y + alt + vao
@@ -399,7 +448,7 @@ def _cartao_skills(titulo: str, itens: list, w: float) -> tuple[list[str], float
         x += larg + vao
     h = y + alt + m
     return [caixa(0.5, 0.5, w - 1, h - 1, 12, CARVAO_900),
-            texto(titulo.upper(), m, 28, "mono", 11, 500, APOIO, esp=1.4), *pecas], h
+            texto(L["skills"].get(titulo, titulo).upper(), m, 28, "mono", 11, 500, APOIO, esp=1.4), *pecas], h
 
 
 def skills(largura_total: float, colunas: int) -> str:
@@ -413,27 +462,33 @@ def skills(largura_total: float, colunas: int) -> str:
     for (pecas, h), c in zip(cartoes, melhor):
         corpo.append(f'<g transform="translate({_n(c * (w + vao))} {_n(alturas[c])})">' + "\n".join(pecas) + "</g>")
         alturas[c] += h + vao
-    rotulo = "Skills técnicas. " + " ".join(f"{t}: {', '.join(n for n, _ in itens)}." for t, itens in SKILLS)
+    tr = lambda t: L["skills"].get(t, t)
+    rotulo = L["skills_titulo"] + " ".join(f"{tr(t)}: {', '.join(tr(n) for n, _ in itens)}." for t, itens in SKILLS)
     return svg(largura_total, max(alturas) - vao, rotulo, corpo)
 
 
 def main() -> None:
+    global L
     SAIDA.mkdir(parents=True, exist_ok=True)
-    arquivos = {
-        "hero.svg": hero(),
-        "hero-mobile.svg": hero_mobile(),
-        "numeros.svg": numeros(W, 4),
-        "numeros-mobile.svg": numeros(WM, 2),
-        "experiencia.svg": experiencia(),
-        "experiencia-mobile.svg": experiencia_mobile(),
-        "skills.svg": skills(W, 2),
-        "skills-mobile.svg": skills(WM, 1),
-    }
-    for nome, rotulo, detalhe, icone, cheio in CONTATOS:
-        arquivos[f"contato-{nome}.svg"] = contato(rotulo, detalhe, icone, cheio)
-    for nome, conteudo in arquivos.items():
-        (SAIDA / nome).write_text(conteudo, encoding="utf-8", newline="\n")
-        print(f"gerado: assets/perfil/{nome} ({len(conteudo) // 1024} KB)")
+    for idioma, sufixo in (("pt", ""), ("en", "-en")):
+        L = TEXTOS[idioma]
+        arquivos = {
+            "hero": hero(),
+            "hero-mobile": hero_mobile(),
+            "numeros": numeros(W, 4),
+            "numeros-mobile": numeros(WM, 2),
+            "experiencia": experiencia(),
+            "experiencia-mobile": experiencia_mobile(),
+            "skills": skills(W, 2),
+            "skills-mobile": skills(WM, 1),
+        }
+        for nome, rotulo, detalhe, icone, cheio in CONTATOS:
+            traduzido = L["contatos"].get(nome, rotulo)
+            if idioma == "pt" or traduzido != rotulo:  # botões iguais nos dois idiomas não são duplicados
+                arquivos[f"contato-{nome}"] = contato(traduzido, detalhe, icone, cheio)
+        for nome, conteudo in arquivos.items():
+            (SAIDA / f"{nome}{sufixo}.svg").write_text(conteudo, encoding="utf-8", newline="\n")
+            print(f"gerado: assets/perfil/{nome}{sufixo}.svg ({len(conteudo) // 1024} KB)")
 
 
 if __name__ == "__main__":
