@@ -15,7 +15,7 @@ Melhorias no perfil inspiradas no repositório `anjennlical`:
 - Carrosséis em WebP animado: `assets/projetos/turnos.webp` (7 telas) e `assets/perfil/projetos.webp` (5 projetos).
 - Versão em inglês: `README.en.md`, com imagens `-en` do mesmo gerador. Os carrosséis e os cards de estatísticas são os mesmos nos dois idiomas, em português.
 - Ordem nova: topo, sobre, experiência, projetos, skills, estatísticas. Títulos sem emoji. Destaque 03 passou a ser o Good Cities; o modelo do PNCP foi para "Mais projetos".
-- Animação da cobra na paleta do portfólio (o Pac-Man continua no tema github-dark, que é o que a action oferece).
+- Animação da cobra na paleta do portfólio e Pac-Man no tema `brasa`, criado em https://github.com/AndreRuperto/svg-pacman-contributions/pull/1.
 - Prancha de design do topo: https://claude.ai/artifact/LYzNB8zYwFmMqEPjeN952k
 
 ## Estado atual
@@ -26,6 +26,7 @@ Melhorias no perfil inspiradas no repositório `anjennlical`:
 
 ## Próximos passos
 
+- [ ] Fazer o merge do PR do tema `brasa` no svg-pacman-contributions ANTES do PR do perfil (o workflow usa a action em `@main`)
 - [ ] Preencher descrição, site e tópicos dos repositórios públicos e revisar os fixados
 - [ ] Depois do merge, conferir a execução de "Atualizar estatísticas do README" e os cards no perfil
 - [ ] Revisar os textos dos três projetos em destaque (stack do Triagegeist ficou de fora por falta de fonte)
