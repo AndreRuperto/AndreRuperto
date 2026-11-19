@@ -10,7 +10,7 @@ GitHub com o token em GITHUB_TOKEN e grava em assets/stats/:
 
 Os três seguem uma grade de 900 px: resumo (495) + linguagens (395) na primeira
 linha, com a mesma altura, e atividade (900) ocupando a segunda.
-Cores no tema "merko".
+Cores da identidade do portfólio (carvão e laranja Brasa).
 """
 
 import json
@@ -34,13 +34,15 @@ LARGURA_RESUMO = 495
 LARGURA_LINGUAGENS = LARGURA_TOTAL - LARGURA_RESUMO - 10
 ALTURA_LINHA1 = 195
 
+# Paleta da prancha "Portfólio · Identidade e sistema de design".
 TEMA = {
-    "fundo": "#0a0f0b",
-    "borda": "#e4e2e2",
-    "titulo": "#abd200",
-    "texto": "#68b587",
-    "icone": "#b7d364",
-    "grade": "#1f2a21",
+    "fundo": "#120F0D",   # Carvão 950
+    "borda": "#332C28",   # Cinza quente
+    "titulo": "#FF7E29",  # Brasa
+    "texto": "#FBFAF9",   # Papel
+    "apoio": "#988881",   # texto de apoio
+    "icone": "#FF7E29",
+    "grade": "#292220",   # Carvão 800
 }
 FONTE = "'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif"
 MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"]
@@ -166,9 +168,9 @@ def moldura(largura: int, altura: int, titulo: str, conteudo: str, rotulo: str) 
     .texto  {{ font: 600 14px {FONTE}; fill: {TEMA['texto']}; }}
     .valor  {{ font: 700 14px {FONTE}; fill: {TEMA['titulo']}; }}
     .grande {{ font: 700 28px {FONTE}; fill: {TEMA['titulo']}; }}
-    .menor  {{ font: 400 12px {FONTE}; fill: {TEMA['texto']}; }}
+    .menor  {{ font: 400 12px {FONTE}; fill: {TEMA['apoio']}; }}
   </style>
-  <rect x="0.5" y="0.5" rx="10" width="{largura - 1}" height="{altura - 1}" fill="{TEMA['fundo']}" stroke="{TEMA['borda']}" stroke-opacity="0.8"/>
+  <rect x="0.5" y="0.5" rx="10" width="{largura - 1}" height="{altura - 1}" fill="{TEMA['fundo']}" stroke="{TEMA['borda']}"/>
   <text x="25" y="35" class="titulo">{escape(titulo)}</text>
 {conteudo}
 </svg>

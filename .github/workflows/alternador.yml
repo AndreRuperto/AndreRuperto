@@ -6,6 +6,11 @@ on:
     - cron: "0 */12 * * *"
   workflow_dispatch:
 
+# o workflow de estatísticas também dá push na branch output
+concurrency:
+  group: branch-output
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -15,7 +20,7 @@ jobs:
     steps:
     # ─────────────────────────── Clona & troca p/ branch output ────────────
     - name: Checkout repositório
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
@@ -32,25 +37,14 @@ jobs:
         echo "current=$(cat mode.txt)" >> "$GITHUB_OUTPUT"
 
     # ─────────────────────────── 2 ▪ S N A K E  ────────────────────────────
-    - name: Gerar cor aleatória (Snake)
-      if: steps.mode.outputs.current == 'snake'
-      id: snakeColor
-      run: |
-        python3 - <<'PY'
-        import random, os
-        colors = ["#FFA500", "#00FFFF", "#32CD32", "#FF69B4", "#FFD700",
-                  "#DC143C", "#4B0082", "#008080", "#800080", "#FF8C00",
-                  "#98FF98", "#FF4500"]
-        print(f"::set-output name=color::{random.choice(colors)}")
-        PY
-
+    # Cores da identidade do portfólio: cobra em Brasa e quadrados do carvão ao laranja.
     - name: Gerar Snake
       if: steps.mode.outputs.current == 'snake'
       uses: Platane/snk@v3
       with:
         github_user_name: ${{ github.repository_owner }}
         outputs: |
-          dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=${{ steps.snakeColor.outputs.color }}
+          dist/github-contribution-grid-snake.svg?color_snake=#FBFAF9&color_dots=#1A1614,#5C2D0F,#994B19,#CC6521,#FF7E29
 
     - name: Copiar Snake para nome genérico
       if: steps.mode.outputs.current == 'snake'
@@ -63,12 +57,12 @@ jobs:
       with:
         github_user_name: ${{ github.repository_owner }}
         github_token:     ${{ secrets.GITHUB_TOKEN }}
-        theme:            github-dark
+        theme:            brasa
         output_directory: dist
 
     - name: Copiar Pac-Man para nome genérico
       if: steps.mode.outputs.current == 'pacman'
-      run: cp dist/pacman-contribution-graph-dark.svg github-contribution-grid.svg
+      run: cp dist/pacman-contribution-graph-brasa.svg github-contribution-grid.svg
 
     # ─────────────────────────── 4 ▪ Alterna modo p/ próxima execução ─────
     - name: Alternar o modo para próxima execução
@@ -78,9 +72,11 @@ jobs:
 
     # ─────────────────────────── 5 ▪ Commit & push ─────────────────────────
     - name: Commit e Push para output
+      env:
+        MODO: ${{ steps.mode.outputs.current }}
       run: |
         git config user.name  "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add .
-        git commit -m "Atualiza animação (${next^^})" || echo "Nada para commitar"
+        git commit -m "Atualiza animação (${MODO^^})" || echo "Nada para commitar"
         git push origin output
