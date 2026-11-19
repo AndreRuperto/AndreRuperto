@@ -1,38 +1,30 @@
-# 👨🏻‍💻 André Ruperto
-*`Cientista de Dados & Desenvolvedor FullStack`*
+<picture><source media="(max-width: 600px)" srcset="./assets/perfil/hero-mobile.svg" /><img src="./assets/perfil/hero.svg" width="100%" alt="André Ruperto, cientista de dados e desenvolvedor fullstack. Tiro trabalho manual do caminho. Gráfico do modelo de credenciamento do PNCP: pedidos analisados manualmente cairiam de 1.494 para 97, 93,5% a menos, com acurácia de 94,65%." /></picture>
 
-<p align="left">
-  <a href="https://www.andreruperto.dev"><img src="https://img.shields.io/badge/Portfólio-andreruperto.dev-0A0A0A?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfólio" /></a>
-  <a href="https://linkedin.com/in/andrerup"><img src="https://img.shields.io/badge/LinkedIn-andrerup-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:contato@andreruperto.dev"><img src="https://img.shields.io/badge/Email-contato@andreruperto.dev-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://instagram.com/andreruperto.dev"><img src="https://img.shields.io/badge/Instagram-andreruperto.dev-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
-</p>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/226190894-18e959ba-d458-4a94-ac44-790190f2a947.gif" width="60%" alt="Hello World em várias linguagens" />
+<p>
+  <a href="https://www.andreruperto.dev"><img src="./assets/perfil/contato-portfolio.svg" height="40" alt="Portfólio: andreruperto.dev" /></a>
+  <a href="https://linkedin.com/in/andrerup"><img src="./assets/perfil/contato-linkedin.svg" height="40" alt="LinkedIn: andrerup" /></a>
+  <a href="mailto:contato@andreruperto.dev"><img src="./assets/perfil/contato-email.svg" height="40" alt="E-mail: contato@andreruperto.dev" /></a>
+  <a href="https://instagram.com/andreruperto.dev"><img src="./assets/perfil/contato-instagram.svg" height="40" alt="Instagram" /></a>
 </p>
 
 ### 🧠 Sobre Mim
 
-<img align="right" alt="computador" src="https://user-images.githubusercontent.com/74038190/212749168-86d6c7ab-98da-409b-998f-c5b74721badd.gif" width="100" />
+<picture><source media="(max-width: 600px)" srcset="./assets/perfil/numeros-mobile.svg" /><img src="./assets/perfil/numeros.svg" width="100%" alt="Em números: CR 9,38 no bacharelado em Ciência da Computação (UDF), com láurea acadêmica; quase 3 anos em dados e desenvolvimento; 120 horas por mês de trabalho manual economizadas com pipelines; mais de 30 módulos em um sistema fullstack interno." /></picture>
 
-- 🎓 **Bacharel em Ciência da Computação** pelo **Centro Universitário UDF** (2022–2025) — Láurea Acadêmica, CR 9,38/10 e nota 10 no TCC em Ciência de Dados e Machine Learning
-- 💼 Quase **3 anos de experiência** em dados e desenvolvimento no **MGI**, na **Resende Mori Hutchison** e como freelancer
-- 🤖 Modelo de ML que reduziria de **1.494 para 97** os pedidos de credenciamento analisados manualmente no PNCP (acurácia de 94,65%)
-- ⚙️ Pipelines que economizam **120 horas/mês** de trabalho manual e um sistema fullstack com **mais de 30 módulos**
-- 🔍 Aberto a vagas de **dados (análise e engenharia)** e de **desenvolvimento de sistemas orientados a dados**
-- 🚀 Disponível para **freelas** de sites, sistemas web, dashboards e automação — [andreruperto.dev](https://www.andreruperto.dev)
+- 🎓 **Bacharel em Ciência da Computação** pelo **Centro Universitário UDF** (2022–2025) — Láurea Acadêmica e nota 10 no TCC em Ciência de Dados e Machine Learning
+- 🔍 **Aberto a vagas** de dados (análise e engenharia) e de desenvolvimento de sistemas orientados a dados
+- 🚀 **Disponível para freelas** de sites, sistemas web, dashboards e automação — [andreruperto.dev](https://www.andreruperto.dev)
 
 ---
 
 ### 💼 Experiência
 
-| Período | Cargo | Onde |
-|---|---|---|
-| Ago/2025&nbsp;&#8288;–&#8288;&nbsp;Out/2026 | **Desenvolvedor FullStack Júnior** — sistema interno com mais de 30 módulos (React 18 + TypeScript, Node.js + Express, PostgreSQL, Airflow) | Resende Mori Hutchison |
-| Fev/2026&nbsp;&#8288;–&#8288;&nbsp;Mai/2026 | **Desenvolvedor Web Freelancer** — sites e sistemas sob medida, do planejamento ao deploy | Autônomo |
-| Mai/2025&nbsp;&#8288;–&#8288;&nbsp;Ago/2025 | **Analista de Dados Júnior** — pipelines em Python/pandas, dashboards em Power BI e Qlik | Resende Mori Hutchison |
-| Jan/2024&nbsp;&#8288;–&#8288;&nbsp;Mai/2025 | **Estagiário, Equipe de Dados (COTIN)** — scrapers, Power BI, documentação da API do Compras.gov.br | Ministério da Gestão e da Inovação (MGI) |
+<picture><source media="(max-width: 600px)" srcset="./assets/perfil/experiencia-mobile.svg" /><img src="./assets/perfil/experiencia.svg" width="100%" alt="Experiência, da mais recente para a mais antiga: Desenvolvedor FullStack Júnior na Resende Mori Hutchison, de agosto de 2025 a outubro de 2026; Desenvolvedor Web Freelancer, autônomo, de fevereiro a maio de 2026; Analista de Dados Júnior na Resende Mori Hutchison, de maio a agosto de 2025; Estagiário na Equipe de Dados do MGI, de janeiro de 2024 a maio de 2025." /></picture>
+
+- **Desenvolvedor FullStack Júnior** · Resende Mori Hutchison — sistema interno com mais de 30 módulos (React 18 + TypeScript, Node.js + Express, PostgreSQL, Airflow)
+- **Desenvolvedor Web Freelancer** · Autônomo — sites e sistemas sob medida, do planejamento ao deploy
+- **Analista de Dados Júnior** · Resende Mori Hutchison — pipelines em Python/pandas, dashboards em Power BI e Qlik
+- **Estagiário, Equipe de Dados (COTIN)** · Ministério da Gestão e da Inovação (MGI) — scrapers, Power BI, documentação da API do Compras.gov.br
 
 ---
 
