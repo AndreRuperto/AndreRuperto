@@ -97,55 +97,9 @@ Modelo de Machine Learning do meu TCC (nota 10) que separa os pedidos de credenc
 ---
 <!-- STATS:END -->
 
-## 💻 Skills Técnicas:
+### 💻 Skills Técnicas
 
-### 🧑‍💻 &nbsp;Linguagens
-![Linguagens](https://skillicons.dev/icons?i=py,ts,js,c,cpp,html,css)
-
-### 🧠 &nbsp;Dados, Machine Learning & IA
-<p align="left">
-  <img src="./assets/icons/pandas.svg" alt="pandas" height="48" />
-  <span>&nbsp;</span>
-  <img src="./assets/icons/numpy.svg" alt="NumPy" height="48" />
-  <span>&nbsp;</span>
-  <img src="https://skillicons.dev/icons?i=sklearn" alt="Scikit-learn" height="48" />
-  <span>&nbsp;</span>
-  <img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow" height="48" />
-  <span>&nbsp;</span>
-  <img src="https://skillicons.dev/icons?i=pytorch" alt="PyTorch" height="48" />
-  <span>&nbsp;</span>
-  <img src="https://skillicons.dev/icons?i=opencv" alt="OpenCV" height="48" />
-</p>
-
-<sub>XGBoost · LightGBM · SHAP · LLMs e RAG · EDA · modelagem de dados</sub>
-
-### ⚙️ &nbsp;Engenharia de Dados, BI & Automação
-<p align="left">
-  <img src="./assets/icons/airflow.svg" alt="Apache Airflow" height="48" />
-  <span>&nbsp;</span>
-  <img src="./assets/icons/databricks.svg" alt="Databricks" height="48" />
-  <span>&nbsp;</span>
-  <img src="./assets/icons/powerbi.svg" alt="Power BI" height="48" />
-  <span>&nbsp;</span>
-  <img src="./assets/icons/qlik.svg" alt="Qlik Sense" height="48" />
-  <span>&nbsp;</span>
-  <img src="./assets/icons/streamlit.svg" alt="Streamlit" height="48" />
-  <span>&nbsp;</span>
-  <img src="https://skillicons.dev/icons?i=graphql" alt="GraphQL" height="48" />
-  <span>&nbsp;</span>
-  <img src="https://skillicons.dev/icons?i=selenium" alt="Selenium" height="48" />
-</p>
-
-<sub>Airflow (DAGs) · Power BI Embedded · Playwright · web scraping · APIs REST e GraphQL</sub>
-
-### 🌐 &nbsp;Desenvolvimento Web
-![Web](https://skillicons.dev/icons?i=react,vite,tailwind,astro,d3,nodejs,express,bun,fastapi,prisma,redis)
-
-### 💾 &nbsp;Bancos de Dados
-![Bancos de Dados](https://skillicons.dev/icons?i=postgres,mysql,sqlite)
-
-### 🛠️ &nbsp;Ferramentas & DevOps
-![Ferramentas](https://skillicons.dev/icons?i=git,github,githubactions,docker,vitest,postman,vercel,vscode,figma)
+<picture><source media="(max-width: 600px)" srcset="./assets/perfil/skills-mobile.svg" /><img src="./assets/perfil/skills.svg" width="100%" alt="Skills técnicas. Linguagens: Python, TypeScript, JavaScript, C, C++, HTML, CSS. Dados, Machine Learning e IA: pandas, NumPy, scikit-learn, TensorFlow, PyTorch, OpenCV, XGBoost, LightGBM, SHAP, LLMs e RAG, EDA, Modelagem de dados. Engenharia de dados, BI e automação: Apache Airflow, Databricks, Power BI, Qlik Sense, Streamlit, GraphQL, Selenium, Playwright, Web scraping, APIs REST. Desenvolvimento web: React, Vite, Tailwind CSS, Astro, D3.js, Node.js, Express, Bun, FastAPI, Prisma, Redis. Bancos de dados: PostgreSQL, MySQL, SQLite. Ferramentas e DevOps: Git, GitHub, GitHub Actions, Docker, Vitest, Postman, Vercel, VS Code, Figma." /></picture>
 
 <br>
 

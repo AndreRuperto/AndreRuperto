@@ -13,6 +13,8 @@ Rodar à mão depois de editar os textos abaixo (não faz parte de nenhum workfl
 Cada imagem larga tem uma versão "-mobile", trocada pelo <picture> do README.
 """
 
+import re
+from itertools import product
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -327,6 +329,85 @@ def contato(rotulo: str, detalhe: str, icone: str, cheio: bool) -> str:
     return svg(w, h, f"{rotulo}: {detalhe}" if detalhe else rotulo, corpo)
 
 
+# ───────────────────────────── Skills ─────────────────────────────
+
+ICONES_MARCA = RAIZ / "assets/icones"  # Simple Icons (CC0), um arquivo por tecnologia
+
+# Ícones próprios, em traço, para o que não tem logotipo no Simple Icons.
+ICONES_PROPRIOS = {
+    "arvore": '<circle cx="12" cy="5" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path d="M12 7v4M12 11l-6 5M12 11l6 5"/>',
+    "raio": '<path d="M13 2L5 13h6l-1 9 8-11h-6z"/>',
+    "barras": '<path d="M12 3v18M12 7h6M12 12H5M12 17h4"/>',
+    "conversa": '<path d="M4 5h16v11H10l-4 4v-4H4z"/><path d="M8.5 9h7M8.5 12h4"/>',
+    "lupa": '<circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21M8 13v-2M10.5 13V8M13 13v-3.5"/>',
+    "tabelas": '<rect x="3" y="4" width="8" height="6" rx="1"/><rect x="13" y="14" width="8" height="6" rx="1"/><path d="M7 10v5a2 2 0 0 0 2 2h4"/>',
+    "coleta": '<rect x="3" y="3" width="18" height="11" rx="2"/><path d="M3 7h18M12 10.5V21M8.5 17.5L12 21l3.5-3.5"/>',
+    "chaves": '<path d="M8 4c-2 0-3 1-3 3v2c0 1.5-1 3-2 3 1 0 2 1.5 2 3v2c0 2 1 3 3 3M16 4c2 0 3 1 3 3v2c0 1.5 1 3 2 3-1 0-2 1.5-2 3v2c0 2-1 3-3 3"/>',
+}
+
+SKILLS = [  # (grupo, [(nome, ícone)]) — ícone é um arquivo de assets/icones ou uma chave de ICONES_PROPRIOS
+    ("Linguagens", [("Python", "python"), ("TypeScript", "typescript"), ("JavaScript", "javascript"), ("C", "c"),
+                    ("C++", "cplusplus"), ("HTML", "html5"), ("CSS", "css3")]),
+    ("Dados, Machine Learning e IA", [
+        ("pandas", "pandas"), ("NumPy", "numpy"), ("scikit-learn", "scikitlearn"), ("TensorFlow", "tensorflow"),
+        ("PyTorch", "pytorch"), ("OpenCV", "opencv"), ("XGBoost", "arvore"), ("LightGBM", "raio"), ("SHAP", "barras"),
+        ("LLMs e RAG", "conversa"), ("EDA", "lupa"), ("Modelagem de dados", "tabelas")]),
+    ("Engenharia de dados, BI e automação", [
+        ("Apache Airflow", "apacheairflow"), ("Databricks", "databricks"), ("Power BI", "powerbi"), ("Qlik Sense", "qlik"),
+        ("Streamlit", "streamlit"), ("GraphQL", "graphql"), ("Selenium", "selenium"), ("Playwright", "playwright"),
+        ("Web scraping", "coleta"), ("APIs REST", "chaves")]),
+    ("Desenvolvimento web", [
+        ("React", "react"), ("Vite", "vite"), ("Tailwind CSS", "tailwindcss"), ("Astro", "astro"), ("D3.js", "d3dotjs"),
+        ("Node.js", "nodedotjs"), ("Express", "express"), ("Bun", "bun"), ("FastAPI", "fastapi"), ("Prisma", "prisma"),
+        ("Redis", "redis")]),
+    ("Bancos de dados", [("PostgreSQL", "postgresql"), ("MySQL", "mysql"), ("SQLite", "sqlite")]),
+    ("Ferramentas e DevOps", [
+        ("Git", "git"), ("GitHub", "github"), ("GitHub Actions", "githubactions"), ("Docker", "docker"), ("Vitest", "vitest"),
+        ("Postman", "postman"), ("Vercel", "vercel"), ("VS Code", "visualstudiocode"), ("Figma", "figma")]),
+]
+
+
+def _icone(chave: str, x: float, y: float, tam: float = 16) -> str:
+    k = tam / 24
+    if chave in ICONES_PROPRIOS:
+        return (f'<g transform="translate({_n(x)} {_n(y)}) scale({k:.4f})" fill="none" stroke="{PAPEL}" stroke-width="2" '
+                f'stroke-linecap="round" stroke-linejoin="round">{ICONES_PROPRIOS[chave]}</g>')
+    fonte = (ICONES_MARCA / f"{chave}.svg").read_text(encoding="utf-8")
+    d = re.search(r'<path d="([^"]+)"', fonte).group(1)
+    return f'<path transform="translate({_n(x)} {_n(y)}) scale({k:.4f})" fill="{PAPEL}" d="{d}"/>'
+
+
+def _cartao_skills(titulo: str, itens: list, w: float) -> tuple[list[str], float]:
+    """Um cartão desenhado a partir de (0, 0); devolve as peças e a altura."""
+    m, alt, vao = 18, 32, 8
+    pecas, x, y = [], m, 44
+    for nome, chave in itens:
+        larg = 10 + 16 + 7 + largura(nome, "sora", 13, 500) + 12
+        if x + larg > w - m and x > m:
+            x, y = m, y + alt + vao
+        pecas += [caixa(x, y, larg, alt, 8, CARVAO_800, None), _icone(chave, x + 10, y + 8),
+                  texto(nome, x + 33, y + 20.5, "sora", 13, 500)]
+        x += larg + vao
+    h = y + alt + m
+    return [caixa(0.5, 0.5, w - 1, h - 1, 12, CARVAO_900),
+            texto(titulo.upper(), m, 28, "mono", 11, 500, APOIO, esp=1.4), *pecas], h
+
+
+def skills(largura_total: float, colunas: int) -> str:
+    vao = 12
+    w = (largura_total - vao * (colunas - 1)) / colunas
+    cartoes = [_cartao_skills(titulo, itens, w) for titulo, itens in SKILLS]
+    # testa todas as distribuições dos cartões nas colunas e fica com a mais equilibrada
+    melhor = min(product(range(colunas), repeat=len(cartoes)),
+                 key=lambda d: max(sum(h + vao for (_, h), c in zip(cartoes, d) if c == col) for col in range(colunas)))
+    alturas, corpo = [0.0] * colunas, []
+    for (pecas, h), c in zip(cartoes, melhor):
+        corpo.append(f'<g transform="translate({_n(c * (w + vao))} {_n(alturas[c])})">' + "\n".join(pecas) + "</g>")
+        alturas[c] += h + vao
+    rotulo = "Skills técnicas. " + " ".join(f"{t}: {', '.join(n for n, _ in itens)}." for t, itens in SKILLS)
+    return svg(largura_total, max(alturas) - vao, rotulo, corpo)
+
+
 def main() -> None:
     SAIDA.mkdir(parents=True, exist_ok=True)
     arquivos = {
@@ -336,6 +417,8 @@ def main() -> None:
         "numeros-mobile.svg": numeros(WM, 2),
         "experiencia.svg": experiencia(),
         "experiencia-mobile.svg": experiencia_mobile(),
+        "skills.svg": skills(W, 2),
+        "skills-mobile.svg": skills(WM, 1),
     }
     for nome, rotulo, detalhe, icone, cheio in CONTATOS:
         arquivos[f"contato-{nome}.svg"] = contato(rotulo, detalhe, icone, cheio)
