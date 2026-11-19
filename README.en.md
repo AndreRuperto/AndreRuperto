@@ -69,18 +69,56 @@ Compares quality of life and cost across 99 cities in 15 countries of the Americ
 
 [Site](https://good-cities.up.railway.app/)
 
+#### 04 / DataBola
+
+<a href="https://databola.up.railway.app/"><img src="./assets/projetos/databola.webp" width="100%" alt="Carousel with three DataBola screens: picking a team from Brazil's top league, the team dashboard with standing and season numbers, and results with the cumulative win rate" /></a>
+
+Data dashboard for Brazil's top football league, with automated collection, a dashboard per team, an interactive pitch map and a live mode.
+
+- **Features:** team dashboard (overview, goals by minute, top scorers, line-ups, upcoming matches), pitch map with event replay, live mode and a PDF of the day's matches
+- **Data:** automatic collection through API-Football, stored in PostgreSQL
+- **Stack:** Python, FastAPI, PostgreSQL and Google sign-in
+- **Status:** site live (in Portuguese); code in a private repository
+
+[Site](https://databola.up.railway.app/)
+
+#### 05 / A Carta
+
+<a href="https://melhores-restaurantes.up.railway.app/"><img src="./assets/projetos/carta.webp" width="100%" alt="Carousel with six screens from A Carta: the menu cover, the open menu, the map of the 100 restaurants, the Brazilian entries, the filterable list and a restaurant page" /></a>
+
+The world's 100 best restaurants in 2026, according to The 50 Best, presented as a menu that opens: map, ranking, views by continent, country and Brazil, and a page for each restaurant.
+
+- **Features:** animated menu-style opening, interactive map, searchable and filterable list, and 100 restaurant profiles
+- **Stack:** React, Vite, Tailwind CSS, D3 and TopoJSON
+- **Quality:** tests with Playwright and axe, and Lighthouse above 90 on the main pages
+- **Status:** live (in Portuguese)
+
+[Site](https://melhores-restaurantes.up.railway.app/) · [Code](https://github.com/AndreRuperto/melhores-restaurantes)
+
+#### 06 / Cronomapa
+
+<a href="https://cronomapa.up.railway.app/"><img src="./assets/projetos/cronomapa.webp" width="100%" alt="Carousel with six Cronomapa screens: the world map with its rulers in the year 100, in 1500, in 1900 and in 2026, the notable figures of 1600 and a ruler's page" /></a>
+
+Interactive map showing how the world's borders changed since 3000 BC and who ruled each territory in each period.
+
+- **Features:** timeline from 3000 BC to 2026, ruler portraits on the map, searchable list, a page for each ruler and a layer of notable figures (philosophy, literature, art and science)
+- **Data:** borders from historical-basemaps and rulers from Wikidata
+- **Stack:** JavaScript, D3 and Vite
+- **Status:** site live (in Portuguese); code in a private repository
+
+[Site](https://cronomapa.up.railway.app/)
+
 #### More projects
 
-<a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.webp" width="100%" alt="Carousel with six screens: in DataBola, the team picker, the team dashboard and the win rate; in Genética da Gravidez Explicada, the home page, the risk calculator and the syndrome guides" /></a>
+<a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.webp" width="100%" alt="Carousel with three screens from Genética da Gravidez Explicada: the home page, the risk calculator and the syndrome guides" /></a>
 
-| Project | Description | Links |
-|---|---|---|
-| **DataBola** | Statistical analysis of Brazil's top football league | [Site](https://databola.up.railway.app/) |
-| **Genética da Gravidez Explicada** | Educational site about genetics in pregnancy, with a risk calculator, guides to chromosomal conditions and a source for every number | [Site](https://genetica-na-gestacao.up.railway.app/) · [Code](https://github.com/AndreRuperto/genetica-na-gestacao) |
-| **Credentialing model — PNCP** | Thesis ML model (Random Forest, XGBoost) that would cut manually reviewed requests on Brazil's public procurement portal from 1,494 to 97, at 94.65% accuracy | — |
-| **Alice × ComprasGov integration** | Airflow and Databricks pipelines between ComprasGov and Alice, the audit bot of Brazil's Comptroller General (CGU) | [Webinar](https://www.youtube.com/watch?v=234EGymqotI) |
-| **Pac-Man Contributions** | Turns the GitHub contribution graph into a Pac-Man game through GitHub Actions | [Code](https://github.com/AndreRuperto/svg-pacman-contributions) |
-| **Expense tracking over WhatsApp** | Expense bot with automatic categorization, installments and due-date alerts | [Code](https://github.com/AndreRuperto/whatsapp_gastos_ai) |
+<p>
+<a href="https://genetica-na-gestacao.up.railway.app/"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-genetica-mobile-en.svg" /><img src="./assets/perfil/projeto-genetica-en.svg" width="100%" alt="Genética da Gravidez Explicada: Educational site about genetics in pregnancy, with a risk calculator, guides to chromosomal conditions and a source for every number. Site" /></picture></a>
+<picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-pncp-mobile-en.svg" /><img src="./assets/perfil/projeto-pncp-en.svg" width="100%" alt="Credentialing model — PNCP: ML model built during my internship at MGI (Random Forest, XGBoost) that would cut manually reviewed requests on Brazil's public procurement portal from 1,494 to 97, at 94.65% accuracy. Internship · MGI" /></picture>
+<a href="https://www.youtube.com/watch?v=234EGymqotI"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-alice-mobile-en.svg" /><img src="./assets/perfil/projeto-alice-en.svg" width="100%" alt="Alice × ComprasGov integration: Airflow and Databricks pipelines between ComprasGov and Alice, the audit bot of Brazil's Comptroller General (CGU). Webinar" /></picture></a>
+<a href="https://github.com/AndreRuperto/svg-pacman-contributions"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-pacman-mobile-en.svg" /><img src="./assets/perfil/projeto-pacman-en.svg" width="100%" alt="Pac-Man Contributions: Turns the GitHub contribution graph into a Pac-Man game through GitHub Actions. Code" /></picture></a>
+<a href="https://github.com/AndreRuperto/whatsapp_gastos_ai"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-whatsapp-mobile-en.svg" /><img src="./assets/perfil/projeto-whatsapp-en.svg" width="100%" alt="Expense tracking over WhatsApp: Expense bot with automatic categorization, installments and due-date alerts. Code" /></picture></a>
+</p>
 
 <p align="center"><a href="https://www.andreruperto.dev/#projects">See all projects in the portfolio →</a></p>
 

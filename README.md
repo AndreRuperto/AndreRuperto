@@ -69,18 +69,56 @@ Compara qualidade de vida e custo em 99 cidades de 15 países das Américas, do 
 
 [Site](https://good-cities.up.railway.app/)
 
+#### 04 / DataBola
+
+<a href="https://databola.up.railway.app/"><img src="./assets/projetos/databola.webp" width="100%" alt="Carrossel com três telas do DataBola: a escolha do time da Série A, o painel do time com posição e números da temporada, e os resultados com o aproveitamento acumulado" /></a>
+
+Dashboard de dados do Brasileirão Série A, com coleta automatizada, painel por time, mapa de campo interativo e modo ao vivo.
+
+- **Recursos:** painel por time (visão geral, gols por minuto, artilheiros, escalações, próximos jogos), mapa de campo com replay dos eventos, modo ao vivo e PDF dos jogos do dia
+- **Dados:** coleta automática via API-Football, com armazenamento em PostgreSQL
+- **Stack:** Python, FastAPI, PostgreSQL e login com Google
+- **Estado:** site no ar; código em repositório privado
+
+[Site](https://databola.up.railway.app/)
+
+#### 05 / A Carta
+
+<a href="https://melhores-restaurantes.up.railway.app/"><img src="./assets/projetos/carta.webp" width="100%" alt="Carrossel com seis telas da A Carta: a capa da carta, a carta aberta, o mapa dos 100 restaurantes, os brasileiros na lista, a lista com filtros e a página de um restaurante" /></a>
+
+Os 100 melhores restaurantes do mundo em 2026, segundo o The 50 Best, apresentados como uma carta que se abre: mapa, ranking, recortes por continente, país e Brasil, e uma página por restaurante.
+
+- **Recursos:** abertura animada em forma de carta, mapa interativo, lista com busca e filtros, e 100 perfis de restaurante
+- **Stack:** React, Vite, Tailwind CSS, D3 e TopoJSON
+- **Qualidade:** testes com Playwright e axe, e Lighthouse acima de 90 nas páginas principais
+- **Estado:** no ar
+
+[Site](https://melhores-restaurantes.up.railway.app/) · [Código](https://github.com/AndreRuperto/melhores-restaurantes)
+
+#### 06 / Cronomapa
+
+<a href="https://cronomapa.up.railway.app/"><img src="./assets/projetos/cronomapa.webp" width="100%" alt="Carrossel com seis telas do Cronomapa: o mapa do mundo com os governantes no ano 100, em 1500, em 1900 e em 2026, as personalidades de 1600 e a página de um governante" /></a>
+
+Mapa interativo que mostra como as fronteiras do mundo mudaram desde 3000 a.C. e quem governava cada território em cada época.
+
+- **Recursos:** régua do tempo de 3000 a.C. a 2026, retratos dos governantes no mapa, lista com busca, página de cada governante e camada de personalidades (filosofia, literatura, arte e ciência)
+- **Dados:** fronteiras do historical-basemaps e governantes do Wikidata
+- **Stack:** JavaScript, D3 e Vite
+- **Estado:** site no ar; código em repositório privado
+
+[Site](https://cronomapa.up.railway.app/)
+
 #### Mais projetos
 
-<a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.webp" width="100%" alt="Carrossel com seis telas: no DataBola, a escolha do time, o painel do time e o aproveitamento; no Genética da Gravidez Explicada, a página inicial, a calculadora de risco e os guias de síndromes" /></a>
+<a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.webp" width="100%" alt="Carrossel com três telas do Genética da Gravidez Explicada: a página inicial, a calculadora de risco e os guias de síndromes" /></a>
 
-| Projeto | Descrição | Links |
-|---|---|---|
-| **DataBola** | Análise estatística do Brasileirão Série A | [Site](https://databola.up.railway.app/) |
-| **Genética da Gravidez Explicada** | Site educativo com calculadora de risco, guias de alterações cromossômicas e fontes em cada número | [Site](https://genetica-na-gestacao.up.railway.app/) · [Código](https://github.com/AndreRuperto/genetica-na-gestacao) |
-| **Modelo de Credenciamento — PNCP** | ML do meu TCC (Random Forest, XGBoost) que reduziria de 1.494 para 97 os pedidos analisados manualmente, com acurácia de 94,65% | — |
-| **Integração Alice × ComprasGov** | Pipelines com Airflow e Databricks entre o ComprasGov e o robô de auditoria Alice (CGU) | [Webinar](https://www.youtube.com/watch?v=234EGymqotI) |
-| **Pac-Man Contributions** | Transforma o gráfico de contribuições do GitHub em um jogo de Pac-Man via GitHub Actions | [Código](https://github.com/AndreRuperto/svg-pacman-contributions) |
-| **Controle Financeiro via WhatsApp** | Bot de despesas com categorização automática, parcelas e alertas de vencimento | [Código](https://github.com/AndreRuperto/whatsapp_gastos_ai) |
+<p>
+<a href="https://genetica-na-gestacao.up.railway.app/"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-genetica-mobile.svg" /><img src="./assets/perfil/projeto-genetica.svg" width="100%" alt="Genética da Gravidez Explicada: Site educativo com calculadora de risco, guias de alterações cromossômicas e fontes em cada número. Site" /></picture></a>
+<picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-pncp-mobile.svg" /><img src="./assets/perfil/projeto-pncp.svg" width="100%" alt="Modelo de Credenciamento — PNCP: ML feito no estágio no MGI (Random Forest, XGBoost) que reduziria de 1.494 para 97 os pedidos analisados manualmente, com acurácia de 94,65%. Estágio · MGI" /></picture>
+<a href="https://www.youtube.com/watch?v=234EGymqotI"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-alice-mobile.svg" /><img src="./assets/perfil/projeto-alice.svg" width="100%" alt="Integração Alice × ComprasGov: Pipelines com Airflow e Databricks entre o ComprasGov e o robô de auditoria Alice (CGU). Webinar" /></picture></a>
+<a href="https://github.com/AndreRuperto/svg-pacman-contributions"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-pacman-mobile.svg" /><img src="./assets/perfil/projeto-pacman.svg" width="100%" alt="Pac-Man Contributions: Transforma o gráfico de contribuições do GitHub em um jogo de Pac-Man via GitHub Actions. Código" /></picture></a>
+<a href="https://github.com/AndreRuperto/whatsapp_gastos_ai"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-whatsapp-mobile.svg" /><img src="./assets/perfil/projeto-whatsapp.svg" width="100%" alt="Controle Financeiro via WhatsApp: Bot de despesas com categorização automática, parcelas e alertas de vencimento. Código" /></picture></a>
+</p>
 
 <p align="center"><a href="https://www.andreruperto.dev/#projects">Ver todos os projetos no portfólio →</a></p>
 

@@ -1,42 +1,57 @@
 # Próximos passos
 
-**Data:** 19/11/2026 · **Branch:** `claude/github-profile-improvements-725406`
+**Data:** 19/11/2026 · **Branch:** `claude/cartoes-mais-projetos` (PR 2, aberto)
 
 ## O que foi feito nesta sessão
 
-Melhorias no perfil inspiradas no repositório `anjennlical`:
+Já na `main` (PR 1, mergeado):
 
-- `alternador.yml`: mensagem de commit corrigida (saía "Atualiza animação ()"), `::set-output` trocado por `GITHUB_OUTPUT`, `actions/checkout@v4`.
-- Cards de estatísticas saíram da `main`: o workflow publica em `stats/` na branch `output` e o README aponta para lá. A `main` só recebe commit quando o conjunto de cards muda.
-- Projetos em destaque: Turnos e Triagegeist com captura de tela, PNCP com os números; os outros seis ficaram em "Mais projetos".
-- Topo novo na identidade do portfólio (carvão, laranja Brasa, Sora e Fira Code): cabeçalho "André." com o gráfico do PNCP, botões de contato, números do "Sobre mim" e experiência em forma de consulta SQL, cada um com versão de celular. Tudo gerado por `.github/scripts/gerar_perfil.py` a partir de `assets/fontes/`.
-- Cards de estatísticas passaram do verde para a mesma paleta.
-- Skills em painel gerado (`skills.svg`), com ícones do Simple Icons em `assets/icones/` e oito ícones próprios para o que não tem logotipo.
-- Carrosséis em WebP animado: `assets/projetos/turnos.webp` (7 telas) e `assets/perfil/projetos.webp` (5 projetos).
-- Versão em inglês: `README.en.md`, com imagens `-en` do mesmo gerador. Os carrosséis e os cards de estatísticas são os mesmos nos dois idiomas, em português.
-- Ordem nova: topo, sobre, experiência, projetos, skills, estatísticas. Títulos sem emoji. Destaque 03 passou a ser o Good Cities; o modelo do PNCP foi para "Mais projetos".
-- Animação da cobra na paleta do portfólio e Pac-Man no tema `brasa`, criado em https://github.com/AndreRuperto/svg-pacman-contributions/pull/1.
-- Prancha de design do topo: https://claude.ai/artifact/LYzNB8zYwFmMqEPjeN952k
+- Topo na identidade do portfólio (carvão, laranja Brasa, Sora e Fira Code): cabeçalho "André." com o gráfico do PNCP, botões de contato, números do "Sobre mim", experiência em forma de consulta SQL e painel de skills. Tudo com versão de celular e em inglês, gerado por `.github/scripts/gerar_perfil.py`.
+- `README.en.md` com seletor de idioma.
+- Cards de estatísticas na mesma paleta, publicados em `stats/` na branch `output`; a `main` só recebe commit quando o conjunto de cards muda.
+- `alternador.yml` corrigido; cobra e Pac-Man na paleta. O tema `brasa` do Pac-Man foi criado e mergeado em `svg-pacman-contributions`.
+- Descrições, sites e tópicos preenchidos em `turnos`, `genetica-na-gestacao`, `AndreRuperto`, `Portfolio-AndreRuperto`, `whatsapp_gastos_ai`, `2turno`, `mercado-eleicoes`, `leis-rag` e `melhores-restaurantes`.
+
+No PR 2 (https://github.com/AndreRuperto/AndreRuperto/pull/2):
+
+- Seis destaques: Turnos, Triagegeist, Good Cities, DataBola, A Carta e Cronomapa. Turnos, DataBola, A Carta e Cronomapa têm carrossel próprio em WebP.
+- "Mais projetos" em cartões gerados (Genética, modelo do PNCP, Alice × ComprasGov, Pac-Man, WhatsApp), no lugar da tabela.
+- Modelo do PNCP corrigido: foi feito no estágio no MGI, não no TCC.
+- Montador de carrosséis no repositório: `.github/scripts/gerar_carrossel.py`.
 
 ## Estado atual
 
-- Verificado localmente: YAML dos dois workflows, passo da cor da cobra, scripts de estatísticas e caminhos de imagem do README.
-- Não testado: os workflows rodando no GitHub Actions (só rodam depois do merge).
-- Logo após o merge, os três cards ficam quebrados por cerca de um minuto, até o workflow de estatísticas publicar em `output/stats/` (ele dispara sozinho no push).
+- Conferido na prévia local (desktop e celular, português e inglês). O PR 2 não foi conferido no GitHub.
+- No GitHub já rodaram sem erro: o workflow de estatísticas e o Pac-Man no tema `brasa`.
+- Não testado no GitHub: a cobra com as cores novas (primeira execução depois de 00:00 UTC de 20/11).
+- As animações do README somam cerca de 7,5 MB.
 
 ## Próximos passos
 
-- [ ] Fazer o merge do PR do tema `brasa` no svg-pacman-contributions ANTES do PR do perfil (o workflow usa a action em `@main`)
-- [ ] Preencher descrição, site e tópicos dos repositórios públicos e revisar os fixados
-- [ ] Depois do merge, conferir a execução de "Atualizar estatísticas do README" e os cards no perfil
-- [ ] Revisar os textos dos três projetos em destaque (stack do Triagegeist ficou de fora por falta de fonte)
-- [ ] Refazer o carrossel (`assets/perfil/projetos.webp` e `assets/projetos/turnos.webp`) quando os sites dos projetos mudarem; foi montado à mão a partir de capturas
-- [ ] Validação automática do README (links, âncoras, texto alternativo, peso das imagens)
+- [ ] Fazer o merge do PR 2 e conferir o perfil (troca para celular, carrosséis animando, cartões clicáveis)
+- [ ] Conferir a primeira execução da cobra na paleta nova
+- [ ] Fixar os repositórios no perfil (manual): `turnos`, `genetica-na-gestacao`, `svg-pacman-contributions`, `whatsapp_gastos_ai`, `Portfolio-AndreRuperto`, `simulador-sistemas-autenticacao`
+- [ ] Revisar os textos em inglês e a lista de skills (a contagem veio das dependências dos projetos, não do domínio de cada uma)
+- [ ] Decidir se seis destaques é demais; o Good Cities é o candidato a ir para "Mais projetos"
+- [ ] Ver se as fotos do TSE carregam para visitantes no `mapa.html` do Turnos
+- [ ] Atualizar o README do Cronomapa (fala em globo 3D a partir do ano 1; o site é um mapa a partir de 3000 a.C.)
+- [ ] Validação automática do README (links, texto alternativo, peso das imagens)
+
+## Decisões e problemas conhecidos
+
+- O GitHub não carrega fontes externas em SVG, então todo texto das imagens vira contorno a partir de `assets/fontes/`.
+- Os carrosséis não se atualizam sozinhos. As capturas de tela ficam fora do repositório; para refazer, capture as telas em 1280x720 e rode o montador.
+- Carrosséis e cards de estatísticas têm texto em português também no README em inglês.
+- Prancha de design do topo: https://claude.ai/artifact/LYzNB8zYwFmMqEPjeN952k (cores da prancha "Portfólio · Identidade e sistema de design").
 
 ## Comandos úteis
 
 ```powershell
 python .github/scripts/gerar_perfil.py
+```
+
+```powershell
+python .github/scripts/gerar_carrossel.py saida.webp "site.exemplo" tela1.png="Legenda 1" tela2.png="Legenda 2"
 ```
 
 ```powershell
