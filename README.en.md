@@ -73,14 +73,14 @@ Compares quality of life and cost across 99 cities in 15 countries of the Americ
 
 <a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.webp" width="100%" alt="Carousel with six screens: in DataBola, the team picker, the team dashboard and the win rate; in Genética da Gravidez Explicada, the home page, the risk calculator and the syndrome guides" /></a>
 
-| Project | Description | Links |
-|---|---|---|
-| **DataBola** | Statistical analysis of Brazil's top football league | [Site](https://databola.up.railway.app/) |
-| **Genética da Gravidez Explicada** | Educational site about genetics in pregnancy, with a risk calculator, guides to chromosomal conditions and a source for every number | [Site](https://genetica-na-gestacao.up.railway.app/) · [Code](https://github.com/AndreRuperto/genetica-na-gestacao) |
-| **Credentialing model — PNCP** | Thesis ML model (Random Forest, XGBoost) that would cut manually reviewed requests on Brazil's public procurement portal from 1,494 to 97, at 94.65% accuracy | — |
-| **Alice × ComprasGov integration** | Airflow and Databricks pipelines between ComprasGov and Alice, the audit bot of Brazil's Comptroller General (CGU) | [Webinar](https://www.youtube.com/watch?v=234EGymqotI) |
-| **Pac-Man Contributions** | Turns the GitHub contribution graph into a Pac-Man game through GitHub Actions | [Code](https://github.com/AndreRuperto/svg-pacman-contributions) |
-| **Expense tracking over WhatsApp** | Expense bot with automatic categorization, installments and due-date alerts | [Code](https://github.com/AndreRuperto/whatsapp_gastos_ai) |
+<p>
+<a href="https://databola.up.railway.app/"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-databola-mobile-en.svg" /><img src="./assets/perfil/projeto-databola-en.svg" width="100%" alt="DataBola: Statistical analysis of Brazil's top football league. Site" /></picture></a>
+<a href="https://genetica-na-gestacao.up.railway.app/"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-genetica-mobile-en.svg" /><img src="./assets/perfil/projeto-genetica-en.svg" width="100%" alt="Genética da Gravidez Explicada: Educational site about genetics in pregnancy, with a risk calculator, guides to chromosomal conditions and a source for every number. Site" /></picture></a>
+<picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-pncp-mobile-en.svg" /><img src="./assets/perfil/projeto-pncp-en.svg" width="100%" alt="Credentialing model — PNCP: Thesis ML model (Random Forest, XGBoost) that would cut manually reviewed requests on Brazil's public procurement portal from 1,494 to 97, at 94.65% accuracy. Academic thesis" /></picture>
+<a href="https://www.youtube.com/watch?v=234EGymqotI"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-alice-mobile-en.svg" /><img src="./assets/perfil/projeto-alice-en.svg" width="100%" alt="Alice × ComprasGov integration: Airflow and Databricks pipelines between ComprasGov and Alice, the audit bot of Brazil's Comptroller General (CGU). Webinar" /></picture></a>
+<a href="https://github.com/AndreRuperto/svg-pacman-contributions"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-pacman-mobile-en.svg" /><img src="./assets/perfil/projeto-pacman-en.svg" width="100%" alt="Pac-Man Contributions: Turns the GitHub contribution graph into a Pac-Man game through GitHub Actions. Code" /></picture></a>
+<a href="https://github.com/AndreRuperto/whatsapp_gastos_ai"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-whatsapp-mobile-en.svg" /><img src="./assets/perfil/projeto-whatsapp-en.svg" width="100%" alt="Expense tracking over WhatsApp: Expense bot with automatic categorization, installments and due-date alerts. Code" /></picture></a>
+</p>
 
 <p align="center"><a href="https://www.andreruperto.dev/#projects">See all projects in the portfolio →</a></p>
 

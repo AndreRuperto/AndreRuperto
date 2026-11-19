@@ -63,6 +63,20 @@ TEXTOS = {
         "colunas": ("CARGO", "ONDE", "PERÍODO"),
         "rodape_consulta": "{n} linhas · quase 3 anos",
         "contatos": {"portfolio": "Portfólio", "email": "E-mail"},
+        "mais": [  # (arquivo, nome, descrição, rótulo do link); o endereço fica em MAIS_LINKS
+            ("databola", "DataBola", "Análise estatística do Brasileirão Série A", "Site"),
+            ("genetica", "Genética da Gravidez Explicada",
+             "Site educativo com calculadora de risco, guias de alterações cromossômicas e fontes em cada número", "Site"),
+            ("pncp", "Modelo de Credenciamento — PNCP",
+             "ML do meu TCC (Random Forest, XGBoost) que reduziria de 1.494 para 97 os pedidos analisados manualmente, "
+             "com acurácia de 94,65%", "Trabalho acadêmico"),
+            ("alice", "Integração Alice × ComprasGov",
+             "Pipelines com Airflow e Databricks entre o ComprasGov e o robô de auditoria Alice (CGU)", "Webinar"),
+            ("pacman", "Pac-Man Contributions",
+             "Transforma o gráfico de contribuições do GitHub em um jogo de Pac-Man via GitHub Actions", "Código"),
+            ("whatsapp", "Controle Financeiro via WhatsApp",
+             "Bot de despesas com categorização automática, parcelas e alertas de vencimento", "Código"),
+        ],
         "skills_titulo": "Skills técnicas. ",
         "skills": {},
     },
@@ -90,6 +104,22 @@ TEXTOS = {
         "colunas": ("ROLE", "COMPANY", "PERIOD"),
         "rodape_consulta": "{n} rows · almost 3 years",
         "contatos": {"portfolio": "Portfolio", "email": "Email"},
+        "mais": [
+            ("databola", "DataBola", "Statistical analysis of Brazil's top football league", "Site"),
+            ("genetica", "Genética da Gravidez Explicada",
+             "Educational site about genetics in pregnancy, with a risk calculator, guides to chromosomal conditions "
+             "and a source for every number", "Site"),
+            ("pncp", "Credentialing model — PNCP",
+             "Thesis ML model (Random Forest, XGBoost) that would cut manually reviewed requests on Brazil's public "
+             "procurement portal from 1,494 to 97, at 94.65% accuracy", "Academic thesis"),
+            ("alice", "Alice × ComprasGov integration",
+             "Airflow and Databricks pipelines between ComprasGov and Alice, the audit bot of Brazil's Comptroller "
+             "General (CGU)", "Webinar"),
+            ("pacman", "Pac-Man Contributions",
+             "Turns the GitHub contribution graph into a Pac-Man game through GitHub Actions", "Code"),
+            ("whatsapp", "Expense tracking over WhatsApp",
+             "Expense bot with automatic categorization, installments and due-date alerts", "Code"),
+        ],
         "skills_titulo": "Technical skills. ",
         "skills": {
             "Linguagens": "Languages", "Dados, Machine Learning e IA": "Data, Machine Learning & AI",
@@ -101,6 +131,15 @@ TEXTOS = {
     },
 }
 L = TEXTOS["pt"]  # textos do idioma em geração; main() troca a cada idioma
+
+MAIS_LINKS = {  # destino de cada cartão de "Mais projetos"; None = sem link público
+    "databola": "https://databola.up.railway.app/",
+    "genetica": "https://genetica-na-gestacao.up.railway.app/",
+    "pncp": None,
+    "alice": "https://www.youtube.com/watch?v=234EGymqotI",
+    "pacman": "https://github.com/AndreRuperto/svg-pacman-contributions",
+    "whatsapp": "https://github.com/AndreRuperto/whatsapp_gastos_ai",
+}
 
 CONTATOS = [  # (arquivo, rótulo padrão, detalhe em mono, ícone, botão cheio?)
     ("portfolio", "Portfólio", SITE, "globo", True),
@@ -377,6 +416,37 @@ def contato(rotulo: str, detalhe: str, icone: str, cheio: bool) -> str:
     return svg(w, h, f"{rotulo}: {detalhe}" if detalhe else rotulo, corpo)
 
 
+# ───────────────────────────── Mais projetos ─────────────────────────────
+
+SETA = '<path d="M5 12h14M13 6l6 6-6 6"/>'
+VAO_CARTOES = 10  # espaço transparente embaixo de cada cartão, porque eles ficam empilhados no README
+
+
+def cartao_projeto(i: int, slug: str, nome: str, desc: str, rotulo: str, largura_total: float) -> str:
+    """Um projeto em linha: número, nome e descrição; à direita (ou embaixo, no celular), o link."""
+    link = MAIS_LINKS[slug] is not None
+    compacto = largura_total < 600
+    m = 20 if compacto else 24
+    cor_rotulo = BRASA if link else APOIO
+    larg_rotulo = largura(rotulo, "sora", 13, 600) + (22 if link else 0)
+    x_txt = m + 40
+    larg_desc = largura_total - x_txt - m - (0 if compacto else larg_rotulo + 32)
+    linhas_desc, fim = paragrafo(desc, x_txt, 58, larg_desc, 20, APOIO, fonte="sora", tam=13, peso=400)
+    h = fim + (52 if compacto else 22)
+    corpo = [caixa(0.5, 0.5, largura_total - 1, h - 1, 12, CARVAO_900),
+             texto(f"{i:02d}", m, 34, "mono", 13, 500, BRASA),
+             texto(nome, x_txt, 34, "sora", 16, 600), linhas_desc]
+    if compacto:
+        xr, yr = x_txt, fim + 32
+    else:
+        xr, yr = largura_total - m - larg_rotulo, h / 2 + 5
+    corpo.append(texto(rotulo, xr, yr, "sora", 13, 600, cor_rotulo))
+    if link:
+        corpo.append(f'<g transform="translate({_n(xr + larg_rotulo - 16)} {_n(yr - 12)}) scale(0.6667)" fill="none" '
+                     f'stroke="{BRASA}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">{SETA}</g>')
+    return svg(largura_total, h + VAO_CARTOES, f"{nome}: {desc}", corpo)
+
+
 # ───────────────────────────── Skills ─────────────────────────────
 
 ICONES_MARCA = RAIZ / "assets/icones"  # Simple Icons (CC0), um arquivo por tecnologia
@@ -482,6 +552,9 @@ def main() -> None:
             "skills": skills(W, 2),
             "skills-mobile": skills(WM, 1),
         }
+        for i, (slug, nome, desc, rotulo) in enumerate(L["mais"], start=1):
+            arquivos[f"projeto-{slug}"] = cartao_projeto(i, slug, nome, desc, rotulo, W)
+            arquivos[f"projeto-{slug}-mobile"] = cartao_projeto(i, slug, nome, desc, rotulo, WM)
         for nome, rotulo, detalhe, icone, cheio in CONTATOS:
             traduzido = L["contatos"].get(nome, rotulo)
             if idioma == "pt" or traduzido != rotulo:  # botões iguais nos dois idiomas não são duplicados
