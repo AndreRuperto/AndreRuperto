@@ -1,1 +1,3 @@
 .github/workflows/snake.yml
+# Cards de estatísticas: gerados pelo workflow e publicados na branch output
+assets/stats/

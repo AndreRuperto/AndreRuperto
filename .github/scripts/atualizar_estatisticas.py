@@ -4,13 +4,15 @@ O GitHub remove atributos como `onerror` do README, então uma imagem quebrada
 não pode se esconder sozinha. Este script roda no GitHub Actions e reescreve o
 bloco entre <!-- STATS:START --> e <!-- STATS:END -->:
 
-- cards gerados por gerar_cards.py entram se o arquivo existir;
+- cards gerados por gerar_cards.py entram se o arquivo existir (o README aponta
+  para a cópia publicada na branch output, não para o arquivo local);
 - cards de serviços externos (campo "url") entram só se responderem um SVG.
 
 Cards com o mesmo número de "linha" ficam lado a lado; a largura em % segue a
 grade de 900 px de gerar_cards.py. Se nada estiver disponível, a seção some.
 """
 
+import os
 import re
 import sys
 import urllib.error
@@ -20,6 +22,11 @@ from pathlib import Path
 
 README = Path(__file__).resolve().parents[2] / "README.md"
 INICIO, FIM = "<!-- STATS:START -->", "<!-- STATS:END -->"
+
+# Os cards não ficam na main: o workflow os publica em stats/ na branch output,
+# para que a atualização a cada 6 h não gere commits no histórico principal.
+REPO = os.environ.get("GITHUB_REPOSITORY", "AndreRuperto/AndreRuperto")
+PUBLICADO = f"https://raw.githubusercontent.com/{REPO}/output/stats"
 
 CARDS = [
     {
@@ -62,7 +69,10 @@ def disponivel(card: dict) -> bool:
 
 
 def img(card: dict) -> str:
-    src = f'./{card["arquivo"]}' if "arquivo" in card else card["url"].replace("&", "&amp;")
+    if "arquivo" in card:
+        src = f'{PUBLICADO}/{Path(card["arquivo"]).name}'
+    else:
+        src = card["url"].replace("&", "&amp;")
     return f'<img src="{src}" width="{card["largura"]}" alt="{card["alt"]}" />'
 
 

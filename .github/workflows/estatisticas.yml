@@ -5,9 +5,20 @@ on:
   schedule:
     - cron: "30 */6 * * *"
   workflow_dispatch:
+  # roda logo após mudanças no gerador, para os cards publicados não ficarem defasados
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/estatisticas.yml"
+      - ".github/scripts/**"
 
 permissions:
   contents: write
+
+# o alternador Snake/Pac-Man também dá push na branch output
+concurrency:
+  group: branch-output
+  cancel-in-progress: false
 
 jobs:
   atualizar:
@@ -30,17 +41,34 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
         run: python .github/scripts/gerar_cards.py
 
+      # Os cards mudam todo dia; ficam na branch output para não encher a main de commits.
+      - name: Publicar cards na branch output
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch --depth=1 origin output
+          git worktree add -B output ../output origin/output
+          mkdir -p ../output/stats
+          cp assets/stats/*.svg ../output/stats/
+          cd ../output
+          git add stats
+          if git diff --cached --quiet; then
+            echo "Cards sem mudança."
+            exit 0
+          fi
+          git commit -m "Atualiza cards de estatísticas"
+          git push origin output
+
       - name: Testar cards e reescrever seção
         run: python .github/scripts/atualizar_estatisticas.py
 
-      - name: Commit se mudou
+      # Só há commit na main quando o conjunto de cards disponíveis muda.
+      - name: Commit do README se mudou
         run: |
-          git add README.md assets/stats
+          git add README.md
           if git diff --cached --quiet; then
-            echo "Nenhuma mudança."
+            echo "README sem mudança."
             exit 0
           fi
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "Atualiza cards de estatísticas"
+          git commit -m "Atualiza seção de estatísticas"
           git push

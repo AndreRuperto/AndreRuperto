@@ -38,17 +38,51 @@
 
 ### 🚀 Projetos em Destaque
 
+#### 01 / 🗳️ Turnos: Eleições 2026
+
+<a href="https://1e2turnos.up.railway.app/"><img src="./assets/projetos/turnos.jpg" width="100%" alt="Tela do Turnos: cartograma com o vencedor do 1º turno em cada estado e tabela ordenável de votos por UF" /></a>
+
+Portal de jornalismo de dados sobre os dois turnos das eleições gerais de 2026, com cartograma por estado, hemiciclos do Congresso de 2027 e 596 perfis de candidatos.
+
+- **Recursos:** mapa por UF, tabelas ordenáveis, hemiciclos por partido e espectro, tema claro e escuro
+- **Stack:** HTML, CSS e JavaScript no site; Python na coleta e no tratamento dos dados
+- **Estado:** no ar, com os dois turnos publicados
+
+[Site](https://1e2turnos.up.railway.app/) · [Código](https://github.com/AndreRuperto/turnos)
+
+#### 02 / 🏥 Triagegeist
+
+<a href="https://triagegeist-kaggle.up.railway.app/"><img src="./assets/projetos/triagegeist.jpg" width="100%" alt="Tela do Triagegeist: distribuição de 100 mil pacientes por nível de acuidade ESI e sinais vitais médios por nível" /></a>
+
+IA para triagem em pronto-socorro, que classifica o paciente de ESI 1 a 5 e explica cada previsão com SHAP. Na análise, identifiquei vazamento de dados na base do desafio Kaggle.
+
+- **Recursos:** exploração dos dados, previsão interativa, notebooks e relatório, em português e inglês
+- **Dados:** 100 mil pacientes sintéticos do desafio e a base real NHAMCS
+- **Estado:** site no ar; código em repositório privado
+
+[Site](https://triagegeist-kaggle.up.railway.app/) · [Desafio no Kaggle](https://www.kaggle.com/competitions/triagegeist/overview)
+
+#### 03 / 📋 Modelo de Credenciamento — PNCP
+
+Modelo de Machine Learning do meu TCC (nota 10) que separa os pedidos de credenciamento do PNCP que precisam de análise manual. Reduziria a fila de **1.494 para 97** pedidos (93,5% a menos), com acurácia de 94,65%.
+
+- **Stack:** Python, Random Forest e XGBoost
+- **Estado:** trabalho acadêmico concluído; não está em produção e não tem repositório público
+
+<details>
+<summary><b>Mais projetos</b></summary>
+<br>
+
 | Projeto | Descrição | Links |
 |---|---|---|
-| 🗳️ **Turnos: Eleições 2026** | Portal de jornalismo de dados sobre os dois turnos, com mapas, hemiciclos do Congresso de 2027 e 596 perfis de candidatos | [Site](https://1e2turnos.up.railway.app/) · [Código](https://github.com/AndreRuperto/turnos) |
-| 🏥 **Triagegeist** | IA para triagem em pronto-socorro (ESI 1–5) com explicação via SHAP; identifiquei vazamento de dados na base do desafio Kaggle | [Site](https://triagegeist-kaggle.up.railway.app/) · [Kaggle](https://www.kaggle.com/competitions/triagegeist/overview) |
 | ⚽ **DataBola** | Análise estatística do Brasileirão Série A | [Site](https://databola.up.railway.app/) |
 | 🧬 **Genética da Gravidez Explicada** | Site educativo com calculadora de risco, guias de alterações cromossômicas e fontes em cada número | [Site](https://genetica-na-gestacao.up.railway.app/) · [Código](https://github.com/AndreRuperto/genetica-na-gestacao) |
 | 🌎 **Good Cities** | Compara qualidade e custo de vida em 99 cidades das Américas | [Site](https://good-cities.up.railway.app/) |
-| 📋 **Modelo de Credenciamento — PNCP** | ML (Random Forest, XGBoost) que reduziria em 93,5% as análises manuais de credenciamento | — |
 | 🔗 **Integração Alice × ComprasGov** | Pipelines com Airflow e Databricks entre o ComprasGov e o robô de auditoria Alice (CGU) | [Webinar](https://www.youtube.com/watch?v=234EGymqotI) |
 | 👾 **Pac-Man Contributions** | Transforma o gráfico de contribuições do GitHub em um jogo de Pac-Man via GitHub Actions | [Código](https://github.com/AndreRuperto/svg-pacman-contributions) |
 | 💸 **Controle Financeiro via WhatsApp** | Bot de despesas com categorização automática, parcelas e alertas de vencimento | [Código](https://github.com/AndreRuperto/whatsapp_gastos_ai) |
+
+</details>
 
 <p align="center"><a href="https://www.andreruperto.dev/#projects">Ver todos os projetos no portfólio →</a></p>
 
@@ -59,10 +93,10 @@
 
 <div align="center">
 
-  <img src="./assets/stats/resumo.svg" width="54.5%" alt="Resumo do GitHub" />
-  <img src="./assets/stats/linguagens.svg" width="43.3%" alt="Linguagens mais usadas" />
+  <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/stats/resumo.svg" width="54.5%" alt="Resumo do GitHub" />
+  <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/stats/linguagens.svg" width="43.3%" alt="Linguagens mais usadas" />
 
-  <img src="./assets/stats/atividade.svg" width="98.6%" alt="Gráfico de contribuições dos últimos 31 dias" />
+  <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/stats/atividade.svg" width="98.6%" alt="Gráfico de contribuições dos últimos 31 dias" />
 
 </div>
 
