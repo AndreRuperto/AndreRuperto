@@ -95,6 +95,19 @@ The world's 100 best restaurants in 2026, according to The 50 Best, presented as
 
 [Site](https://melhores-restaurantes.up.railway.app/) · [Code](https://github.com/AndreRuperto/melhores-restaurantes)
 
+#### 06 / Cronomapa
+
+<a href="https://cronomapa.up.railway.app/"><img src="./assets/projetos/cronomapa.webp" width="100%" alt="Carousel with six Cronomapa screens: the world map with its rulers in the year 100, in 1500, in 1900 and in 2026, the notable figures of 1600 and a ruler's page" /></a>
+
+Interactive map showing how the world's borders changed since 3000 BC and who ruled each territory in each period.
+
+- **Features:** timeline from 3000 BC to 2026, ruler portraits on the map, searchable list, a page for each ruler and a layer of notable figures (philosophy, literature, art and science)
+- **Data:** borders from historical-basemaps and rulers from Wikidata
+- **Stack:** JavaScript, D3 and Vite
+- **Status:** site live (in Portuguese); code in a private repository
+
+[Site](https://cronomapa.up.railway.app/)
+
 #### More projects
 
 <a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.webp" width="100%" alt="Carousel with three screens from Genética da Gravidez Explicada: the home page, the risk calculator and the syndrome guides" /></a>
