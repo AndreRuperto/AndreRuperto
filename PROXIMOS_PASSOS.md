@@ -10,7 +10,7 @@ Já na `main` (PR 1, mergeado):
 - `README.en.md` com seletor de idioma.
 - Cards de estatísticas na mesma paleta, publicados em `stats/` na branch `output`; a `main` só recebe commit quando o conjunto de cards muda.
 - `alternador.yml` corrigido; cobra e Pac-Man na paleta. O tema `brasa` do Pac-Man foi criado e mergeado em `svg-pacman-contributions`.
-- Descrições, sites e tópicos preenchidos em `turnos`, `genetica-na-gestacao`, `AndreRuperto`, `Portfolio-AndreRuperto` e `whatsapp_gastos_ai`.
+- Descrições, sites e tópicos preenchidos em `turnos`, `genetica-na-gestacao`, `AndreRuperto`, `Portfolio-AndreRuperto`, `whatsapp_gastos_ai`, `2turno`, `mercado-eleicoes`, `leis-rag` e `melhores-restaurantes`.
 
 No PR 2 (https://github.com/AndreRuperto/AndreRuperto/pull/2):
 
@@ -31,7 +31,6 @@ No PR 2 (https://github.com/AndreRuperto/AndreRuperto/pull/2):
 - [ ] Fazer o merge do PR 2 e conferir o perfil (troca para celular, carrosséis animando, cartões clicáveis)
 - [ ] Conferir a primeira execução da cobra na paleta nova
 - [ ] Fixar os repositórios no perfil (manual): `turnos`, `genetica-na-gestacao`, `svg-pacman-contributions`, `whatsapp_gastos_ai`, `Portfolio-AndreRuperto`, `simulador-sistemas-autenticacao`
-- [ ] Preencher a descrição de `2turno`, `mercado-eleicoes`, `leis-rag` e `melhores-restaurantes`
 - [ ] Revisar os textos em inglês e a lista de skills (a contagem veio das dependências dos projetos, não do domínio de cada uma)
 - [ ] Decidir se seis destaques é demais; o Good Cities é o candidato a ir para "Mais projetos"
 - [ ] Ver se as fotos do TSE carregam para visitantes no `mapa.html` do Turnos
