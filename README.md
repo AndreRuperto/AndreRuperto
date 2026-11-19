@@ -32,7 +32,7 @@
 
 #### 01 / 🗳️ Turnos: Eleições 2026
 
-<a href="https://1e2turnos.up.railway.app/"><img src="./assets/projetos/turnos.gif" width="100%" alt="Carrossel com sete telas do Turnos: resultado do 1º turno, presidente da República, cartograma por estado, governadores, hemiciclos do Congresso de 2027, mapa interativo e análise entre os dois turnos" /></a>
+<a href="https://1e2turnos.up.railway.app/"><img src="./assets/projetos/turnos.webp" width="100%" alt="Carrossel com sete telas do Turnos: resultado do 1º turno, presidente da República, cartograma por estado, governadores, hemiciclos do Congresso de 2027, mapa interativo e análise entre os dois turnos" /></a>
 
 Portal de jornalismo de dados sobre os dois turnos das eleições gerais de 2026, com cartograma por estado, hemiciclos do Congresso de 2027 e 596 perfis de candidatos.
 
@@ -76,7 +76,7 @@ Modelo de Machine Learning do meu TCC (nota 10) que separa os pedidos de credenc
 
 </details>
 
-<a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.gif" width="100%" alt="Carrossel com as telas de cinco projetos: Turnos: Eleições 2026, Triagegeist, DataBola, Genética da Gravidez Explicada e Good Cities" /></a>
+<a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.webp" width="100%" alt="Carrossel com as telas de cinco projetos: Turnos: Eleições 2026, Triagegeist, DataBola, Genética da Gravidez Explicada e Good Cities" /></a>
 
 <p align="center"><a href="https://www.andreruperto.dev/#projects">Ver todos os projetos no portfólio →</a></p>
 

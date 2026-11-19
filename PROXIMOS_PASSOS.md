@@ -23,7 +23,7 @@ Melhorias no perfil inspiradas no repositório `anjennlical`:
 
 - [ ] Depois do merge, conferir a execução de "Atualizar estatísticas do README" e os cards no perfil
 - [ ] Revisar os textos dos três projetos em destaque (stack do Triagegeist ficou de fora por falta de fonte)
-- [ ] Refazer o carrossel (`assets/perfil/projetos.gif`) quando os sites dos projetos mudarem; foi montado à mão a partir de capturas
+- [ ] Refazer o carrossel (`assets/perfil/projetos.webp` e `assets/projetos/turnos.webp`) quando os sites dos projetos mudarem; foi montado à mão a partir de capturas
 - [ ] Versão em inglês (`README.en.md`) com seletor de idioma
 - [ ] Trocar os ícones do skillicons por arquivos locais na paleta do portfólio
 - [ ] Uma frase de contexto por grupo de skills
