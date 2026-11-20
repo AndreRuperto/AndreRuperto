@@ -1,0 +1,40 @@
+name: Validar README
+
+on:
+  # imagens, texto alternativo e peso a cada mudança; links também toda segunda-feira
+  pull_request:
+    paths:
+      - "README*.md"
+      - "assets/**"
+      - ".github/scripts/validar_readme.py"
+      - ".github/workflows/validar.yml"
+  push:
+    branches: [main]
+    paths:
+      - "README*.md"
+      - "assets/**"
+      - ".github/scripts/validar_readme.py"
+      - ".github/workflows/validar.yml"
+  schedule:
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Conferir imagens, texto alternativo, peso e links
+        run: python .github/scripts/validar_readme.py --links

@@ -19,7 +19,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 W, H, B = 1280, 720, 76            # tela, altura da tela e altura da legenda
 PARADA, PASSO = 3200, 200          # ms em cada tela e intervalo de avanço da barra
-QUADROS_TROCA, QUALIDADE = 18, 82  # quadros por deslize e qualidade do WebP
+QUADROS_TROCA, QUALIDADE = 18, 50  # quadros por deslize e qualidade do WebP (50 pesa ~40% menos que 82, sem perda visível)
 SEG_ALT, SEG_VAO = 5, 8
 CARVAO, BORDA, PAPEL, APOIO, BRASA = "#120F0D", "#332C28", "#FBFAF9", "#988881", "#FF7E29"
 

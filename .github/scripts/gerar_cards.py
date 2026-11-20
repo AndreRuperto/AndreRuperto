@@ -8,6 +8,8 @@ GitHub com o token em GITHUB_TOKEN e grava em assets/stats/:
 - linguagens.svg → linguagens mais usadas nos repositórios próprios
 - atividade.svg  → contribuições dos últimos 31 dias
 
+Cada card sai em português (nome.svg) e em inglês (nome-en.svg, para o README.en.md).
+
 Os três seguem uma grade de 900 px: resumo (495) + linguagens (395) na primeira
 linha, com a mesma altura, e atividade (900) ocupando a segunda.
 Cores da identidade do portfólio (carvão e laranja Brasa).
@@ -45,7 +47,34 @@ TEMA = {
     "grade": "#292220",   # Carvão 800
 }
 FONTE = "'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif"
-MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"]
+TEXTOS = {
+    "pt": {
+        "meses": ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"],
+        "milhar": ".", "decimal": ",",
+        "data": lambda dia, mes: f"{dia} {mes}",
+        "resumo": "Resumo do GitHub de {nome}",
+        "totais": "Contribuições totais", "commits": "Commits em {ano}", "prs": "Pull requests",
+        "estrelas": "Estrelas recebidas", "recorde": "Recorde de sequência", "dias": "{n} dias",
+        "atual": "Sequência atual",
+        "linguagens": "Linguagens mais usadas", "linguagens_rotulo": "Linguagens mais usadas por {nome}",
+        "atividade": "Atividade nos últimos 31 dias", "contribuicoes": "{n} contribuições",
+        "atividade_rotulo": "Gráfico de contribuições de {nome} nos últimos 31 dias",
+    },
+    "en": {
+        "meses": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        "milhar": ",", "decimal": ".",
+        "data": lambda dia, mes: f"{mes} {dia}",
+        "resumo": "{nome}'s GitHub summary",
+        "totais": "Total contributions", "commits": "Commits in {ano}", "prs": "Pull requests",
+        "estrelas": "Stars earned", "recorde": "Longest streak", "dias": "{n} days",
+        "atual": "Current streak",
+        "linguagens": "Most used languages", "linguagens_rotulo": "Languages {nome} uses the most",
+        "atividade": "Activity in the last 31 days", "contribuicoes": "{n} contributions",
+        "atividade_rotulo": "Chart of {nome}'s contributions over the last 31 days",
+    },
+}
+SUFIXOS = {"pt": "", "en": "-en"}
+T = TEXTOS["pt"]  # idioma do card em geração; main() troca
 
 
 # ───────────────────────────── API ─────────────────────────────
@@ -178,11 +207,11 @@ def moldura(largura: int, altura: int, titulo: str, conteudo: str, rotulo: str) 
 
 
 def fmt(n: int) -> str:
-    return f"{n:,}".replace(",", ".")
+    return f"{n:,}".replace(",", T["milhar"])
 
 
 def fmt_data(d: date | None) -> str:
-    return f"{d.day} {MESES[d.month - 1]}" if d else "—"
+    return T["data"](d.day, T["meses"][d.month - 1]) if d else "—"
 
 
 def fmt_periodo(de: date | None, ate: date | None) -> str:
@@ -198,11 +227,11 @@ def card_resumo(usuario: dict, repos: list[dict], dias: list[tuple[date, int]]) 
     seq = sequencias(dias)
     ano = usuario["ano"]
     linhas = [
-        ("Contribuições totais", fmt(sum(n for _, n in dias))),
-        (f"Commits em {date.today().year}", fmt(ano["totalCommitContributions"] + ano["restrictedContributionsCount"])),
-        ("Pull requests", fmt(usuario["pullRequests"]["totalCount"])),
-        ("Estrelas recebidas", fmt(sum(r["stargazerCount"] for r in repos))),
-        ("Recorde de sequência", f"{seq['recorde']} dias"),
+        (T["totais"], fmt(sum(n for _, n in dias))),
+        (T["commits"].format(ano=date.today().year), fmt(ano["totalCommitContributions"] + ano["restrictedContributionsCount"])),
+        (T["prs"], fmt(usuario["pullRequests"]["totalCount"])),
+        (T["estrelas"], fmt(sum(r["stargazerCount"] for r in repos))),
+        (T["recorde"], T["dias"].format(n=seq["recorde"])),
     ]
     partes = []
     for i, (rotulo, valor) in enumerate(linhas):
@@ -217,11 +246,11 @@ def card_resumo(usuario: dict, repos: list[dict], dias: list[tuple[date, int]]) 
         f'  <line x1="330" x2="330" y1="55" y2="175" stroke="{TEMA["grade"]}" stroke-width="2"/>\n'
         f'  <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{TEMA["titulo"]}" stroke-width="5"/>\n'
         f'  <text x="{cx}" y="{cy + 10}" text-anchor="middle" class="grande">{seq["atual"]}</text>\n'
-        f'  <text x="{cx}" y="{cy + r + 22}" text-anchor="middle" class="valor">Sequência atual</text>\n'
+        f'  <text x="{cx}" y="{cy + r + 22}" text-anchor="middle" class="valor">{escape(T["atual"])}</text>\n'
         f'  <text x="{cx}" y="{cy + r + 40}" text-anchor="middle" class="menor">{escape(fmt_periodo(seq["atual_de"], seq["atual_ate"]))}</text>'
     )
-    return moldura(LARGURA_RESUMO, ALTURA_LINHA1, f"Resumo do GitHub de {NOME}", "\n".join(partes),
-                   f"Resumo do GitHub de {NOME}")
+    titulo = T["resumo"].format(nome=NOME)
+    return moldura(LARGURA_RESUMO, ALTURA_LINHA1, titulo, "\n".join(partes), titulo)
 
 
 def card_linguagens(repos: list[dict]) -> str:
@@ -249,14 +278,14 @@ def card_linguagens(repos: list[dict]) -> str:
     for i, (nome, (tam, cor)) in enumerate(top):
         col, lin = i % 2, i // 2
         lx, ly = 31 + col * coluna, 105 + lin * 30
-        pct = f"{tam / soma * 100:.1f}".replace(".", ",")
+        pct = f"{tam / soma * 100:.1f}".replace(".", T["decimal"])
         partes.append(
             f'  <circle cx="{lx:.1f}" cy="{ly - 5}" r="5" fill="{cor}"/>\n'
             f'  <text x="{lx + 13:.1f}" y="{ly}" class="texto">{escape(NOMES_CURTOS.get(nome, nome))}</text>\n'
             f'  <text x="{lx + coluna - 15:.1f}" y="{ly}" text-anchor="end" class="menor">{pct}%</text>'
         )
-    return moldura(LARGURA_LINGUAGENS, ALTURA_LINHA1, "Linguagens mais usadas", "\n".join(partes),
-                   f"Linguagens mais usadas por {NOME}")
+    return moldura(LARGURA_LINGUAGENS, ALTURA_LINHA1, T["linguagens"], "\n".join(partes),
+                   T["linguagens_rotulo"].format(nome=NOME))
 
 
 def card_atividade(dias_todos: list[tuple[date, int]]) -> str:
@@ -289,9 +318,9 @@ def card_atividade(dias_todos: list[tuple[date, int]]) -> str:
         partes.append(f'  <circle cx="{px(i):.1f}" cy="{py(v):.1f}" r="3.5" fill="{TEMA["icone"]}"><title>{d.isoformat()}: {v}</title></circle>')
         if i % 2 == 0 or i == len(dias) - 1:
             partes.append(f'  <text x="{px(i):.1f}" y="{y1 + 22}" text-anchor="middle" class="menor">{d.day:02d}</text>')
-    partes.append(f'  <text x="{largura - 30}" y="35" text-anchor="end" class="menor">{fmt(sum(valores))} contribuições</text>')
-    return moldura(largura, altura, "Atividade nos últimos 31 dias", "\n".join(partes),
-                   f"Gráfico de contribuições de {NOME} nos últimos 31 dias")
+    partes.append(f'  <text x="{largura - 30}" y="35" text-anchor="end" class="menor">{escape(T["contribuicoes"].format(n=fmt(sum(valores))))}</text>')
+    return moldura(largura, altura, T["atividade"], "\n".join(partes),
+                   T["atividade_rotulo"].format(nome=NOME))
 
 
 def main() -> None:
@@ -299,14 +328,17 @@ def main() -> None:
     dias = buscar_calendario(usuario["createdAt"])
     repos = buscar_repos()
     SAIDA.mkdir(parents=True, exist_ok=True)
-    arquivos = {
-        "resumo.svg": card_resumo(usuario, repos, dias),
-        "linguagens.svg": card_linguagens(repos),
-        "atividade.svg": card_atividade(dias),
-    }
-    for nome, svg in arquivos.items():
-        (SAIDA / nome).write_text(svg, encoding="utf-8", newline="\n")
-        print(f"gerado: assets/stats/{nome}")
+    global T
+    for idioma, sufixo in SUFIXOS.items():
+        T = TEXTOS[idioma]
+        arquivos = {
+            f"resumo{sufixo}.svg": card_resumo(usuario, repos, dias),
+            f"linguagens{sufixo}.svg": card_linguagens(repos),
+            f"atividade{sufixo}.svg": card_atividade(dias),
+        }
+        for nome, svg in arquivos.items():
+            (SAIDA / nome).write_text(svg, encoding="utf-8", newline="\n")
+            print(f"gerado: assets/stats/{nome}")
     antigo = SAIDA / "stats.svg"
     if antigo.exists():
         antigo.unlink()

@@ -6,7 +6,8 @@ bloco entre <!-- STATS:START --> e <!-- STATS:END --> em README.md (português)
 e README.en.md (inglês):
 
 - cards gerados por gerar_cards.py entram se o arquivo existir (o README aponta
-  para a cópia publicada na branch output, não para o arquivo local);
+  para a cópia publicada na branch output, não para o arquivo local); o README
+  em inglês usa a versão "-en" de cada card;
 - cards de serviços externos (campo "url") entram só se responderem um SVG.
 
 Cards com o mesmo número de "linha" ficam lado a lado; a largura em % segue a
@@ -23,6 +24,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[2]
 READMES = {"README.md": "pt", "README.en.md": "en"}
+SUFIXOS = {"pt": "", "en": "-en"}
 TITULOS = {"pt": "Estatísticas", "en": "Statistics"}
 INICIO, FIM = "<!-- STATS:START -->", "<!-- STATS:END -->"
 
@@ -35,20 +37,20 @@ CARDS = [
     {
         "linha": 1,
         "arquivo": "assets/stats/resumo.svg",
-        "alt": {"pt": "Resumo do GitHub", "en": "GitHub summary (card in Portuguese)"},
+        "alt": {"pt": "Resumo do GitHub", "en": "GitHub summary"},
         "largura": "54.5%",  # 495 / 900, com folga para o espaço entre as imagens
     },
     {
         "linha": 1,
         "arquivo": "assets/stats/linguagens.svg",
-        "alt": {"pt": "Linguagens mais usadas", "en": "Most used languages (card in Portuguese)"},
+        "alt": {"pt": "Linguagens mais usadas", "en": "Most used languages"},
         "largura": "43.3%",  # 395 / 900
     },
     {
         "linha": 2,
         "arquivo": "assets/stats/atividade.svg",
         "alt": {"pt": "Gráfico de contribuições dos últimos 31 dias",
-                "en": "Contributions over the last 31 days (card in Portuguese)"},
+                "en": "Contributions over the last 31 days"},
         "largura": "98.6%",  # alinha com as bordas da linha 1
     },
 ]
@@ -66,15 +68,20 @@ def funciona(url: str) -> bool:
         return False
 
 
+def no_idioma(arquivo: str, idioma: str) -> Path:
+    caminho = Path(arquivo)
+    return caminho.with_name(f"{caminho.stem}{SUFIXOS[idioma]}{caminho.suffix}")
+
+
 def disponivel(card: dict) -> bool:
     if "arquivo" in card:
-        return (RAIZ / card["arquivo"]).is_file()
+        return all((RAIZ / no_idioma(card["arquivo"], idioma)).is_file() for idioma in SUFIXOS)
     return funciona(card["url"])
 
 
 def img(card: dict, idioma: str) -> str:
     if "arquivo" in card:
-        src = f'{PUBLICADO}/{Path(card["arquivo"]).name}'
+        src = f'{PUBLICADO}/{no_idioma(card["arquivo"], idioma).name}'
     else:
         src = card["url"].replace("&", "&amp;")
     return f'<img src="{src}" width="{card["largura"]}" alt="{card["alt"][idioma]}" />'
