@@ -1,46 +1,48 @@
 # Próximos passos
 
-**Data:** 19/11/2026 · **Branch:** `claude/mais-projetos-completo` (PR 3)
+**Data:** 20/11/2026 · **Branch:** `claude/acabamento-perfil`
 
-## O que foi feito nesta sessão
+## O que foi feito
 
-Já na `main` (PR 1, mergeado):
+Na `main` (PRs 1, 2 e 3, mergeados):
 
 - Topo na identidade do portfólio (carvão, laranja Brasa, Sora e Fira Code): cabeçalho "André." com o gráfico do PNCP, botões de contato, números do "Sobre mim", experiência em forma de consulta SQL e painel de skills. Tudo com versão de celular e em inglês, gerado por `.github/scripts/gerar_perfil.py`.
 - `README.en.md` com seletor de idioma.
+- Seis destaques (Turnos, Triagegeist, Good Cities, DataBola, A Carta e Cronomapa) e "Mais projetos" em 14 cartões gerados.
 - Cards de estatísticas na mesma paleta, publicados em `stats/` na branch `output`; a `main` só recebe commit quando o conjunto de cards muda.
-- `alternador.yml` corrigido; cobra e Pac-Man na paleta. O tema `brasa` do Pac-Man foi criado e mergeado em `svg-pacman-contributions`.
-- Descrições, sites e tópicos preenchidos em `turnos`, `genetica-na-gestacao`, `AndreRuperto`, `Portfolio-AndreRuperto`, `whatsapp_gastos_ai`, `2turno`, `mercado-eleicoes`, `leis-rag` e `melhores-restaurantes`.
+- Cobra e Pac-Man na paleta (tema `brasa` em `svg-pacman-contributions`).
+- Descrições, sites e tópicos preenchidos nos repositórios dos projetos.
 
-Do PR 2 (mergeado) e do PR 3:
+Nesta branch (acabamento):
 
-- Seis destaques: Turnos, Triagegeist, Good Cities, DataBola, A Carta e Cronomapa. Turnos, DataBola, A Carta e Cronomapa têm carrossel próprio em WebP.
-- "Mais projetos" em 14 cartões gerados, no lugar da tabela: os cinco que já existiam e mais Cobra o L, 2 Turno, Mercado & Eleições, Capi3D, Mangueira & Peixoto, Blue Mais, documentação da API do Compras.gov.br, simulador de autenticação e leis-rag.
-- Modelo do PNCP corrigido: foi feito no estágio no MGI, não no TCC.
-- Montador de carrosséis no repositório: `.github/scripts/gerar_carrossel.py`.
+- Carrosséis do Turnos e do Cronomapa recomprimidos: de 2,4 e 2,3 MB para 1,6 e 1,5 MB, na mesma resolução.
+- Cards de estatísticas também em inglês (`*-en.svg`), usados pelo `README.en.md`.
+- Validação automática: `.github/workflows/validar.yml` confere imagens, texto alternativo e peso a cada mudança, e os links toda segunda-feira.
+- `LICENSE` (MIT para scripts e workflows) e tópicos no repositório.
 
 ## Estado atual
 
-- Conferido na prévia local (desktop e celular, português e inglês). O PR 2 não foi conferido no GitHub.
-- No GitHub já rodaram sem erro: o workflow de estatísticas e o Pac-Man no tema `brasa`.
-- Não testado no GitHub: a cobra com as cores novas (primeira execução depois de 00:00 UTC de 20/11).
-- As animações do README somam cerca de 7,5 MB.
+- Conferido no GitHub depois do PR 3: 33 imagens carregam em desktop e celular, 14 cartões, links funcionando.
+- Workflows de estatísticas e de animação rodando sem erro; a cobra já saiu na paleta nova.
+- O `README.en.md` só passa a apontar para os cards em inglês depois que o workflow de estatísticas rodar na `main` (ele roda sozinho após o merge).
+- As legendas dos carrosséis continuam em português também no README em inglês.
 
 ## Próximos passos
 
-- [ ] Conferir a primeira execução da cobra na paleta nova
-- [ ] Fixar os repositórios no perfil (manual): `turnos`, `genetica-na-gestacao`, `svg-pacman-contributions`, `whatsapp_gastos_ai`, `Portfolio-AndreRuperto`, `simulador-sistemas-autenticacao`
+- [ ] Fixar os repositórios no perfil (manual): trocar `AndreRuperto` e `Capi3D` por `turnos` e `genetica-na-gestacao`
+- [ ] Encurtar as descrições de `svg-pacman-contributions`, `whatsapp_gastos_ai` e `simulador-sistemas-autenticacao` (são cortadas no cartão fixado) e descrever `Capi3D` e `paradigma_orientado_a_eventos`
 - [ ] Revisar os textos em inglês e a lista de skills (a contagem veio das dependências dos projetos, não do domínio de cada uma)
+- [ ] Confirmar os textos de Blue Mais, Mangueira & Peixoto e Capi3D nos cartões
 - [ ] Decidir se seis destaques é demais; o Good Cities é o candidato a ir para "Mais projetos"
+- [ ] Legendas dos carrosséis em inglês (exige recapturar as telas)
 - [ ] Ver se as fotos do TSE carregam para visitantes no `mapa.html` do Turnos
 - [ ] Atualizar o README do Cronomapa (fala em globo 3D a partir do ano 1; o site é um mapa a partir de 3000 a.C.)
-- [ ] Validação automática do README (links, texto alternativo, peso das imagens)
 
 ## Decisões e problemas conhecidos
 
 - O GitHub não carrega fontes externas em SVG, então todo texto das imagens vira contorno a partir de `assets/fontes/`.
-- Os carrosséis não se atualizam sozinhos. As capturas de tela ficam fora do repositório; para refazer, capture as telas em 1280x720 e rode o montador.
-- Carrosséis e cards de estatísticas têm texto em português também no README em inglês.
+- Os carrosséis não se atualizam sozinhos. As capturas de tela ficam fora do repositório; para refazer, capture as telas em 1280x720 e rode o montador (qualidade 50).
+- O validador falha se uma imagem passar de 2 MB ou se as imagens de um README somarem mais de 8 MB.
 - Prancha de design do topo: https://claude.ai/artifact/LYzNB8zYwFmMqEPjeN952k (cores da prancha "Portfólio · Identidade e sistema de design").
 
 ## Comandos úteis
@@ -55,4 +57,8 @@ python .github/scripts/gerar_carrossel.py saida.webp "site.exemplo" tela1.png="L
 
 ```powershell
 $env:GITHUB_TOKEN = gh auth token; python .github/scripts/gerar_cards.py; python .github/scripts/atualizar_estatisticas.py
+```
+
+```powershell
+python .github/scripts/validar_readme.py --links
 ```
