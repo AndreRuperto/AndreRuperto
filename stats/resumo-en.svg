@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" role="img" aria-label="André Ruperto's GitHub summary">
+  <title>André Ruperto's GitHub summary</title>
+  <style>
+    .titulo { font: 600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #FF7E29; }
+    .texto  { font: 600 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #FBFAF9; }
+    .valor  { font: 700 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #FF7E29; }
+    .grande { font: 700 28px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #FF7E29; }
+    .menor  { font: 400 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #988881; }
+  </style>
+  <rect x="0.5" y="0.5" rx="10" width="494" height="194" fill="#120F0D" stroke="#332C28"/>
+  <text x="25" y="35" class="titulo">André Ruperto's GitHub summary</text>
+  <circle cx="31" cy="67" r="4" fill="#FF7E29"/>
+  <text x="45" y="72" class="texto">Total contributions</text>
+  <text x="300" y="72" text-anchor="end" class="valor">7,467</text>
+  <circle cx="31" cy="92" r="4" fill="#FF7E29"/>
+  <text x="45" y="97" class="texto">Commits in 2026</text>
+  <text x="300" y="97" text-anchor="end" class="valor">5,568</text>
+  <circle cx="31" cy="117" r="4" fill="#FF7E29"/>
+  <text x="45" y="122" class="texto">Pull requests</text>
+  <text x="300" y="122" text-anchor="end" class="valor">559</text>
+  <circle cx="31" cy="142" r="4" fill="#FF7E29"/>
+  <text x="45" y="147" class="texto">Stars earned</text>
+  <text x="300" y="147" text-anchor="end" class="valor">13</text>
+  <circle cx="31" cy="167" r="4" fill="#FF7E29"/>
+  <text x="45" y="172" class="texto">Longest streak</text>
+  <text x="300" y="172" text-anchor="end" class="valor">48 days</text>
+  <line x1="330" x2="330" y1="55" y2="175" stroke="#292220" stroke-width="2"/>
+  <circle cx="400" cy="100" r="42" fill="none" stroke="#FF7E29" stroke-width="5"/>
+  <text x="400" y="110" text-anchor="middle" class="grande">32</text>
+  <text x="400" y="164" text-anchor="middle" class="valor">Current streak</text>
+  <text x="400" y="182" text-anchor="middle" class="menor">Oct 20 – Nov 20</text>
+</svg>
