@@ -144,10 +144,10 @@ Interactive map showing how the world's borders changed since 3000 BC and who ru
 
 <div align="center">
 
-  <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/stats/resumo.svg" width="54.5%" alt="GitHub summary (card in Portuguese)" />
-  <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/stats/linguagens.svg" width="43.3%" alt="Most used languages (card in Portuguese)" />
+  <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/stats/resumo-en.svg" width="54.5%" alt="GitHub summary" />
+  <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/stats/linguagens-en.svg" width="43.3%" alt="Most used languages" />
 
-  <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/stats/atividade.svg" width="98.6%" alt="Contributions over the last 31 days (card in Portuguese)" />
+  <img src="https://raw.githubusercontent.com/AndreRuperto/AndreRuperto/output/stats/atividade-en.svg" width="98.6%" alt="Contributions over the last 31 days" />
 
 </div>
 <!-- STATS:END -->
