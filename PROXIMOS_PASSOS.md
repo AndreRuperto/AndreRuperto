@@ -27,6 +27,7 @@ Acabamento concluído na `main` (PRs 4 e 5):
 - PR 5 (Capi3D) mergeado na `main` em 21/11/2026; validação do README e atualização de estatísticas concluíram com sucesso após o merge.
 - As cinco descrições dos repositórios foram conferidas no GitHub. O PNCP está identificado como trabalho de estágio no MGI em ambos os READMEs.
 - PR 6 mergeado na `main` em 21/11/2026: textos revisados, tecnologias adicionadas, cartões regenerados e carrosséis EN. Após o merge, os workflows de regeneração, validação do README e estatísticas terminaram com sucesso.
+- Teste de visitante em Chromium (sem cookies) acrescentado ao repositório `turnos`, com capturas no GitHub Actions; fallback do TSE confirmado em produção.
 - O `README.en.md` já aponta para os cards em inglês; o workflow de estatísticas após o PR 5 concluiu com sucesso.
 - O README em inglês usa cinco carrosséis com legendas traduzidas; a interface capturada nas imagens permanece em português.
 
@@ -38,7 +39,8 @@ Acabamento concluído na `main` (PRs 4 e 5):
 - [x] Confirmar e atualizar Blue Mais (site de natação) e Mangueira & Peixoto (advocacia previdenciária) nos cartões PT/EN; Capi3D já corrigido
 - [x] Manter seis destaques neste ciclo: o Good Cities agrega visualização geográfica e diversidade ao portfólio; reavaliar só com dados de navegação
 - [x] Gerar legendas em inglês para Turnos, DataBola, A Carta, Cronomapa e Genética usando os WebP existentes; as capturas das interfaces continuam em português
-- [ ] Validar em navegador de visitante as fotos do TSE no `mapa.html`: duas URLs públicas retornaram 403 em consulta automatizada; fallback com iniciais foi implementado no Turnos (`25df1e6`), mas falta conferir visualmente
+- [x] Validar em navegador sem login as fotos do TSE no `mapa.html`: Playwright aprovado em 21/11/2026; o site respondeu normalmente, as duas fotos originais não carregaram e o fallback com iniciais funcionou, sem erros de JavaScript ([execução 44927105770](https://github.com/AndreRuperto/turnos/actions/runs/44927105770)).
+- [ ] Se for necessário exibir fotografias reais, substituir as URLs externas do TSE por arquivos locais com direitos de reutilização verificados; manter o fallback e registrar créditos.
 - [x] Atualizar README do Cronomapa para o mapa plano 2D desde 3000 a.C., D3.js, governantes, personalidades e limitações (commit `1c292e4` em `AndreRuperto/cronomapa`)
 
 ## Decisões e problemas conhecidos
