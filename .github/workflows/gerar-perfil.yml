@@ -2,7 +2,7 @@ name: Regenerar imagens do perfil
 
 on:
   push:
-    branches: [main, chatgpt/perfil-revisao-20261121]
+    branches: [main, "chatgpt/**", "claude/**"]
     paths:
       - ".github/scripts/gerar_perfil.py"
       - ".github/scripts/legendar_carrosseis_en.py"
