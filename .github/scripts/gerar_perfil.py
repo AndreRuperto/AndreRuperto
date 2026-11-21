@@ -86,8 +86,8 @@ TEXTOS = {
              "atualizado todo dia", "Código"),
             ("capi3d", "Capi3D", "Jogo 3D em Three.js: uma capivara desvia de árvores e obstáculos. Feito em grupo na faculdade", "Código"),
             ("mangueira", "Mangueira & Peixoto Advocacia",
-             "Site institucional de um escritório de advocacia, feito como freelancer", "Site"),
-            ("bluemais", "Blue Mais", "Plataforma web da academia Blue+, feita como freelancer", "Site"),
+             "Site institucional de advocacia previdenciária, com serviços e canais de contato", "Site"),
+            ("bluemais", "Blue Mais", "Site da academia Blue+, com turmas, horários, professores e galeria", "Site"),
             ("apicompras", "Documentação da API do Compras.gov.br",
              "Documentação oficial da API de dados abertos do Compras.gov.br, com endpoints, parâmetros e exemplos, "
              "feita no estágio no MGI", "Documentação"),
@@ -102,7 +102,7 @@ TEXTOS = {
         "skills": {},
     },
     "en": {
-        "frase": "Data scientist and full-stack developer. I take manual work out of the way.",
+        "frase": "Data scientist and full-stack developer. I turn repetitive work into useful tools.",
         "titulo_hero": "André Ruperto, data scientist and full-stack developer. Credentialing model for PNCP, Brazil's public "
                        "procurement portal: requests reviewed manually would drop from 1,494 to 97 (93.5% fewer), at 94.65% accuracy.",
         "grafico": ("CREDENTIALING MODEL · PNCP", "Requests reviewed manually", "Today", "1,494",
@@ -149,8 +149,8 @@ TEXTOS = {
              "Compares how much prices rose under the Bolsonaro and Lula governments, product by product, using "
              "Brazil's official inflation index, updated daily", "Code"),
             ("capi3d", "Capi3D", "3D game in Three.js: a capybara dodges trees and obstacles. Built with classmates at university", "Code"),
-            ("mangueira", "Mangueira & Peixoto Advocacia", "Institutional website for a law firm, built as a freelancer", "Site"),
-            ("bluemais", "Blue Mais", "Web platform for the Blue+ gym, built as a freelancer", "Site"),
+            ("mangueira", "Mangueira & Peixoto Advocacia", "Website for a social security law firm, with services and contact information", "Site"),
+            ("bluemais", "Blue Mais", "Website for the Blue+ swim school, with classes, schedules and instructors", "Site"),
             ("apicompras", "Compras.gov.br API documentation",
              "Official documentation of the open-data API of Brazil's federal procurement system, with endpoints, "
              "parameters and examples, written during my internship at MGI", "Docs"),
@@ -516,7 +516,7 @@ ICONES_PROPRIOS = {
 
 SKILLS = [  # (grupo, [(nome, ícone)]) — ícone é um arquivo de assets/icones ou uma chave de ICONES_PROPRIOS
     ("Linguagens", [("Python", "python"), ("TypeScript", "typescript"), ("JavaScript", "javascript"), ("C", "c"),
-                    ("C++", "cplusplus"), ("Rust", "rust"), ("HTML", "html5"), ("CSS", "css3")]),
+                    ("C++", "cplusplus"), ("Rust", "rust"), ("C#", "chaves"), ("HTML", "html5"), ("CSS", "css3")]),
     ("Dados, Machine Learning e IA", [
         ("pandas", "pandas"), ("NumPy", "numpy"), ("scikit-learn", "scikitlearn"), ("TensorFlow", "tensorflow"),
         ("PyTorch", "pytorch"), ("OpenCV", "opencv"), ("XGBoost", "arvore"), ("LightGBM", "raio"), ("SHAP", "barras"),
@@ -527,7 +527,7 @@ SKILLS = [  # (grupo, [(nome, ícone)]) — ícone é um arquivo de assets/icone
         ("Streamlit", "streamlit"), ("Selenium", "selenium"), ("Playwright", "playwright"), ("Web scraping", "coleta"),
         ("APIs REST", "chaves"), ("GraphQL", "graphql")]),
     ("Frontend e desktop", [
-        ("React", "react"), ("Vite", "vite"), ("Tailwind CSS", "tailwindcss"), ("shadcn/ui", "shadcnui"),
+        ("React", "react"), ("React Native (Expo)", "react"), ("Vite", "vite"), ("Tailwind CSS", "tailwindcss"), ("shadcn/ui", "shadcnui"),
         ("React Router", "reactrouter"), ("TanStack Query", "reactquery"), ("Zod", "zod"), ("Recharts", "grafico_barras"),
         ("D3.js", "d3dotjs"), ("Framer Motion", "framer"), ("Three.js", "threedotjs"), ("Next.js", "nextdotjs"),
         ("Astro", "astro"), ("Electron", "electron"), ("Tauri", "tauri")]),
