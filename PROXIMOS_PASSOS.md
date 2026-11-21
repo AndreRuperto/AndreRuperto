@@ -26,7 +26,7 @@ Acabamento concluído na `main` (PRs 4 e 5):
 - Workflows de estatísticas e de animação rodando sem erro; a cobra já saiu na paleta nova.
 - PR 5 (Capi3D) mergeado na `main` em 21/11/2026; validação do README e atualização de estatísticas concluíram com sucesso após o merge.
 - As cinco descrições dos repositórios foram conferidas no GitHub. O PNCP está identificado como trabalho de estágio no MGI em ambos os READMEs.
-- PR 6 do perfil: textos revisados, tecnologias adicionadas, cartões regenerados e carrosséis EN; workflow para recriar imagens via GitHub Actions.
+- PR 6 mergeado na `main` em 21/11/2026: textos revisados, tecnologias adicionadas, cartões regenerados e carrosséis EN. Após o merge, os workflows de regeneração, validação do README e estatísticas terminaram com sucesso.
 - O `README.en.md` já aponta para os cards em inglês; o workflow de estatísticas após o PR 5 concluiu com sucesso.
 - O README em inglês usa cinco carrosséis com legendas traduzidas; a interface capturada nas imagens permanece em português.
 
