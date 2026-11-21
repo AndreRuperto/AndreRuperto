@@ -1,10 +1,10 @@
 # Próximos passos
 
-**Data:** 21/11/2026 · **Branch:** `claude/corrige-capi3d`
+**Data:** 21/11/2026 · **Branch:** `main`
 
 ## O que foi feito
 
-Na `main` (PRs 1, 2 e 3, mergeados):
+Na `main` (PRs 1, 2, 3, 4 e 5 mergeados):
 
 - Topo na identidade do portfólio (carvão, laranja Brasa, Sora e Fira Code): cabeçalho "André." com o gráfico do PNCP, botões de contato, números do "Sobre mim", experiência em forma de consulta SQL e painel de skills. Tudo com versão de celular e em inglês, gerado por `.github/scripts/gerar_perfil.py`.
 - `README.en.md` com seletor de idioma.
@@ -13,7 +13,7 @@ Na `main` (PRs 1, 2 e 3, mergeados):
 - Cobra e Pac-Man na paleta (tema `brasa` em `svg-pacman-contributions`).
 - Descrições, sites e tópicos preenchidos nos repositórios dos projetos.
 
-Nesta branch (acabamento):
+Acabamento concluído na `main` (PRs 4 e 5):
 
 - Carrosséis do Turnos e do Cronomapa recomprimidos: de 2,4 e 2,3 MB para 1,6 e 1,5 MB, na mesma resolução.
 - Cards de estatísticas também em inglês (`*-en.svg`), usados pelo `README.en.md`.
@@ -24,13 +24,15 @@ Nesta branch (acabamento):
 
 - Conferido no GitHub depois do PR 3: 33 imagens carregam em desktop e celular, 14 cartões, links funcionando.
 - Workflows de estatísticas e de animação rodando sem erro; a cobra já saiu na paleta nova.
-- O `README.en.md` só passa a apontar para os cards em inglês depois que o workflow de estatísticas rodar na `main` (ele roda sozinho após o merge).
+- PR 5 (Capi3D) mergeado na `main` em 21/11/2026; validação do README e atualização de estatísticas concluíram com sucesso após o merge.
+- As cinco descrições dos repositórios foram conferidas no GitHub. O PNCP está identificado como trabalho de estágio no MGI em ambos os READMEs.
+- O `README.en.md` já aponta para os cards em inglês; o workflow de estatísticas após o PR 5 concluiu com sucesso.
 - As legendas dos carrosséis continuam em português também no README em inglês.
 
 ## Próximos passos
 
 - [ ] Fixar os repositórios no perfil (manual): trocar `AndreRuperto` e `Capi3D` por `turnos` e `genetica-na-gestacao`
-- [ ] Encurtar as descrições de `svg-pacman-contributions`, `whatsapp_gastos_ai` e `simulador-sistemas-autenticacao` (são cortadas no cartão fixado) e descrever `Capi3D` e `paradigma_orientado_a_eventos`
+- [x] Encurtar as descrições de `svg-pacman-contributions`, `whatsapp_gastos_ai` e `simulador-sistemas-autenticacao`, e descrever `Capi3D` e `paradigma_orientado_a_eventos` (cinco metadados conferidos em 21/11/2026)
 - [ ] Revisar os textos em inglês e a lista de skills (a contagem veio das dependências dos projetos, não do domínio de cada uma)
 - [ ] Confirmar os textos de Blue Mais e Mangueira & Peixoto nos cartões (o do Capi3D foi corrigido: é um jogo da faculdade)
 - [ ] Decidir se seis destaques é demais; o Good Cities é o candidato a ir para "Mais projetos"
