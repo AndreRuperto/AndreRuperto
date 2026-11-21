@@ -1,6 +1,6 @@
 # Próximos passos
 
-**Data:** 20/11/2026 · **Branch:** `claude/acabamento-perfil`
+**Data:** 21/11/2026 · **Branch:** `claude/corrige-capi3d`
 
 ## O que foi feito
 
@@ -32,7 +32,7 @@ Nesta branch (acabamento):
 - [ ] Fixar os repositórios no perfil (manual): trocar `AndreRuperto` e `Capi3D` por `turnos` e `genetica-na-gestacao`
 - [ ] Encurtar as descrições de `svg-pacman-contributions`, `whatsapp_gastos_ai` e `simulador-sistemas-autenticacao` (são cortadas no cartão fixado) e descrever `Capi3D` e `paradigma_orientado_a_eventos`
 - [ ] Revisar os textos em inglês e a lista de skills (a contagem veio das dependências dos projetos, não do domínio de cada uma)
-- [ ] Confirmar os textos de Blue Mais, Mangueira & Peixoto e Capi3D nos cartões
+- [ ] Confirmar os textos de Blue Mais e Mangueira & Peixoto nos cartões (o do Capi3D foi corrigido: é um jogo da faculdade)
 - [ ] Decidir se seis destaques é demais; o Good Cities é o candidato a ir para "Mais projetos"
 - [ ] Legendas dos carrosséis em inglês (exige recapturar as telas)
 - [ ] Ver se as fotos do TSE carregam para visitantes no `mapa.html` do Turnos
