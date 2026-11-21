@@ -26,19 +26,20 @@ Acabamento concluído na `main` (PRs 4 e 5):
 - Workflows de estatísticas e de animação rodando sem erro; a cobra já saiu na paleta nova.
 - PR 5 (Capi3D) mergeado na `main` em 21/11/2026; validação do README e atualização de estatísticas concluíram com sucesso após o merge.
 - As cinco descrições dos repositórios foram conferidas no GitHub. O PNCP está identificado como trabalho de estágio no MGI em ambos os READMEs.
+- PR 6 do perfil: textos revisados, tecnologias adicionadas, cartões regenerados e carrosséis EN; workflow para recriar imagens via GitHub Actions.
 - O `README.en.md` já aponta para os cards em inglês; o workflow de estatísticas após o PR 5 concluiu com sucesso.
-- As legendas dos carrosséis continuam em português também no README em inglês.
+- O README em inglês usa cinco carrosséis com legendas traduzidas; a interface capturada nas imagens permanece em português.
 
 ## Próximos passos
 
 - [ ] Fixar os repositórios no perfil (manual): trocar `AndreRuperto` e `Capi3D` por `turnos` e `genetica-na-gestacao`
 - [x] Encurtar as descrições de `svg-pacman-contributions`, `whatsapp_gastos_ai` e `simulador-sistemas-autenticacao`, e descrever `Capi3D` e `paradigma_orientado_a_eventos` (cinco metadados conferidos em 21/11/2026)
-- [ ] Revisar os textos em inglês e a lista de skills (a contagem veio das dependências dos projetos, não do domínio de cada uma)
-- [ ] Confirmar os textos de Blue Mais e Mangueira & Peixoto nos cartões (o do Capi3D foi corrigido: é um jogo da faculdade)
-- [ ] Decidir se seis destaques é demais; o Good Cities é o candidato a ir para "Mais projetos"
-- [ ] Legendas dos carrosséis em inglês (exige recapturar as telas)
-- [ ] Ver se as fotos do TSE carregam para visitantes no `mapa.html` do Turnos
-- [ ] Atualizar o README do Cronomapa (fala em globo 3D a partir do ano 1; o site é um mapa a partir de 3000 a.C.)
+- [x] Revisar textos e skills do perfil: frase do topo em inglês, descrições PT/EN, C# e React Native (Expo) incluídos; nota editorial adicionada sobre níveis variados de experiência
+- [x] Confirmar e atualizar Blue Mais (site de natação) e Mangueira & Peixoto (advocacia previdenciária) nos cartões PT/EN; Capi3D já corrigido
+- [x] Manter seis destaques neste ciclo: o Good Cities agrega visualização geográfica e diversidade ao portfólio; reavaliar só com dados de navegação
+- [x] Gerar legendas em inglês para Turnos, DataBola, A Carta, Cronomapa e Genética usando os WebP existentes; as capturas das interfaces continuam em português
+- [ ] Validar em navegador de visitante as fotos do TSE no `mapa.html`: duas URLs públicas retornaram 403 em consulta automatizada; fallback com iniciais foi implementado no Turnos (`25df1e6`), mas falta conferir visualmente
+- [x] Atualizar README do Cronomapa para o mapa plano 2D desde 3000 a.C., D3.js, governantes, personalidades e limitações (commit `1c292e4` em `AndreRuperto/cronomapa`)
 
 ## Decisões e problemas conhecidos
 
