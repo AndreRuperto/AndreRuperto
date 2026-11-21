@@ -84,7 +84,7 @@ TEXTOS = {
             ("mercado", "Mercado & Eleições",
              "Compara quanto os preços subiram nos governos Bolsonaro e Lula, produto a produto, com o IPCA do IBGE "
              "atualizado todo dia", "Código"),
-            ("capi3d", "Capi3D", "Plataforma de visualização e modelagem 3D, da qual sou cocriador", "Código"),
+            ("capi3d", "Capi3D", "Jogo 3D em Three.js: uma capivara desvia de árvores e obstáculos. Feito em grupo na faculdade", "Código"),
             ("mangueira", "Mangueira & Peixoto Advocacia",
              "Site institucional de um escritório de advocacia, feito como freelancer", "Site"),
             ("bluemais", "Blue Mais", "Plataforma web da academia Blue+, feita como freelancer", "Site"),
@@ -148,7 +148,7 @@ TEXTOS = {
             ("mercado", "Mercado & Eleições",
              "Compares how much prices rose under the Bolsonaro and Lula governments, product by product, using "
              "Brazil's official inflation index, updated daily", "Code"),
-            ("capi3d", "Capi3D", "3D visualization and modeling platform, which I co-created", "Code"),
+            ("capi3d", "Capi3D", "3D game in Three.js: a capybara dodges trees and obstacles. Built with classmates at university", "Code"),
             ("mangueira", "Mangueira & Peixoto Advocacia", "Institutional website for a law firm, built as a freelancer", "Site"),
             ("bluemais", "Blue Mais", "Web platform for the Blue+ gym, built as a freelancer", "Site"),
             ("apicompras", "Compras.gov.br API documentation",
