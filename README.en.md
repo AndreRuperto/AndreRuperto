@@ -32,9 +32,11 @@
 
 ### Featured projects
 
+*The carousel captions are in English; screenshots retain the original Portuguese interfaces.*
+
 #### 01 / Turnos: 2026 Brazilian elections
 
-<a href="https://1e2turnos.up.railway.app/"><img src="./assets/projetos/turnos.webp" width="100%" alt="Carousel with seven screens from Turnos: first-round result, presidential race, state cartogram, governors, the 2027 Congress seat charts, interactive map and the analysis between the two rounds" /></a>
+<a href="https://1e2turnos.up.railway.app/"><img src="./assets/projetos/turnos-en.webp" width="100%" alt="Carousel with seven screens from Turnos: first-round result, presidential race, state cartogram, governors, the 2027 Congress seat charts, interactive map and the analysis between the two rounds" /></a>
 
 Data journalism portal covering both rounds of Brazil's 2026 general elections, with a state cartogram, seat charts for the 2027 Congress and 596 candidate profiles.
 
@@ -71,7 +73,7 @@ Compares quality of life and cost across 99 cities in 15 countries of the Americ
 
 #### 04 / DataBola
 
-<a href="https://databola.up.railway.app/"><img src="./assets/projetos/databola.webp" width="100%" alt="Carousel with three DataBola screens: picking a team from Brazil's top league, the team dashboard with standing and season numbers, and results with the cumulative win rate" /></a>
+<a href="https://databola.up.railway.app/"><img src="./assets/projetos/databola-en.webp" width="100%" alt="Carousel with three DataBola screens: picking a team from Brazil's top league, the team dashboard with standing and season numbers, and results with the cumulative win rate" /></a>
 
 Data dashboard for Brazil's top football league, with automated collection, a dashboard per team, an interactive pitch map and a live mode.
 
@@ -84,7 +86,7 @@ Data dashboard for Brazil's top football league, with automated collection, a da
 
 #### 05 / A Carta
 
-<a href="https://melhores-restaurantes.up.railway.app/"><img src="./assets/projetos/carta.webp" width="100%" alt="Carousel with six screens from A Carta: the menu cover, the open menu, the map of the 100 restaurants, the Brazilian entries, the filterable list and a restaurant page" /></a>
+<a href="https://melhores-restaurantes.up.railway.app/"><img src="./assets/projetos/carta-en.webp" width="100%" alt="Carousel with six screens from A Carta: the menu cover, the open menu, the map of the 100 restaurants, the Brazilian entries, the filterable list and a restaurant page" /></a>
 
 The world's 100 best restaurants in 2026, according to The 50 Best, presented as a menu that opens: map, ranking, views by continent, country and Brazil, and a page for each restaurant.
 
@@ -97,7 +99,7 @@ The world's 100 best restaurants in 2026, according to The 50 Best, presented as
 
 #### 06 / Cronomapa
 
-<a href="https://cronomapa.up.railway.app/"><img src="./assets/projetos/cronomapa.webp" width="100%" alt="Carousel with six Cronomapa screens: the world map with its rulers in the year 100, in 1500, in 1900 and in 2026, the notable figures of 1600 and a ruler's page" /></a>
+<a href="https://cronomapa.up.railway.app/"><img src="./assets/projetos/cronomapa-en.webp" width="100%" alt="Carousel with six Cronomapa screens: the world map with its rulers in the year 100, in 1500, in 1900 and in 2026, the notable figures of 1600 and a ruler's page" /></a>
 
 Interactive map showing how the world's borders changed since 3000 BC and who ruled each territory in each period.
 
@@ -110,7 +112,7 @@ Interactive map showing how the world's borders changed since 3000 BC and who ru
 
 #### More projects
 
-<a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos.webp" width="100%" alt="Carousel with three screens from Genética da Gravidez Explicada: the home page, the risk calculator and the syndrome guides" /></a>
+<a href="https://www.andreruperto.dev/#projects"><img src="./assets/perfil/projetos-en.webp" width="100%" alt="Carousel with three screens from Genética da Gravidez Explicada: the home page, the risk calculator and the syndrome guides" /></a>
 
 <p>
 <a href="https://genetica-na-gestacao.up.railway.app/"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-genetica-mobile-en.svg" /><img src="./assets/perfil/projeto-genetica-en.svg" width="100%" alt="Genética da Gravidez Explicada: Educational site about genetics in pregnancy, with a risk calculator, guides to chromosomal conditions and a source for every number. Site" /></picture></a>
@@ -122,8 +124,8 @@ Interactive map showing how the world's borders changed since 3000 BC and who ru
 <a href="https://2turno.up.railway.app/"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-2turno-mobile-en.svg" /><img src="./assets/perfil/projeto-2turno-en.svg" width="100%" alt="2 Turno: Quiz for Brazil's 2026 presidential runoff: answer on twelve topics and see which candidate you are closer to, with a source for every position. Site" /></picture></a>
 <a href="https://github.com/AndreRuperto/mercado-eleicoes"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-mercado-mobile-en.svg" /><img src="./assets/perfil/projeto-mercado-en.svg" width="100%" alt="Mercado &amp; Eleições: Compares how much prices rose under the Bolsonaro and Lula governments, product by product, using Brazil's official inflation index, updated daily. Code" /></picture></a>
 <a href="https://github.com/AndreRuperto/Capi3D"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-capi3d-mobile-en.svg" /><img src="./assets/perfil/projeto-capi3d-en.svg" width="100%" alt="Capi3D: 3D game in Three.js: a capybara dodges trees and obstacles. Built with classmates at university. Code" /></picture></a>
-<a href="https://mangueiraepeixoto.com.br"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-mangueira-mobile-en.svg" /><img src="./assets/perfil/projeto-mangueira-en.svg" width="100%" alt="Mangueira &amp; Peixoto Advocacia: Institutional website for a law firm, built as a freelancer. Site" /></picture></a>
-<a href="https://bluemais.up.railway.app"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-bluemais-mobile-en.svg" /><img src="./assets/perfil/projeto-bluemais-en.svg" width="100%" alt="Blue Mais: Web platform for the Blue+ gym, built as a freelancer. Site" /></picture></a>
+<a href="https://mangueiraepeixoto.com.br"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-mangueira-mobile-en.svg" /><img src="./assets/perfil/projeto-mangueira-en.svg" width="100%" alt="Mangueira &amp; Peixoto Advocacia: Website for a social security law firm, with services and contact information. Site" /></picture></a>
+<a href="https://bluemais.up.railway.app"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-bluemais-mobile-en.svg" /><img src="./assets/perfil/projeto-bluemais-en.svg" width="100%" alt="Blue Mais: Website for the Blue+ swim school, with classes, schedules and instructors. Site" /></picture></a>
 <a href="https://documenter.getpostman.com/view/13166820/2sA3XJjPpR"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-apicompras-mobile-en.svg" /><img src="./assets/perfil/projeto-apicompras-en.svg" width="100%" alt="Compras.gov.br API documentation: Official documentation of the open-data API of Brazil's federal procurement system, with endpoints, parameters and examples, written during my internship at MGI. Docs" /></picture></a>
 <a href="https://simulador-sistemas-autenticacao.vercel.app"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-simulador-mobile-en.svg" /><img src="./assets/perfil/projeto-simulador-en.svg" width="100%" alt="Authentication Systems Simulator: Educational simulator that models login, sign-up and 2FA with finite automata; an academic project for a Formal Languages and Automata course. Site" /></picture></a>
 <a href="https://github.com/AndreRuperto/leis-rag"><picture><source media="(max-width: 600px)" srcset="./assets/perfil/projeto-leisrag-mobile-en.svg" /><img src="./assets/perfil/projeto-leisrag-en.svg" width="100%" alt="leis-rag: Legal research with RAG over a collection of Brazilian legislation, with answers grounded in the sources. Code" /></picture></a>
@@ -135,8 +137,10 @@ Interactive map showing how the world's borders changed since 3000 BC and who ru
 
 ### Technical skills
 
-<picture><source media="(max-width: 600px)" srcset="./assets/perfil/skills-mobile-en.svg" /><img src="./assets/perfil/skills-en.svg" width="100%" alt="Technical skills. Languages: Python, TypeScript, JavaScript, C, C++, Rust, HTML, CSS. Data, Machine Learning & AI: pandas, NumPy, scikit-learn, TensorFlow, PyTorch, OpenCV, XGBoost, LightGBM, SHAP, Matplotlib, Jupyter, LLMs & RAG, EDA, Data modeling. Data engineering, BI & automation: Apache Airflow, Databricks, Power BI, Qlik Sense, Streamlit, Selenium, Playwright, Web scraping, REST APIs, GraphQL. Frontend & desktop: React, Vite, Tailwind CSS, shadcn/ui, React Router, TanStack Query, Zod, Recharts, D3.js, Framer Motion, Three.js, Next.js, Astro, Electron, Tauri. Backend & databases: Node.js, Express, Bun, FastAPI, Pydantic, Prisma, Drizzle ORM, SQLAlchemy, PostgreSQL, MySQL, SQLite, Redis. Tools & DevOps: Git, GitHub, GitHub Actions, Docker, Railway, Vercel, Vitest, Testing Library, pytest, ESLint, Postman, VS Code, Figma." /></picture>
+<picture><source media="(max-width: 600px)" srcset="./assets/perfil/skills-mobile-en.svg" /><img src="./assets/perfil/skills-en.svg" width="100%" alt="Technical skills. Languages: Python, TypeScript, JavaScript, C, C++, Rust, C#, HTML, CSS. Data, Machine Learning & AI: pandas, NumPy, scikit-learn, TensorFlow, PyTorch, OpenCV, XGBoost, LightGBM, SHAP, Matplotlib, Jupyter, LLMs & RAG, EDA, Data modeling. Data engineering, BI & automation: Apache Airflow, Databricks, Power BI, Qlik Sense, Streamlit, Selenium, Playwright, Web scraping, REST APIs, GraphQL. Frontend & desktop: React, React Native (Expo), Vite, Tailwind CSS, shadcn/ui, React Router, TanStack Query, Zod, Recharts, D3.js, Framer Motion, Three.js, Next.js, Astro, Electron, Tauri. Backend & databases: Node.js, Express, Bun, FastAPI, Pydantic, Prisma, Drizzle ORM, SQLAlchemy, PostgreSQL, MySQL, SQLite, Redis. Tools & DevOps: Git, GitHub, GitHub Actions, Docker, Railway, Vercel, Vitest, Testing Library, pytest, ESLint, Postman, VS Code, Figma." /></picture>
 
+
+*These technologies come from professional, academic and personal projects; the depth of experience varies by tool.*
 ---
 
 <!-- STATS:START -->
