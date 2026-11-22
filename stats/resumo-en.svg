@@ -11,13 +11,13 @@
   <text x="25" y="35" class="titulo">André Ruperto's GitHub summary</text>
   <circle cx="31" cy="67" r="4" fill="#FF7E29"/>
   <text x="45" y="72" class="texto">Total contributions</text>
-  <text x="300" y="72" text-anchor="end" class="valor">7,774</text>
+  <text x="300" y="72" text-anchor="end" class="valor">7,797</text>
   <circle cx="31" cy="92" r="4" fill="#FF7E29"/>
   <text x="45" y="97" class="texto">Commits in 2026</text>
-  <text x="300" y="97" text-anchor="end" class="valor">5,805</text>
+  <text x="300" y="97" text-anchor="end" class="valor">5,820</text>
   <circle cx="31" cy="117" r="4" fill="#FF7E29"/>
   <text x="45" y="122" class="texto">Pull requests</text>
-  <text x="300" y="122" text-anchor="end" class="valor">627</text>
+  <text x="300" y="122" text-anchor="end" class="valor">634</text>
   <circle cx="31" cy="142" r="4" fill="#FF7E29"/>
   <text x="45" y="147" class="texto">Stars earned</text>
   <text x="300" y="147" text-anchor="end" class="valor">13</text>
@@ -26,7 +26,7 @@
   <text x="300" y="172" text-anchor="end" class="valor">48 days</text>
   <line x1="330" x2="330" y1="55" y2="175" stroke="#292220" stroke-width="2"/>
   <circle cx="400" cy="100" r="42" fill="none" stroke="#FF7E29" stroke-width="5"/>
-  <text x="400" y="110" text-anchor="middle" class="grande">33</text>
+  <text x="400" y="110" text-anchor="middle" class="grande">34</text>
   <text x="400" y="164" text-anchor="middle" class="valor">Current streak</text>
-  <text x="400" y="182" text-anchor="middle" class="menor">Oct 20 – Nov 21</text>
+  <text x="400" y="182" text-anchor="middle" class="menor">Oct 20 – Nov 22</text>
 </svg>
