@@ -11,12 +11,12 @@
   <text x="25" y="35" class="titulo">Linguagens mais usadas</text>
   <mask id="barra"><rect x="25" y="60" width="345" height="8" rx="4" fill="white"/></mask>
   <g mask="url(#barra)">
-    <rect x="25.00" y="60" width="135.92" height="8" fill="#e34c26"/>
-    <rect x="160.92" y="60" width="100.59" height="8" fill="#3178c6"/>
-    <rect x="261.51" y="60" width="64.15" height="8" fill="#f1e05a"/>
-    <rect x="325.66" y="60" width="32.67" height="8" fill="#3572A5"/>
-    <rect x="358.33" y="60" width="10.19" height="8" fill="#663399"/>
-    <rect x="368.51" y="60" width="1.49" height="8" fill="#dea584"/>
+    <rect x="25.00" y="60" width="135.83" height="8" fill="#e34c26"/>
+    <rect x="160.83" y="60" width="100.75" height="8" fill="#3178c6"/>
+    <rect x="261.58" y="60" width="64.10" height="8" fill="#f1e05a"/>
+    <rect x="325.68" y="60" width="32.64" height="8" fill="#3572A5"/>
+    <rect x="358.32" y="60" width="10.19" height="8" fill="#663399"/>
+    <rect x="368.52" y="60" width="1.48" height="8" fill="#dea584"/>
   </g>
   <circle cx="31.0" cy="100" r="5" fill="#e34c26"/>
   <text x="44.0" y="105" class="texto">HTML</text>
