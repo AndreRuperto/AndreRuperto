@@ -12,7 +12,7 @@
   <mask id="barra"><rect x="25" y="60" width="345" height="8" rx="4" fill="white"/></mask>
   <g mask="url(#barra)">
     <rect x="25.00" y="60" width="129.47" height="8" fill="#e34c26"/>
-    <rect x="154.47" y="60" width="107.23" height="8" fill="#3178c6"/>
+    <rect x="154.47" y="60" width="107.24" height="8" fill="#3178c6"/>
     <rect x="261.70" y="60" width="61.92" height="8" fill="#f1e05a"/>
     <rect x="323.62" y="60" width="33.51" height="8" fill="#3572A5"/>
     <rect x="357.13" y="60" width="11.40" height="8" fill="#663399"/>
